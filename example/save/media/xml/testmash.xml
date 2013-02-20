@@ -1,6 +1,18 @@
 <moviemasher>
+<<<<<<< HEAD
   <mash width="16" height="9" label="Untitled Mash" quantize="10" id="81713609-9CBC-D31E-E0D9-F8FE574A070A">
     <clip type="video" id="trainmanvideo" fill="crop" speed="1" start="0" audio="../media/audio/Abstract/abstract.mp3" volume="0,50,100,50" trimstart="0" trimend="0" label="Train Man" track="0" length="83"/>
+=======
+  <mash width="16" height="9" label="Untitled Mash" quantize="10" id="786221B6-8CAE-C2B1-8298-D4D1F27357F0">
+    <clip type="audio" id="Swing" track="1" start="5" trimend="36" label="Swing" trimstart="0" volume="0,50,100,50" audio="../media/audio/Swing/audio.mp3" length="20"/>
+    <clip type="audio" id="Swing" track="2" start="5" label="Swing" trimstart="20" volume="0,0,100,0" trimend="0" audio="../media/audio/Swing/audio.mp3" length="36"/>
+    <clip type="audio" id="Swing" track="3" start="33" trimend="36" label="Swing" trimstart="0" volume="0,50,100,50" audio="../media/audio/Swing/audio.mp3" length="20"/>
+    <clip type="image" id="2d27b1d030ee43e6534ea7c610cdbcdd" label="SQ base" track="0" lengthseconds="1" fill="crop" length="10" start="0"/>
+    <clip type="video" id="trainmanvideo" trimend="58" label="Train Man" track="0" volume="0,50,100,50" fill="crop" audio="../media/audio/Abstract/abstract.mp3" start="10" speed="1" trimstart="0" length="25"/>
+    <clip type="video" id="trainmanvideo" label="Train Man" track="0" volume="0,50,100,50" fill="crop" trimend="0" audio="../media/audio/Abstract/abstract.mp3" start="35" speed="1" trimstart="25" length="58"/>
+    <media group="audio" type="audio" id="Swing" label="Swing" duration="5.6" audio="../media/audio/Swing/audio.mp3" wave="../media/audio/Swing/audio.png" icon="../media/audio/Swing/audio.png"/>
+    <media type="image" id="2d27b1d030ee43e6534ea7c610cdbcdd" label="SQ base" group="image" source="media/user/2d27b1d030ee43e6534ea7c610cdbcdd.png" url="media/user/2d27b1d030ee43e6534ea7c610cdbcdd.png" icon="media/user/2d27b1d030ee43e6534ea7c610cdbcdd.png"/>
+>>>>>>> bd360a822e711b363b1fdd3a3d4235a5a28793a0
     <media group="video" type="video" id="trainmanvideo" label="Train Man" url="../media/video/TrainMan/" pattern="%.jpg" duration="8.3" fps="10" begin="71" audio="../media/audio/Abstract/abstract.mp3" wave="../media/audio/Abstract/audio.png"/>
   </mash>
 </moviemasher>
