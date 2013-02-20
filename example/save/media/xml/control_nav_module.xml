@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moviemasher>	
+
+<!--
+	<control style='text,tab' pattern='TITLES' select='browser.source=theme_source' bind='browser.source' value='theme_source' />
+	<control style='text,tab' pattern='EFFECTS' select='browser.source=effect_source' bind='browser.source' value='effect_source' />
+	<control style='text,tab' pattern='TRANSITIONS' select='browser.source=transition_source' bind='browser.source' value='transition_source' />
+
+-->
+	<control style='text,tab' pattern='TITLES' select='browser.parameters.group=theme' value='theme' />
+	<control style='text,tab' pattern='EFFECTS' select='browser.parameters.group=effect' value='effect' />
+	<control style='text,tab' pattern='TRANSITIONS' select='browser.parameters.group=transition' value='transition' />
+
+</moviemasher>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moviemasher>
+	<option type="font" id="default" url="{mm_path}moviemasher/com/moviemasher/font/FreeSans/stable.swf@FreeSans" label="Free Sans" />
+	<option type="font" id="BlackChancery" url="{mm_path}moviemasher/com/moviemasher/font/BlackChancery/stable.swf@BlackChancery" label="BlackChancery" />
+	<option type="font" id="BuilderMarker" url="{mm_path}moviemasher/com/moviemasher/font/BuilderMarker/stable.swf@BuilderMarker" label="BuilderMarker" />
+	<option type="font" id="FacetFolly" url="{mm_path}moviemasher/com/moviemasher/font/FacetFolly/stable.swf@FacetFolly" label="FacetFolly" />
+	<option type="font" id="FutureDeco" url="{mm_path}moviemasher/com/moviemasher/font/FutureDeco/stable.swf@FutureDeco" label="FutureDeco" />
+	<option type="font" id="GentesqueExtraBold" url="{mm_path}moviemasher/com/moviemasher/font/GentesqueExtraBold/stable.swf@GentesqueExtraBold" label="GentesqueExtraBold" />
+	<option type="font" id="IdeomaSpray" url="{mm_path}moviemasher/com/moviemasher/font/IdeomaSpray/stable.swf@IdeomaSpray" label="IdeomaSpray" />
+	<option type="font" id="JuraDemiBold" url="{mm_path}moviemasher/com/moviemasher/font/JuraDemiBold/stable.swf@JuraDemiBold" label="JuraDemiBold" />
+	<option type="font" id="Pecita" url="{mm_path}moviemasher/com/moviemasher/font/Pecita/stable.swf@Pecita" label="Pecita" />
+	<option type="font" id="PixAntiqua" url="{mm_path}moviemasher/com/moviemasher/font/PixAntiqua/stable.swf@PixAntiqua" label="PixAntiqua" />
+	<option type="font" id="Sketchy" url="{mm_path}moviemasher/com/moviemasher/font/Sketchy/stable.swf@Sketchy" label="Sketchy" />
+	<option type="font" id="Valken" url="{mm_path}moviemasher/com/moviemasher/font/Valken/stable.swf@Valken" label="Valken" />
+</moviemasher>

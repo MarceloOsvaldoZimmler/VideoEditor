@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--
+/*
+* This Source Code Form is subject to the terms of the Mozilla Public
+* License, v. 2.0. If a copy of the MPL was not distributed with this
+* file, You can obtain one at http://mozilla.org/MPL/2.0/.
+* 
+* Software distributed under the License is distributed on an
+* "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either express
+* or implied. See the License for the specific language
+* governing rights and limitations under the License.
+* 
+* The Original Code is 'Movie Masher'. The Initial Developer
+* of the Original Code is Doug Anarino. Portions created by
+* Doug Anarino are Copyright (C) 2007-2012 Movie Masher, Inc.
+* All Rights Reserved.
+*/
+-->
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Example :: JavaScript :: Movie Masher</title>
+<style type="text/css">
+	html {
+		height:100%;
+	}
+	#moviemasher_container {
+		height:620;
+	}
+	body {
+		height:100%;
+		margin:0px;
+		padding:0px;
+	}
+</style>
+<script type='text/javascript' src='../media/js/swfobject/swfobject.js'></script>
+<script type="text/javascript">
+var base = window.location.href.substr(0, window.location.href.lastIndexOf('/'));
+var parObj = {
+	"allowFullScreen":"true",
+	"id":"moviemasher_applet"
+};
+var flashvarsObj = {
+	"base":base,
+	"debug":1,
+	"video_width":256,
+	"video_height":144,
+	"mm_path":'../../',
+	"evaluate":1
+};
+flashvarsObj.preloader = flashvarsObj.mm_path + "moviemasher/com/moviemasher/display/Preloader/stable.swf";
+swfobject.embedSWF(flashvarsObj.mm_path + "moviemasher/com/moviemasher/core/MovieMasher/stable.swf", "moviemasher_container", "100%", "490", "10.2.0", "../media/js/swfobject/expressInstall.swf", flashvarsObj, parObj, parObj);
+
+var groups = {};
+var searchParams;
+
+function XMLToString(oXML) {
+  if (window.ActiveXObject) return oXML.xml;
+  return (new XMLSerializer()).serializeToString(oXML);
+}
+
+var xmlhttp;
+function addSearch()
+{
+	var s = '<moviemasher>';
+	var first_index,last_index;
+	
+	var i,z,found;
+	var node;
+	found = 0;
+	if (searchParams && searchParams.group && groups[searchParams.group])
+	{
+		first_index = searchParams.index;
+		last_index = first_index + searchParams.count;
+		z = groups[searchParams.group].length;
+		for (i = 0; i < z; i++)
+		{
+			node = groups[searchParams.group].item(i);
+			if ((node.nodeType == 1) && (node.nodeName == 'media') && (node.attributes.getNamedItem('group').value == searchParams.group))
+			{
+				if ((! searchParams.terms.length) || (node.attributes.getNamedItem('label').value.toLowerCase().indexOf(searchParams.terms.toLowerCase()) != -1)) 
+				{
+					found ++;
+					if (found > first_index) s += XMLToString(node);
+					if (found >= last_index) break;
+				}
+			}
+		}
+	}
+	s += '</moviemasher>';
+	moviemasher().addMedia(s);
+}
+function getMedia(index, count, group, terms)
+{
+	if (group)
+	{
+		searchParams = {"index":index,"count":count,"group":group,"terms":terms};
+		if (! groups[group]) 
+		{
+			groups[group] = '';
+			xmlhttp=(window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP"));
+			xmlhttp.onreadystatechange=function(){
+				if ((xmlhttp.readyState==4) && (xmlhttp.status==200))
+				{
+					groups[searchParams.group] = xmlhttp.responseXML.getElementsByTagName('media');
+					addSearch();
+				}
+			};
+			xmlhttp.open("GET","media/xml/media_" + group + ".xml",true);
+			xmlhttp.send();
+		}
+		else if (typeof(groups[group]) != 'string') setTimeout(addSearch, 100);
+	}
+	else setTimeout(addSearch, 100);
+}
+function moviemasher(inited)
+{
+	switch(inited)
+	{
+		case 1: // applet has loaded, send it initial configuration
+			var config = "<moviemasher>";
+		
+			// supply an initial mash inline
+			//config += "<mash width='16' height='9' quantize='10' crop='1' label='My Mash' />";
+			
+			// or supply an initial mash from URL
+			config += "<moviemasher config='media/xml/mash.xml' />";
+			
+			// set source to JavaScriptSource so addMedia() is called to retrieve media tags
+			config += "<source callback='addMedia' id='media' group='image' ";
+			config += "url='javascript:getMedia({index},{count},\"{group}\",\"{terms}\")' ";
+			config += "symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@JavaScriptSource' ";
+			config += "/>";
+			
+			// pull in panel configuration
+			config += "<moviemasher config='media/xml/panel.xml' />";
+			
+			config += "</moviemasher>";
+			moviemasher().evaluate(config);
+			break;
+		case 2: // configuration has loaded
+			break;
+		case 3: // everything else (controls and mash) has loaded
+			break;
+		default: return (navigator.appName.indexOf("Microsoft") == -1) ? document[parObj.id] : window[parObj.id];
+	}
+	
+}
+function evaluateExpression(form)
+{
+	var expression = form.expression.value;
+	if (expression.length)
+	{
+		form.result.value = moviemasher().evaluate(expression);
+	}
+	return false;
+}
+</script>
+</head>
+<body>
+	<div id="moviemasher_container">
+		<strong>You need to upgrade your Flash Plugin to version 10 and enable JavaScript</strong>
+	</div>
+	<table>
+		<tr valign='top'>
+			<td>
+				<b>Player:</b>
+				<a href="#" onclick="moviemasher().evaluate('player.play=1');return true;">Play</a>
+				<a href="#" onclick="moviemasher().evaluate('player.play=');return true;">Pause</a>
+				<a href="#" onclick="moviemasher().evaluate('player.completed=');return true;">First Frame</a>
+				<a href="#" onclick="moviemasher().evaluate('player.completed=100');return true;">Last Frame</a>
+				<a href="#" onclick="moviemasher().evaluate('player.completed=50');return true;">Middle Frame</a>
+				<a href="#" onclick="moviemasher().evaluate('player.volume=' + (Number(moviemasher().evaluate('player.volume')) - 10));return true;">Volume Down</a>
+				<a href="#" onclick="moviemasher().evaluate('player.volume=' + (Number(moviemasher().evaluate('player.volume')) + 10));return true;">Volume Up</a>
+				<!-- Full screen must be triggered from an actionscript mouse event, so this only fills the applet area
+				<a href="#" onclick="moviemasher().evaluate('player.fullscreen=1');return true;">Full Screen</a>
+				-->
+				<br />
+				<b>Browser:</b>
+				<a href="#" onclick="moviemasher().evaluate('browser.parameters.group=video');return true;">Video</a>
+				<a href="#" onclick="moviemasher().evaluate('browser.parameters.group=audio');return true;">Audio</a>
+				<a href="#" onclick="moviemasher().evaluate('browser.parameters.group=image');return true;">Images</a>
+				<a href="#" onclick="moviemasher().evaluate('browser.parameters.group=effect');return true;">Effects</a>
+				<a href="#" onclick="moviemasher().evaluate('browser.parameters.group=transition');return true;">Transitions</a>
+				<a href="#" onclick="moviemasher().evaluate('browser.parameters.group=theme');return true;">Themes</a>
+				<a href="#" onclick="moviemasher().evaluate('browser.parameters.terms=Caption');return true;">Search for 'Caption'</a>
+				<a href="#" onclick="moviemasher().evaluate('browser.parameters.terms=');return true;">Clear Search</a>
+				
+				<br />
+				<b>Timeline:</b>
+				<a href="#" onclick="moviemasher().evaluate('timeline.selection=clips');return true;">Select All</a>
+				<a href="#" onclick="moviemasher().evaluate('timeline.selection=effect');return true;">Select Effects</a>
+				<a href="#" onclick="moviemasher().evaluate('timeline.selection=video');return true;">Select Video</a>
+				<a href="#" onclick="moviemasher().evaluate('timeline.selection=');return true;">Deselect</a>
+				<a href="#" onclick="moviemasher().evaluate('timeline.undo=');return true;">Undo</a>
+				<a href="#" onclick="moviemasher().evaluate('timeline.redo=');return true;">Redo</a>
+				<a href="#" onclick="moviemasher().evaluate('timeline.remove=');return true;">Delete</a>
+				<a href="#" onclick="moviemasher().evaluate('logo.click=1');return true;">Click Logo</a>
+				<br />
+				<b>Selection:</b>
+				<a href="#" onclick="moviemasher().evaluate('timeline.selection.forecolor=FF0000');return true;">Forecolor Red</a>
+				<a href="#" onclick="moviemasher().evaluate('timeline.selection.backcolor=0000FF');return true;">Backcolor Blue</a>
+				<a href="#" onclick="moviemasher().evaluate('timeline.selection.length=8');return true;">Length 8</a>
+				
+				<br />
+				<br />
+				<form onsubmit="return evaluateExpression(this);">
+					<b>Expression:</b>
+					<input id="expression" value="player.mash.xml" />
+					<input type='submit' value='Evaluate' />
+					<input id="result"/>
+				</form>
+			</td>
+
+			<td>
+				<form onsubmit="return evaluateExpression(this);">
+					<b>Mash XML Configuration:</b>
+					<br />
+					<textarea id="expression" cols="70" rows="10">&lt;moviemasher&gt;
+&lt;mash width="16" height="9" crop="1" label="Frog Mash" quantize="10"&gt;
+	&lt;clip id="frog" /&gt;
+&lt;/mash&gt;
+&lt;media type="image" id="frog" label="Frog" url="../media/image/Frog/media.jpg" /&gt;
+&lt;/moviemasher&gt;</textarea>
+					<br />
+					<input type='submit' value='Load' />
+					<input id="result"/>
+				</form>
+			
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moviemasher>
+	<mash width="16" height="9" crop="1" label="Example Mash" quantize="10">
+		<clip id='barstheme' length='40' forecolor="333399" backcolor="666666" />
+		<clip id='tickereffect' length='40' track='1' longtext="JavaScript Test" />
+	</mash>
+	<media id='barstheme' group='theme' type='theme' label='Bars' 
+		editable='fade,forecolor,backcolor,orientation,instances' 
+		forecolor='CCCCCC' backcolor='333333'
+		fade='0,0,100,100' 
+		orientation='vertical'
+		instances='25'
+		map='bars'
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Shapes' 
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Shapes' 
+	/>
+	<media group='effect' type='effect' id='tickereffect' label='Ticker'
+		longtext='Ticker'
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Ticker'
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Ticker'
+		forecolor='000000' backalpha='50' backcolor='FFFFFF' textsize='14' font='default'
+		editable='font,textsize,longtext,forecolor,backalpha,backcolor'
+	/>
+</moviemasher>

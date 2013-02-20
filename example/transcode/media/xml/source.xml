@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<moviemasher>
+	
+	<!-- BROWSER DYNAMIC CGI SOURCE -->
+	<source id='media' 
+		url='media/php/media.php?group={group}&amp;index={index}&amp;count={count}&amp;unique={moviemasher.random}&amp;label={terms}' 
+		symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@RemoteSource' 
+	/>
+
+	<!-- BROWSER LOADING PROGRESS PANEL -->
+	<panel z='1' hide='browser.source.loading=empty' width='{moviemasher.width}-({layout.navwidth}+{video_width}+2*{layout.padding}+2*{layout.spacing}+{layout.panelwidth})' height='{video_height}+2*{layout.barsize}' x='{layout.navwidth}+{layout.padding}+{layout.spacing}+{video_width}' y='{layout.padding}'>
+		<bar size='*'>
+			<control width='*'  />
+			<control width='100' height='100' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ProgressIndicator' />
+			<control width='*' />
+		</bar>
+	</panel>
+
+</moviemasher>
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moviemasher config='media/xml/source_module.xml'>
+
+<!--
+	<source id='video_source' config='media/xml/media_video.xml' />
+	<source id='audio_source' config='media/xml/media_audio.xml' />
+	<source id='image_source' config='media/xml/media_image.xml' />
+-->
+
+<!-- BROWSER DYNAMIC CGI SOURCE -->
+	<source id='media' 
+		url='media/php/media.php?group={group}&amp;index={index}&amp;count={count}&amp;unique={moviemasher.random}&amp;label={terms}' 
+		symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@RemoteSource' 
+	/>
+
+</moviemasher>
+
+

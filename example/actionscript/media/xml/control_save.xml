@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moviemasher>
+	<control width='6' fill='stretch' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#Separator' />
+	<!-- NEW CONTROL -->
+	<control style='text,button' tooltip='New Mash!' pattern='New'
+		trigger='player.new='
+		symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Text" 
+	/>
+</moviemasher>

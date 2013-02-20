@@ -1,0 +1,1 @@
+22:20:56 index.php Configuration option RESTEndPoint required

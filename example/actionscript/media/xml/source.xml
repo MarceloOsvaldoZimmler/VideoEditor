@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moviemasher config='media/xml/source_module.xml'>
+	<!-- STATIC MEDIA SOURCES --> 
+	<source id='video_source' config='media/xml/media_video.xml' />
+	<source id='audio_source' config='media/xml/media_audio.xml' />
+	<source id='image_source' config='media/xml/media_image.xml' />
+</moviemasher>
+

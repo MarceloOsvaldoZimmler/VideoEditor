@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moviemasher>
+	<!-- AUDIO -->
+	<media group="audio" type="audio" id="Swing" label="Swing" duration="5.6" audio="../media/audio/Swing/audio.mp3" wave="../media/audio/Swing/audio.png" icon="../media/audio/Swing/audio.png" />
+	<media type="audio" id="DrumLoop" loop="1" label="Drum Loop" group="audio" audio="../media/audio/DrumLoop/media.mp3" duration="4.54" wave="../media/audio/DrumLoop/audio.png" icon="../media/audio/DrumLoop/audio.png"/>
+</moviemasher>

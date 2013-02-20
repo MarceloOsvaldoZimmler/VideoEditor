@@ -1,0 +1,1392 @@
+17:25:41 media.php group=mash&index=0&count=20&unique=C429474B-1625-EC26-66A0-8C472FA75121&label=
+17:25:41 media.php <moviemasher>
+</moviemasher>
+
+17:25:41 media.php group=mash&index=0&count=20&unique=6A308615-F4ED-E204-268B-8C4731106DAB&label=
+17:25:41 media.php <moviemasher>
+</moviemasher>
+
+20:10:06 media.php group=mash&index=0&count=20&unique=63BF0D83-D061-A202-B91A-8CDDB6BF15D8&label=
+20:10:07 media.php <moviemasher>
+</moviemasher>
+
+20:10:07 media.php group=mash&index=0&count=20&unique=1031098D-A3CE-8221-7DFF-8CDDBC316F38&label=
+20:10:07 media.php <moviemasher>
+</moviemasher>
+
+21:11:50 media.php group=mash&index=0&count=20&unique=740C5BC7-AA5E-8B46-7615-8D163BCCB220&label=
+21:11:50 media.php <moviemasher>
+</moviemasher>
+
+21:11:50 media.php group=mash&index=0&count=20&unique=D217EFEF-AB7A-9ECF-0C25-8D163CDD8917&label=
+21:11:50 media.php <moviemasher>
+</moviemasher>
+
+21:11:55 media.php group=video&index=0&count=20&unique=61CF1656-FCAE-5644-63C0-8D165064E4D8&label=
+21:11:55 media.php <moviemasher>
+</moviemasher>
+
+21:11:56 media.php group=transition&index=0&count=20&unique=AB57C175-0AA3-7B2F-1047-8D1655CB172C&label=
+21:11:56 media.php <moviemasher>
+</moviemasher>
+
+21:11:57 media.php group=effect&index=0&count=20&unique=D3A6CE43-8019-D2D2-136C-8D165A8C31A0&label=
+21:11:57 media.php <moviemasher>
+</moviemasher>
+
+21:11:59 media.php group=theme&index=0&count=20&unique=DC4CE2F4-DB12-E381-B762-8D165E959E02&label=
+21:11:59 media.php <moviemasher>
+</moviemasher>
+
+21:32:22 media.php group=video&index=0&count=20&unique=14CA32C5-83C0-86A3-26A0-8D2908964761&label=
+21:32:22 media.php <moviemasher>
+</moviemasher>
+
+21:32:23 media.php group=audio&index=0&count=20&unique=8DCEEA9F-25C7-57C5-2967-8D290C3CECD9&label=
+21:32:23 media.php <moviemasher>
+</moviemasher>
+
+21:32:24 media.php group=mash&index=0&count=20&unique=CDD38AB1-6BE2-C404-5142-8D291045010A&label=
+21:32:24 media.php <moviemasher>
+</moviemasher>
+
+21:32:25 media.php group=effect&index=0&count=20&unique=3338BD6B-9DE8-4174-A649-8D2914C2BCA4&label=
+21:32:25 media.php <moviemasher>
+</moviemasher>
+
+21:32:26 media.php group=transition&index=0&count=20&unique=098CF6B5-3641-C31C-5E47-8D29190FEECB&label=
+21:32:26 media.php <moviemasher>
+</moviemasher>
+
+21:32:27 media.php group=theme&index=0&count=20&unique=0E562F75-3C42-3487-CE4B-8D291D6B7A0B&label=
+21:32:27 media.php <moviemasher>
+</moviemasher>
+
+21:33:43 media.php group=mash&index=0&count=20&unique=5B9F3C62-B7EF-0221-5F69-8D2A463E689C&label=
+21:33:43 media.php <moviemasher>
+</moviemasher>
+
+21:33:43 media.php group=mash&index=0&count=20&unique=3F2C6B0E-3C25-4CA3-8847-8D2A47432092&label=
+21:33:43 media.php <moviemasher>
+</moviemasher>
+
+22:08:58 media.php group=mash&index=0&count=20&unique=72C1C603-EAB4-69E0-F18A-8D4A8A2D8F47&label=
+22:08:58 media.php <moviemasher>
+</moviemasher>
+
+22:08:58 media.php group=mash&index=0&count=20&unique=28CC5494-01D1-51D3-5AB6-8D4A8B58F882&label=
+22:08:58 media.php <moviemasher>
+</moviemasher>
+
+22:09:13 import_init.php file=Timeless%20Evolution%20in%20Motion.m4v&size=9760320
+22:09:13 import_init.php <moviemasher  key='moviemasher/example/transcode/media/user/marcelozimmler/CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6/original.m4v' mime='video/x-m4v' bucket='admaker' acl='public-read' policy='eyJleHBpcmF0aW9uIjoiMjAxMy0wMS0zMFQyMjowOToxMy4wMDBaIiwiY29uZGl0aW9ucyI6W1siZXEiLCIkYnVja2V0IiwiYWRtYWtlciJdLFsiZXEiLCIka2V5IiwibW92aWVtYXNoZXIvZXhhbXBsZS90cmFuc2NvZGUvbWVkaWEvdXNlci9tYXJjZWxvemltbWxlci9DRUVBNEUxMi1FOEZELTRGOTMtQkE3My1ERjlCQzJFREI3RjYvb3JpZ2luYWwubTR2Il0sWyJlcSIsIiRhY2wiLCJwdWJsaWMtcmVhZCJdLFsiZXEiLCIkQ29udGVudC1UeXBlIiwidmlkZW8veC1tNHYiXSxbInN0YXJ0cy13aXRoIiwiJEZpbGVuYW1lIiwiIl0sWyJzdGFydHMtd2l0aCIsIiRzdWNjZXNzX2FjdGlvbl9zdGF0dXMiLCIyMDEiXV19' signature='+c58DDorA4SGyQosntpLFAaOzsU=' keyid='AKIAIYOOWGGDC3F5ABOQ' region='us-east-1' url="media/php/import_api.php?label=Timeless+Evolution+in+Motion.m4v&amp;id=CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6&amp;type=video&amp;extension=m4v" status="Transferring" />
+22:09:18 import_api.php label=Timeless+Evolution+in+Motion.m4v&id=CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6&type=video&extension=m4v
+22:09:18 import_api.php Client SQS request:
+<MovieMasher>
+  <Signature>7tXqqhh+225zympEfQUuMbieuBeNeWN8m2hB2PW4bgQ=</Signature>
+  <Authentication>
+    <Nonce>F56CA22D-D25A-4A39-A663-1D5CCE29D69B</Nonce>
+    <Date>2013-01-30T21:09:18Z</Date>
+    <Identifier>AKIAIYOOWGGDC3F5ABOQ</Identifier>
+    <Name>AccessKey</Name>
+  </Authentication>
+  <Job>
+    <TransferType>http</TransferType>
+    <TransferHost>localhost</TransferHost>
+    <Transfer>
+      <Inherit>1</Inherit>
+      <Host>admaker.s3.amazonaws.com</Host>
+      <Path>moviemasher/example/transcode/media/user/marcelozimmler/CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6/{Transfer.File}</Path>
+      <SeparateRequests>1</SeparateRequests>
+      <Retries>3</Retries>
+      <Method>put</Method>
+      <HeaderName>Authorization</HeaderName>
+      <HeaderName>x-amz-acl</HeaderName>
+      <HeaderName>Content-Type</HeaderName>
+      <HeaderName>Content-MD5</HeaderName>
+      <HeaderName>Date</HeaderName>
+      <HeaderValue>AWS {AccessKey.Identifier}:{Transfer.Signature}</HeaderValue>
+      <HeaderValue>public-read</HeaderValue>
+      <HeaderValue>{Transfer.Mime}</HeaderValue>
+      <HeaderValue>{Transfer.MD5}</HeaderValue>
+      <HeaderValue>{Transfer.Date}</HeaderValue>
+      <Signature>
+        <Base64Encode>
+          <HMACSHA1>
+            <Join>
+              <NewLine/>
+              <UpperCase>{Transfer.Method}</UpperCase>
+              <Value>{Transfer.MD5}</Value>
+              <Value>{Transfer.Mime}</Value>
+              <Value>{Transfer.Date}</Value>
+              <Value>x-amz-acl:public-read</Value>
+              <Value>/admaker/{Transfer.Path}</Value>
+            </Join>
+            <Value>{AccessKey.Secret}</Value>
+          </HMACSHA1>
+        </Base64Encode>
+      </Signature>
+    </Transfer>
+    <Input>
+      <Type>video</Type>
+      <Transfer>
+        <Inherit>1</Inherit>
+        <Path>moviemasher/example/transcode/media/user/marcelozimmler/CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6/original.m4v</Path>
+        <Host>admaker.s3.amazonaws.com</Host>
+      </Transfer>
+    </Input>
+    <Output>
+      <Type>text</Type>
+      <Payload>1</Payload>
+      <Body>
+        <Response>
+          <WarningLog>{Job.Warnings}</WarningLog>
+          <ErrorLog>{Job.Errors}</ErrorLog>
+          <Error>{Job.Error}</Error>
+          <Version>{Job.Version}</Version>
+        </Response>
+      </Body>
+      <Transfer>
+        <Host>localhost</Host>
+        <Type>http</Type>
+        <ParameterName>id</ParameterName>
+        <ParameterName>job</ParameterName>
+        <ParameterName>uid</ParameterName>
+        <ParameterName>sig</ParameterName>
+        <ParameterName>date</ParameterName>
+        <ParameterValue>CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6</ParameterValue>
+        <ParameterValue>{Job.ID}</ParameterValue>
+        <ParameterValue>marcelozimmler</ParameterValue>
+        <ParameterValue>{Transfer.Signature}</ParameterValue>
+        <ParameterValue>{Transfer.DateTimestamp}</ParameterValue>
+        <Signature>
+          <Base64Encode>
+            <HMACSHA1>
+              <Join>
+                <NewLine/>
+                <Value>{AccessKey.Identifier}</Value>
+                <Value>{Transfer.DateTimestamp}</Value>
+              </Join>
+              <Value>{AccessKey.Secret}</Value>
+            </HMACSHA1>
+          </Base64Encode>
+        </Signature>
+        <Path>moviemasher/example/transcode/media/php/import_error.php</Path>
+      </Transfer>
+      <Trigger>error</Trigger>
+    </Output>
+    <Output>
+      <Type>text</Type>
+      <Payload>1</Payload>
+      <Body>
+        <Response>
+          <Progress>
+            <Percent>{Job.Percent}</Percent>
+            <PercentEstimate>{Job.PercentEstimate}</PercentEstimate>
+            <Status>{Job.Status}</Status>
+          </Progress>
+          <Version>{Job.Version}</Version>
+        </Response>
+      </Body>
+      <Transfer>
+        <Host>localhost</Host>
+        <Type>http</Type>
+        <ParameterName>id</ParameterName>
+        <ParameterName>job</ParameterName>
+        <ParameterName>uid</ParameterName>
+        <ParameterName>sig</ParameterName>
+        <ParameterName>date</ParameterName>
+        <ParameterValue>CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6</ParameterValue>
+        <ParameterValue>{Job.ID}</ParameterValue>
+        <ParameterValue>marcelozimmler</ParameterValue>
+        <ParameterValue>{Transfer.Signature}</ParameterValue>
+        <ParameterValue>{Transfer.DateTimestamp}</ParameterValue>
+        <Signature>
+          <Base64Encode>
+            <HMACSHA1>
+              <Join>
+                <NewLine/>
+                <Value>{AccessKey.Identifier}</Value>
+                <Value>{Transfer.DateTimestamp}</Value>
+              </Join>
+              <Value>{AccessKey.Secret}</Value>
+            </HMACSHA1>
+          </Base64Encode>
+        </Signature>
+        <Path>moviemasher/example/transcode/media/php/import_progress.php</Path>
+      </Transfer>
+      <Trigger>progress</Trigger>
+    </Output>
+    <Output>
+      <Type>text</Type>
+      <Payload>1</Payload>
+      <Body/>
+      <Transfer>
+        <Host>localhost</Host>
+        <Type>http</Type>
+        <ParameterName>id</ParameterName>
+        <ParameterName>job</ParameterName>
+        <ParameterName>uid</ParameterName>
+        <ParameterName>sig</ParameterName>
+        <ParameterName>date</ParameterName>
+        <ParameterName>started</ParameterName>
+        <ParameterValue>CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6</ParameterValue>
+        <ParameterValue>{Job.ID}</ParameterValue>
+        <ParameterValue>marcelozimmler</ParameterValue>
+        <ParameterValue>{Transfer.Signature}</ParameterValue>
+        <ParameterValue>{Transfer.DateTimestamp}</ParameterValue>
+        <ParameterValue>1359580158</ParameterValue>
+        <Signature>
+          <Base64Encode>
+            <HMACSHA1>
+              <Join>
+                <NewLine/>
+                <Value>{AccessKey.Identifier}</Value>
+                <Value>{Transfer.DateTimestamp}</Value>
+              </Join>
+              <Value>{AccessKey.Secret}</Value>
+            </HMACSHA1>
+          </Base64Encode>
+        </Signature>
+        <Path>moviemasher/example/transcode/media/php/import_done.php</Path>
+        <VariableName>label</VariableName>
+        <VariableName>extension</VariableName>
+        <VariableName>type</VariableName>
+        <VariableName>audio</VariableName>
+        <VariableName>duration</VariableName>
+        <VariableValue>Timeless Evolution in Motion.m4v</VariableValue>
+        <VariableValue>m4v</VariableValue>
+        <VariableValue>{Input.Type}</VariableValue>
+        <VariableValue>{Input.Audio}</VariableValue>
+        <VariableValue>{Input.Duration}</VariableValue>
+      </Transfer>
+      <Trigger>done</Trigger>
+      <Required>1</Required>
+    </Output>
+    <Output>
+      <Type>audio</Type>
+      <AudioBitrate>128</AudioBitrate>
+      <Basename>audio</Basename>
+      <Extension>mp3</Extension>
+      <NoVideo>1</NoVideo>
+      <Frequency>44100</Frequency>
+    </Output>
+    <Output>
+      <Type>waveform</Type>
+      <Forecolor>000000</Forecolor>
+      <Backcolor>FFFFFF</Backcolor>
+      <Basename>waveform</Basename>
+      <Dimensions>8000x32</Dimensions>
+      <Extension>png</Extension>
+    </Output>
+    <Output>
+      <Type>sequence</Type>
+      <FPS>10</FPS>
+      <ImageQuality>1</ImageQuality>
+      <Basename>256x144x10</Basename>
+      <Dimensions>256x144</Dimensions>
+    </Output>
+  </Job>
+</MovieMasher>
+
+22:09:19 import_api.php Client SQS response:
+<?xml version="1.0"?><SendMessageResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><SendMessageResult><MessageId>33d911fd-4a75-41c4-9580-7ebf74e13a70</MessageId><MD5OfMessageBody>a17239f146f7f247959095db8531c7b9</MD5OfMessageBody></SendMessageResult><ResponseMetadata><RequestId>97dd2bdf-2128-5883-85d7-625caf17d7ca</RequestId></ResponseMetadata></SendMessageResponse>
+22:09:19 import_api.php <moviemasher url="media/php/import_monitor.php?type=video&amp;job=33d911fd-4a75-41c4-9580-7ebf74e13a70&amp;id=CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6" progress="1" status="Queueing..." delay="10" />
+22:09:22 media.php group=video&index=0&count=20&unique=ECAEC6E1-B66B-91AA-DA62-8D4AE9DE313B&label=
+22:09:22 media.php <moviemasher>
+</moviemasher>
+
+22:09:23 media.php group=mash&index=0&count=20&unique=53F3B07D-0712-52AC-DEC3-8D4AEF348F41&label=
+22:09:23 media.php <moviemasher>
+</moviemasher>
+
+22:09:29 import_api.php label=Timeless+Evolution+in+Motion.m4v&id=CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6&type=video&extension=m4v
+22:09:29 import_api.php Client SQS request:
+<MovieMasher>
+  <Signature>5xEBqeifTxbo3zd8nuS6KQF82fbTAPJCkg3Fj6OTZdw=</Signature>
+  <Authentication>
+    <Nonce>84A33135-780D-415A-B126-7EB73719C6F5</Nonce>
+    <Date>2013-01-30T21:09:29Z</Date>
+    <Identifier>AKIAIYOOWGGDC3F5ABOQ</Identifier>
+    <Name>AccessKey</Name>
+  </Authentication>
+  <Job>
+    <TransferType>http</TransferType>
+    <TransferHost>localhost</TransferHost>
+    <Transfer>
+      <Inherit>1</Inherit>
+      <Host>admaker.s3.amazonaws.com</Host>
+      <Path>moviemasher/example/transcode/media/user/marcelozimmler/CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6/{Transfer.File}</Path>
+      <SeparateRequests>1</SeparateRequests>
+      <Retries>3</Retries>
+      <Method>put</Method>
+      <HeaderName>Authorization</HeaderName>
+      <HeaderName>x-amz-acl</HeaderName>
+      <HeaderName>Content-Type</HeaderName>
+      <HeaderName>Content-MD5</HeaderName>
+      <HeaderName>Date</HeaderName>
+      <HeaderValue>AWS {AccessKey.Identifier}:{Transfer.Signature}</HeaderValue>
+      <HeaderValue>public-read</HeaderValue>
+      <HeaderValue>{Transfer.Mime}</HeaderValue>
+      <HeaderValue>{Transfer.MD5}</HeaderValue>
+      <HeaderValue>{Transfer.Date}</HeaderValue>
+      <Signature>
+        <Base64Encode>
+          <HMACSHA1>
+            <Join>
+              <NewLine/>
+              <UpperCase>{Transfer.Method}</UpperCase>
+              <Value>{Transfer.MD5}</Value>
+              <Value>{Transfer.Mime}</Value>
+              <Value>{Transfer.Date}</Value>
+              <Value>x-amz-acl:public-read</Value>
+              <Value>/admaker/{Transfer.Path}</Value>
+            </Join>
+            <Value>{AccessKey.Secret}</Value>
+          </HMACSHA1>
+        </Base64Encode>
+      </Signature>
+    </Transfer>
+    <Input>
+      <Type>video</Type>
+      <Transfer>
+        <Inherit>1</Inherit>
+        <Path>moviemasher/example/transcode/media/user/marcelozimmler/CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6/original.m4v</Path>
+        <Host>admaker.s3.amazonaws.com</Host>
+      </Transfer>
+    </Input>
+    <Output>
+      <Type>text</Type>
+      <Payload>1</Payload>
+      <Body>
+        <Response>
+          <WarningLog>{Job.Warnings}</WarningLog>
+          <ErrorLog>{Job.Errors}</ErrorLog>
+          <Error>{Job.Error}</Error>
+          <Version>{Job.Version}</Version>
+        </Response>
+      </Body>
+      <Transfer>
+        <Host>localhost</Host>
+        <Type>http</Type>
+        <ParameterName>id</ParameterName>
+        <ParameterName>job</ParameterName>
+        <ParameterName>uid</ParameterName>
+        <ParameterName>sig</ParameterName>
+        <ParameterName>date</ParameterName>
+        <ParameterValue>CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6</ParameterValue>
+        <ParameterValue>{Job.ID}</ParameterValue>
+        <ParameterValue>marcelozimmler</ParameterValue>
+        <ParameterValue>{Transfer.Signature}</ParameterValue>
+        <ParameterValue>{Transfer.DateTimestamp}</ParameterValue>
+        <Signature>
+          <Base64Encode>
+            <HMACSHA1>
+              <Join>
+                <NewLine/>
+                <Value>{AccessKey.Identifier}</Value>
+                <Value>{Transfer.DateTimestamp}</Value>
+              </Join>
+              <Value>{AccessKey.Secret}</Value>
+            </HMACSHA1>
+          </Base64Encode>
+        </Signature>
+        <Path>moviemasher/example/transcode/media/php/import_error.php</Path>
+      </Transfer>
+      <Trigger>error</Trigger>
+    </Output>
+    <Output>
+      <Type>text</Type>
+      <Payload>1</Payload>
+      <Body>
+        <Response>
+          <Progress>
+            <Percent>{Job.Percent}</Percent>
+            <PercentEstimate>{Job.PercentEstimate}</PercentEstimate>
+            <Status>{Job.Status}</Status>
+          </Progress>
+          <Version>{Job.Version}</Version>
+        </Response>
+      </Body>
+      <Transfer>
+        <Host>localhost</Host>
+        <Type>http</Type>
+        <ParameterName>id</ParameterName>
+        <ParameterName>job</ParameterName>
+        <ParameterName>uid</ParameterName>
+        <ParameterName>sig</ParameterName>
+        <ParameterName>date</ParameterName>
+        <ParameterValue>CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6</ParameterValue>
+        <ParameterValue>{Job.ID}</ParameterValue>
+        <ParameterValue>marcelozimmler</ParameterValue>
+        <ParameterValue>{Transfer.Signature}</ParameterValue>
+        <ParameterValue>{Transfer.DateTimestamp}</ParameterValue>
+        <Signature>
+          <Base64Encode>
+            <HMACSHA1>
+              <Join>
+                <NewLine/>
+                <Value>{AccessKey.Identifier}</Value>
+                <Value>{Transfer.DateTimestamp}</Value>
+              </Join>
+              <Value>{AccessKey.Secret}</Value>
+            </HMACSHA1>
+          </Base64Encode>
+        </Signature>
+        <Path>moviemasher/example/transcode/media/php/import_progress.php</Path>
+      </Transfer>
+      <Trigger>progress</Trigger>
+    </Output>
+    <Output>
+      <Type>text</Type>
+      <Payload>1</Payload>
+      <Body/>
+      <Transfer>
+        <Host>localhost</Host>
+        <Type>http</Type>
+        <ParameterName>id</ParameterName>
+        <ParameterName>job</ParameterName>
+        <ParameterName>uid</ParameterName>
+        <ParameterName>sig</ParameterName>
+        <ParameterName>date</ParameterName>
+        <ParameterName>started</ParameterName>
+        <ParameterValue>CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6</ParameterValue>
+        <ParameterValue>{Job.ID}</ParameterValue>
+        <ParameterValue>marcelozimmler</ParameterValue>
+        <ParameterValue>{Transfer.Signature}</ParameterValue>
+        <ParameterValue>{Transfer.DateTimestamp}</ParameterValue>
+        <ParameterValue>1359580169</ParameterValue>
+        <Signature>
+          <Base64Encode>
+            <HMACSHA1>
+              <Join>
+                <NewLine/>
+                <Value>{AccessKey.Identifier}</Value>
+                <Value>{Transfer.DateTimestamp}</Value>
+              </Join>
+              <Value>{AccessKey.Secret}</Value>
+            </HMACSHA1>
+          </Base64Encode>
+        </Signature>
+        <Path>moviemasher/example/transcode/media/php/import_done.php</Path>
+        <VariableName>label</VariableName>
+        <VariableName>extension</VariableName>
+        <VariableName>type</VariableName>
+        <VariableName>audio</VariableName>
+        <VariableName>duration</VariableName>
+        <VariableValue>Timeless Evolution in Motion.m4v</VariableValue>
+        <VariableValue>m4v</VariableValue>
+        <VariableValue>{Input.Type}</VariableValue>
+        <VariableValue>{Input.Audio}</VariableValue>
+        <VariableValue>{Input.Duration}</VariableValue>
+      </Transfer>
+      <Trigger>done</Trigger>
+      <Required>1</Required>
+    </Output>
+    <Output>
+      <Type>audio</Type>
+      <AudioBitrate>128</AudioBitrate>
+      <Basename>audio</Basename>
+      <Extension>mp3</Extension>
+      <NoVideo>1</NoVideo>
+      <Frequency>44100</Frequency>
+    </Output>
+    <Output>
+      <Type>waveform</Type>
+      <Forecolor>000000</Forecolor>
+      <Backcolor>FFFFFF</Backcolor>
+      <Basename>waveform</Basename>
+      <Dimensions>8000x32</Dimensions>
+      <Extension>png</Extension>
+    </Output>
+    <Output>
+      <Type>sequence</Type>
+      <FPS>10</FPS>
+      <ImageQuality>1</ImageQuality>
+      <Basename>256x144x10</Basename>
+      <Dimensions>256x144</Dimensions>
+    </Output>
+  </Job>
+</MovieMasher>
+
+22:09:29 import_api.php Client SQS response:
+<?xml version="1.0"?><SendMessageResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><SendMessageResult><MessageId>ac5c58cb-baf1-4c98-83c6-d3ff1067554c</MessageId><MD5OfMessageBody>b8e7cca1709b7eaa3adad0f57cc6dbf0</MD5OfMessageBody></SendMessageResult><ResponseMetadata><RequestId>616eb19c-3799-55a8-83b9-f81fb9d09d9e</RequestId></ResponseMetadata></SendMessageResponse>
+22:09:29 import_api.php <moviemasher url="media/php/import_monitor.php?type=video&amp;job=ac5c58cb-baf1-4c98-83c6-d3ff1067554c&amp;id=CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6" progress="1" status="Queueing..." delay="10" />
+22:09:39 import_api.php label=Timeless+Evolution+in+Motion.m4v&id=CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6&type=video&extension=m4v
+22:09:39 import_api.php Client SQS request:
+<MovieMasher>
+  <Signature>8lHIYelUPqNBKHyb/a0+1QEYyjJIiI1AUcrmLKTzJ8s=</Signature>
+  <Authentication>
+    <Nonce>CB90CE3E-9E3B-4096-B575-A9DF59DBF8BD</Nonce>
+    <Date>2013-01-30T21:09:39Z</Date>
+    <Identifier>AKIAIYOOWGGDC3F5ABOQ</Identifier>
+    <Name>AccessKey</Name>
+  </Authentication>
+  <Job>
+    <TransferType>http</TransferType>
+    <TransferHost>localhost</TransferHost>
+    <Transfer>
+      <Inherit>1</Inherit>
+      <Host>admaker.s3.amazonaws.com</Host>
+      <Path>moviemasher/example/transcode/media/user/marcelozimmler/CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6/{Transfer.File}</Path>
+      <SeparateRequests>1</SeparateRequests>
+      <Retries>3</Retries>
+      <Method>put</Method>
+      <HeaderName>Authorization</HeaderName>
+      <HeaderName>x-amz-acl</HeaderName>
+      <HeaderName>Content-Type</HeaderName>
+      <HeaderName>Content-MD5</HeaderName>
+      <HeaderName>Date</HeaderName>
+      <HeaderValue>AWS {AccessKey.Identifier}:{Transfer.Signature}</HeaderValue>
+      <HeaderValue>public-read</HeaderValue>
+      <HeaderValue>{Transfer.Mime}</HeaderValue>
+      <HeaderValue>{Transfer.MD5}</HeaderValue>
+      <HeaderValue>{Transfer.Date}</HeaderValue>
+      <Signature>
+        <Base64Encode>
+          <HMACSHA1>
+            <Join>
+              <NewLine/>
+              <UpperCase>{Transfer.Method}</UpperCase>
+              <Value>{Transfer.MD5}</Value>
+              <Value>{Transfer.Mime}</Value>
+              <Value>{Transfer.Date}</Value>
+              <Value>x-amz-acl:public-read</Value>
+              <Value>/admaker/{Transfer.Path}</Value>
+            </Join>
+            <Value>{AccessKey.Secret}</Value>
+          </HMACSHA1>
+        </Base64Encode>
+      </Signature>
+    </Transfer>
+    <Input>
+      <Type>video</Type>
+      <Transfer>
+        <Inherit>1</Inherit>
+        <Path>moviemasher/example/transcode/media/user/marcelozimmler/CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6/original.m4v</Path>
+        <Host>admaker.s3.amazonaws.com</Host>
+      </Transfer>
+    </Input>
+    <Output>
+      <Type>text</Type>
+      <Payload>1</Payload>
+      <Body>
+        <Response>
+          <WarningLog>{Job.Warnings}</WarningLog>
+          <ErrorLog>{Job.Errors}</ErrorLog>
+          <Error>{Job.Error}</Error>
+          <Version>{Job.Version}</Version>
+        </Response>
+      </Body>
+      <Transfer>
+        <Host>localhost</Host>
+        <Type>http</Type>
+        <ParameterName>id</ParameterName>
+        <ParameterName>job</ParameterName>
+        <ParameterName>uid</ParameterName>
+        <ParameterName>sig</ParameterName>
+        <ParameterName>date</ParameterName>
+        <ParameterValue>CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6</ParameterValue>
+        <ParameterValue>{Job.ID}</ParameterValue>
+        <ParameterValue>marcelozimmler</ParameterValue>
+        <ParameterValue>{Transfer.Signature}</ParameterValue>
+        <ParameterValue>{Transfer.DateTimestamp}</ParameterValue>
+        <Signature>
+          <Base64Encode>
+            <HMACSHA1>
+              <Join>
+                <NewLine/>
+                <Value>{AccessKey.Identifier}</Value>
+                <Value>{Transfer.DateTimestamp}</Value>
+              </Join>
+              <Value>{AccessKey.Secret}</Value>
+            </HMACSHA1>
+          </Base64Encode>
+        </Signature>
+        <Path>moviemasher/example/transcode/media/php/import_error.php</Path>
+      </Transfer>
+      <Trigger>error</Trigger>
+    </Output>
+    <Output>
+      <Type>text</Type>
+      <Payload>1</Payload>
+      <Body>
+        <Response>
+          <Progress>
+            <Percent>{Job.Percent}</Percent>
+            <PercentEstimate>{Job.PercentEstimate}</PercentEstimate>
+            <Status>{Job.Status}</Status>
+          </Progress>
+          <Version>{Job.Version}</Version>
+        </Response>
+      </Body>
+      <Transfer>
+        <Host>localhost</Host>
+        <Type>http</Type>
+        <ParameterName>id</ParameterName>
+        <ParameterName>job</ParameterName>
+        <ParameterName>uid</ParameterName>
+        <ParameterName>sig</ParameterName>
+        <ParameterName>date</ParameterName>
+        <ParameterValue>CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6</ParameterValue>
+        <ParameterValue>{Job.ID}</ParameterValue>
+        <ParameterValue>marcelozimmler</ParameterValue>
+        <ParameterValue>{Transfer.Signature}</ParameterValue>
+        <ParameterValue>{Transfer.DateTimestamp}</ParameterValue>
+        <Signature>
+          <Base64Encode>
+            <HMACSHA1>
+              <Join>
+                <NewLine/>
+                <Value>{AccessKey.Identifier}</Value>
+                <Value>{Transfer.DateTimestamp}</Value>
+              </Join>
+              <Value>{AccessKey.Secret}</Value>
+            </HMACSHA1>
+          </Base64Encode>
+        </Signature>
+        <Path>moviemasher/example/transcode/media/php/import_progress.php</Path>
+      </Transfer>
+      <Trigger>progress</Trigger>
+    </Output>
+    <Output>
+      <Type>text</Type>
+      <Payload>1</Payload>
+      <Body/>
+      <Transfer>
+        <Host>localhost</Host>
+        <Type>http</Type>
+        <ParameterName>id</ParameterName>
+        <ParameterName>job</ParameterName>
+        <ParameterName>uid</ParameterName>
+        <ParameterName>sig</ParameterName>
+        <ParameterName>date</ParameterName>
+        <ParameterName>started</ParameterName>
+        <ParameterValue>CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6</ParameterValue>
+        <ParameterValue>{Job.ID}</ParameterValue>
+        <ParameterValue>marcelozimmler</ParameterValue>
+        <ParameterValue>{Transfer.Signature}</ParameterValue>
+        <ParameterValue>{Transfer.DateTimestamp}</ParameterValue>
+        <ParameterValue>1359580179</ParameterValue>
+        <Signature>
+          <Base64Encode>
+            <HMACSHA1>
+              <Join>
+                <NewLine/>
+                <Value>{AccessKey.Identifier}</Value>
+                <Value>{Transfer.DateTimestamp}</Value>
+              </Join>
+              <Value>{AccessKey.Secret}</Value>
+            </HMACSHA1>
+          </Base64Encode>
+        </Signature>
+        <Path>moviemasher/example/transcode/media/php/import_done.php</Path>
+        <VariableName>label</VariableName>
+        <VariableName>extension</VariableName>
+        <VariableName>type</VariableName>
+        <VariableName>audio</VariableName>
+        <VariableName>duration</VariableName>
+        <VariableValue>Timeless Evolution in Motion.m4v</VariableValue>
+        <VariableValue>m4v</VariableValue>
+        <VariableValue>{Input.Type}</VariableValue>
+        <VariableValue>{Input.Audio}</VariableValue>
+        <VariableValue>{Input.Duration}</VariableValue>
+      </Transfer>
+      <Trigger>done</Trigger>
+      <Required>1</Required>
+    </Output>
+    <Output>
+      <Type>audio</Type>
+      <AudioBitrate>128</AudioBitrate>
+      <Basename>audio</Basename>
+      <Extension>mp3</Extension>
+      <NoVideo>1</NoVideo>
+      <Frequency>44100</Frequency>
+    </Output>
+    <Output>
+      <Type>waveform</Type>
+      <Forecolor>000000</Forecolor>
+      <Backcolor>FFFFFF</Backcolor>
+      <Basename>waveform</Basename>
+      <Dimensions>8000x32</Dimensions>
+      <Extension>png</Extension>
+    </Output>
+    <Output>
+      <Type>sequence</Type>
+      <FPS>10</FPS>
+      <ImageQuality>1</ImageQuality>
+      <Basename>256x144x10</Basename>
+      <Dimensions>256x144</Dimensions>
+    </Output>
+  </Job>
+</MovieMasher>
+
+22:09:39 import_api.php Client SQS response:
+<?xml version="1.0"?><SendMessageResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><SendMessageResult><MessageId>f9bd2fd0-49c7-4195-83fa-0217e27c73ad</MessageId><MD5OfMessageBody>e8cfde85e861255d7b2541cf72409b51</MD5OfMessageBody></SendMessageResult><ResponseMetadata><RequestId>14cdf029-24f1-5dff-b052-b9aaaaa20734</RequestId></ResponseMetadata></SendMessageResponse>
+22:09:39 import_api.php <moviemasher url="media/php/import_monitor.php?type=video&amp;job=f9bd2fd0-49c7-4195-83fa-0217e27c73ad&amp;id=CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6" progress="1" status="Queueing..." delay="10" />
+22:09:49 import_api.php label=Timeless+Evolution+in+Motion.m4v&id=CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6&type=video&extension=m4v
+22:09:49 import_api.php Client SQS request:
+<MovieMasher>
+  <Signature>Lek/dkMVfxOhweCVvLG1LFffejrw70ynvdo5JpMe83U=</Signature>
+  <Authentication>
+    <Nonce>6BC13FC4-F28D-4A01-84FD-1717564C5AF6</Nonce>
+    <Date>2013-01-30T21:09:49Z</Date>
+    <Identifier>AKIAIYOOWGGDC3F5ABOQ</Identifier>
+    <Name>AccessKey</Name>
+  </Authentication>
+  <Job>
+    <TransferType>http</TransferType>
+    <TransferHost>localhost</TransferHost>
+    <Transfer>
+      <Inherit>1</Inherit>
+      <Host>admaker.s3.amazonaws.com</Host>
+      <Path>moviemasher/example/transcode/media/user/marcelozimmler/CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6/{Transfer.File}</Path>
+      <SeparateRequests>1</SeparateRequests>
+      <Retries>3</Retries>
+      <Method>put</Method>
+      <HeaderName>Authorization</HeaderName>
+      <HeaderName>x-amz-acl</HeaderName>
+      <HeaderName>Content-Type</HeaderName>
+      <HeaderName>Content-MD5</HeaderName>
+      <HeaderName>Date</HeaderName>
+      <HeaderValue>AWS {AccessKey.Identifier}:{Transfer.Signature}</HeaderValue>
+      <HeaderValue>public-read</HeaderValue>
+      <HeaderValue>{Transfer.Mime}</HeaderValue>
+      <HeaderValue>{Transfer.MD5}</HeaderValue>
+      <HeaderValue>{Transfer.Date}</HeaderValue>
+      <Signature>
+        <Base64Encode>
+          <HMACSHA1>
+            <Join>
+              <NewLine/>
+              <UpperCase>{Transfer.Method}</UpperCase>
+              <Value>{Transfer.MD5}</Value>
+              <Value>{Transfer.Mime}</Value>
+              <Value>{Transfer.Date}</Value>
+              <Value>x-amz-acl:public-read</Value>
+              <Value>/admaker/{Transfer.Path}</Value>
+            </Join>
+            <Value>{AccessKey.Secret}</Value>
+          </HMACSHA1>
+        </Base64Encode>
+      </Signature>
+    </Transfer>
+    <Input>
+      <Type>video</Type>
+      <Transfer>
+        <Inherit>1</Inherit>
+        <Path>moviemasher/example/transcode/media/user/marcelozimmler/CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6/original.m4v</Path>
+        <Host>admaker.s3.amazonaws.com</Host>
+      </Transfer>
+    </Input>
+    <Output>
+      <Type>text</Type>
+      <Payload>1</Payload>
+      <Body>
+        <Response>
+          <WarningLog>{Job.Warnings}</WarningLog>
+          <ErrorLog>{Job.Errors}</ErrorLog>
+          <Error>{Job.Error}</Error>
+          <Version>{Job.Version}</Version>
+        </Response>
+      </Body>
+      <Transfer>
+        <Host>localhost</Host>
+        <Type>http</Type>
+        <ParameterName>id</ParameterName>
+        <ParameterName>job</ParameterName>
+        <ParameterName>uid</ParameterName>
+        <ParameterName>sig</ParameterName>
+        <ParameterName>date</ParameterName>
+        <ParameterValue>CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6</ParameterValue>
+        <ParameterValue>{Job.ID}</ParameterValue>
+        <ParameterValue>marcelozimmler</ParameterValue>
+        <ParameterValue>{Transfer.Signature}</ParameterValue>
+        <ParameterValue>{Transfer.DateTimestamp}</ParameterValue>
+        <Signature>
+          <Base64Encode>
+            <HMACSHA1>
+              <Join>
+                <NewLine/>
+                <Value>{AccessKey.Identifier}</Value>
+                <Value>{Transfer.DateTimestamp}</Value>
+              </Join>
+              <Value>{AccessKey.Secret}</Value>
+            </HMACSHA1>
+          </Base64Encode>
+        </Signature>
+        <Path>moviemasher/example/transcode/media/php/import_error.php</Path>
+      </Transfer>
+      <Trigger>error</Trigger>
+    </Output>
+    <Output>
+      <Type>text</Type>
+      <Payload>1</Payload>
+      <Body>
+        <Response>
+          <Progress>
+            <Percent>{Job.Percent}</Percent>
+            <PercentEstimate>{Job.PercentEstimate}</PercentEstimate>
+            <Status>{Job.Status}</Status>
+          </Progress>
+          <Version>{Job.Version}</Version>
+        </Response>
+      </Body>
+      <Transfer>
+        <Host>localhost</Host>
+        <Type>http</Type>
+        <ParameterName>id</ParameterName>
+        <ParameterName>job</ParameterName>
+        <ParameterName>uid</ParameterName>
+        <ParameterName>sig</ParameterName>
+        <ParameterName>date</ParameterName>
+        <ParameterValue>CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6</ParameterValue>
+        <ParameterValue>{Job.ID}</ParameterValue>
+        <ParameterValue>marcelozimmler</ParameterValue>
+        <ParameterValue>{Transfer.Signature}</ParameterValue>
+        <ParameterValue>{Transfer.DateTimestamp}</ParameterValue>
+        <Signature>
+          <Base64Encode>
+            <HMACSHA1>
+              <Join>
+                <NewLine/>
+                <Value>{AccessKey.Identifier}</Value>
+                <Value>{Transfer.DateTimestamp}</Value>
+              </Join>
+              <Value>{AccessKey.Secret}</Value>
+            </HMACSHA1>
+          </Base64Encode>
+        </Signature>
+        <Path>moviemasher/example/transcode/media/php/import_progress.php</Path>
+      </Transfer>
+      <Trigger>progress</Trigger>
+    </Output>
+    <Output>
+      <Type>text</Type>
+      <Payload>1</Payload>
+      <Body/>
+      <Transfer>
+        <Host>localhost</Host>
+        <Type>http</Type>
+        <ParameterName>id</ParameterName>
+        <ParameterName>job</ParameterName>
+        <ParameterName>uid</ParameterName>
+        <ParameterName>sig</ParameterName>
+        <ParameterName>date</ParameterName>
+        <ParameterName>started</ParameterName>
+        <ParameterValue>CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6</ParameterValue>
+        <ParameterValue>{Job.ID}</ParameterValue>
+        <ParameterValue>marcelozimmler</ParameterValue>
+        <ParameterValue>{Transfer.Signature}</ParameterValue>
+        <ParameterValue>{Transfer.DateTimestamp}</ParameterValue>
+        <ParameterValue>1359580189</ParameterValue>
+        <Signature>
+          <Base64Encode>
+            <HMACSHA1>
+              <Join>
+                <NewLine/>
+                <Value>{AccessKey.Identifier}</Value>
+                <Value>{Transfer.DateTimestamp}</Value>
+              </Join>
+              <Value>{AccessKey.Secret}</Value>
+            </HMACSHA1>
+          </Base64Encode>
+        </Signature>
+        <Path>moviemasher/example/transcode/media/php/import_done.php</Path>
+        <VariableName>label</VariableName>
+        <VariableName>extension</VariableName>
+        <VariableName>type</VariableName>
+        <VariableName>audio</VariableName>
+        <VariableName>duration</VariableName>
+        <VariableValue>Timeless Evolution in Motion.m4v</VariableValue>
+        <VariableValue>m4v</VariableValue>
+        <VariableValue>{Input.Type}</VariableValue>
+        <VariableValue>{Input.Audio}</VariableValue>
+        <VariableValue>{Input.Duration}</VariableValue>
+      </Transfer>
+      <Trigger>done</Trigger>
+      <Required>1</Required>
+    </Output>
+    <Output>
+      <Type>audio</Type>
+      <AudioBitrate>128</AudioBitrate>
+      <Basename>audio</Basename>
+      <Extension>mp3</Extension>
+      <NoVideo>1</NoVideo>
+      <Frequency>44100</Frequency>
+    </Output>
+    <Output>
+      <Type>waveform</Type>
+      <Forecolor>000000</Forecolor>
+      <Backcolor>FFFFFF</Backcolor>
+      <Basename>waveform</Basename>
+      <Dimensions>8000x32</Dimensions>
+      <Extension>png</Extension>
+    </Output>
+    <Output>
+      <Type>sequence</Type>
+      <FPS>10</FPS>
+      <ImageQuality>1</ImageQuality>
+      <Basename>256x144x10</Basename>
+      <Dimensions>256x144</Dimensions>
+    </Output>
+  </Job>
+</MovieMasher>
+
+22:09:49 import_api.php Client SQS response:
+<?xml version="1.0"?><SendMessageResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><SendMessageResult><MessageId>60685738-599a-46ed-8b92-8271e7abd75a</MessageId><MD5OfMessageBody>3423ba5eec129463f48140af6f6d1937</MD5OfMessageBody></SendMessageResult><ResponseMetadata><RequestId>e61ee8cb-5028-56c4-beba-a148de7538fd</RequestId></ResponseMetadata></SendMessageResponse>
+22:09:49 import_api.php <moviemasher url="media/php/import_monitor.php?type=video&amp;job=60685738-599a-46ed-8b92-8271e7abd75a&amp;id=CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6" progress="1" status="Queueing..." delay="10" />
+22:09:59 import_api.php label=Timeless+Evolution+in+Motion.m4v&id=CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6&type=video&extension=m4v
+22:09:59 import_api.php Client SQS request:
+<MovieMasher>
+  <Signature>os352CFoqmUTIp0htm2L4eJVn/dR8VmIql0wQ8clsX0=</Signature>
+  <Authentication>
+    <Nonce>1C30343E-F6F2-4A94-BEF2-E5B27F586424</Nonce>
+    <Date>2013-01-30T21:09:59Z</Date>
+    <Identifier>AKIAIYOOWGGDC3F5ABOQ</Identifier>
+    <Name>AccessKey</Name>
+  </Authentication>
+  <Job>
+    <TransferType>http</TransferType>
+    <TransferHost>localhost</TransferHost>
+    <Transfer>
+      <Inherit>1</Inherit>
+      <Host>admaker.s3.amazonaws.com</Host>
+      <Path>moviemasher/example/transcode/media/user/marcelozimmler/CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6/{Transfer.File}</Path>
+      <SeparateRequests>1</SeparateRequests>
+      <Retries>3</Retries>
+      <Method>put</Method>
+      <HeaderName>Authorization</HeaderName>
+      <HeaderName>x-amz-acl</HeaderName>
+      <HeaderName>Content-Type</HeaderName>
+      <HeaderName>Content-MD5</HeaderName>
+      <HeaderName>Date</HeaderName>
+      <HeaderValue>AWS {AccessKey.Identifier}:{Transfer.Signature}</HeaderValue>
+      <HeaderValue>public-read</HeaderValue>
+      <HeaderValue>{Transfer.Mime}</HeaderValue>
+      <HeaderValue>{Transfer.MD5}</HeaderValue>
+      <HeaderValue>{Transfer.Date}</HeaderValue>
+      <Signature>
+        <Base64Encode>
+          <HMACSHA1>
+            <Join>
+              <NewLine/>
+              <UpperCase>{Transfer.Method}</UpperCase>
+              <Value>{Transfer.MD5}</Value>
+              <Value>{Transfer.Mime}</Value>
+              <Value>{Transfer.Date}</Value>
+              <Value>x-amz-acl:public-read</Value>
+              <Value>/admaker/{Transfer.Path}</Value>
+            </Join>
+            <Value>{AccessKey.Secret}</Value>
+          </HMACSHA1>
+        </Base64Encode>
+      </Signature>
+    </Transfer>
+    <Input>
+      <Type>video</Type>
+      <Transfer>
+        <Inherit>1</Inherit>
+        <Path>moviemasher/example/transcode/media/user/marcelozimmler/CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6/original.m4v</Path>
+        <Host>admaker.s3.amazonaws.com</Host>
+      </Transfer>
+    </Input>
+    <Output>
+      <Type>text</Type>
+      <Payload>1</Payload>
+      <Body>
+        <Response>
+          <WarningLog>{Job.Warnings}</WarningLog>
+          <ErrorLog>{Job.Errors}</ErrorLog>
+          <Error>{Job.Error}</Error>
+          <Version>{Job.Version}</Version>
+        </Response>
+      </Body>
+      <Transfer>
+        <Host>localhost</Host>
+        <Type>http</Type>
+        <ParameterName>id</ParameterName>
+        <ParameterName>job</ParameterName>
+        <ParameterName>uid</ParameterName>
+        <ParameterName>sig</ParameterName>
+        <ParameterName>date</ParameterName>
+        <ParameterValue>CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6</ParameterValue>
+        <ParameterValue>{Job.ID}</ParameterValue>
+        <ParameterValue>marcelozimmler</ParameterValue>
+        <ParameterValue>{Transfer.Signature}</ParameterValue>
+        <ParameterValue>{Transfer.DateTimestamp}</ParameterValue>
+        <Signature>
+          <Base64Encode>
+            <HMACSHA1>
+              <Join>
+                <NewLine/>
+                <Value>{AccessKey.Identifier}</Value>
+                <Value>{Transfer.DateTimestamp}</Value>
+              </Join>
+              <Value>{AccessKey.Secret}</Value>
+            </HMACSHA1>
+          </Base64Encode>
+        </Signature>
+        <Path>moviemasher/example/transcode/media/php/import_error.php</Path>
+      </Transfer>
+      <Trigger>error</Trigger>
+    </Output>
+    <Output>
+      <Type>text</Type>
+      <Payload>1</Payload>
+      <Body>
+        <Response>
+          <Progress>
+            <Percent>{Job.Percent}</Percent>
+            <PercentEstimate>{Job.PercentEstimate}</PercentEstimate>
+            <Status>{Job.Status}</Status>
+          </Progress>
+          <Version>{Job.Version}</Version>
+        </Response>
+      </Body>
+      <Transfer>
+        <Host>localhost</Host>
+        <Type>http</Type>
+        <ParameterName>id</ParameterName>
+        <ParameterName>job</ParameterName>
+        <ParameterName>uid</ParameterName>
+        <ParameterName>sig</ParameterName>
+        <ParameterName>date</ParameterName>
+        <ParameterValue>CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6</ParameterValue>
+        <ParameterValue>{Job.ID}</ParameterValue>
+        <ParameterValue>marcelozimmler</ParameterValue>
+        <ParameterValue>{Transfer.Signature}</ParameterValue>
+        <ParameterValue>{Transfer.DateTimestamp}</ParameterValue>
+        <Signature>
+          <Base64Encode>
+            <HMACSHA1>
+              <Join>
+                <NewLine/>
+                <Value>{AccessKey.Identifier}</Value>
+                <Value>{Transfer.DateTimestamp}</Value>
+              </Join>
+              <Value>{AccessKey.Secret}</Value>
+            </HMACSHA1>
+          </Base64Encode>
+        </Signature>
+        <Path>moviemasher/example/transcode/media/php/import_progress.php</Path>
+      </Transfer>
+      <Trigger>progress</Trigger>
+    </Output>
+    <Output>
+      <Type>text</Type>
+      <Payload>1</Payload>
+      <Body/>
+      <Transfer>
+        <Host>localhost</Host>
+        <Type>http</Type>
+        <ParameterName>id</ParameterName>
+        <ParameterName>job</ParameterName>
+        <ParameterName>uid</ParameterName>
+        <ParameterName>sig</ParameterName>
+        <ParameterName>date</ParameterName>
+        <ParameterName>started</ParameterName>
+        <ParameterValue>CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6</ParameterValue>
+        <ParameterValue>{Job.ID}</ParameterValue>
+        <ParameterValue>marcelozimmler</ParameterValue>
+        <ParameterValue>{Transfer.Signature}</ParameterValue>
+        <ParameterValue>{Transfer.DateTimestamp}</ParameterValue>
+        <ParameterValue>1359580199</ParameterValue>
+        <Signature>
+          <Base64Encode>
+            <HMACSHA1>
+              <Join>
+                <NewLine/>
+                <Value>{AccessKey.Identifier}</Value>
+                <Value>{Transfer.DateTimestamp}</Value>
+              </Join>
+              <Value>{AccessKey.Secret}</Value>
+            </HMACSHA1>
+          </Base64Encode>
+        </Signature>
+        <Path>moviemasher/example/transcode/media/php/import_done.php</Path>
+        <VariableName>label</VariableName>
+        <VariableName>extension</VariableName>
+        <VariableName>type</VariableName>
+        <VariableName>audio</VariableName>
+        <VariableName>duration</VariableName>
+        <VariableValue>Timeless Evolution in Motion.m4v</VariableValue>
+        <VariableValue>m4v</VariableValue>
+        <VariableValue>{Input.Type}</VariableValue>
+        <VariableValue>{Input.Audio}</VariableValue>
+        <VariableValue>{Input.Duration}</VariableValue>
+      </Transfer>
+      <Trigger>done</Trigger>
+      <Required>1</Required>
+    </Output>
+    <Output>
+      <Type>audio</Type>
+      <AudioBitrate>128</AudioBitrate>
+      <Basename>audio</Basename>
+      <Extension>mp3</Extension>
+      <NoVideo>1</NoVideo>
+      <Frequency>44100</Frequency>
+    </Output>
+    <Output>
+      <Type>waveform</Type>
+      <Forecolor>000000</Forecolor>
+      <Backcolor>FFFFFF</Backcolor>
+      <Basename>waveform</Basename>
+      <Dimensions>8000x32</Dimensions>
+      <Extension>png</Extension>
+    </Output>
+    <Output>
+      <Type>sequence</Type>
+      <FPS>10</FPS>
+      <ImageQuality>1</ImageQuality>
+      <Basename>256x144x10</Basename>
+      <Dimensions>256x144</Dimensions>
+    </Output>
+  </Job>
+</MovieMasher>
+
+22:09:59 import_api.php Client SQS response:
+<?xml version="1.0"?><SendMessageResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><SendMessageResult><MessageId>b4b98ecc-75c1-4697-9f12-aa0ac0f0b9c9</MessageId><MD5OfMessageBody>f9dbff87c8840b26469af56f1ea7494e</MD5OfMessageBody></SendMessageResult><ResponseMetadata><RequestId>c1722d52-ef75-50e9-ba00-64d16112529e</RequestId></ResponseMetadata></SendMessageResponse>
+22:09:59 import_api.php <moviemasher url="media/php/import_monitor.php?type=video&amp;job=b4b98ecc-75c1-4697-9f12-aa0ac0f0b9c9&amp;id=CEEA4E12-E8FD-4F93-BA73-DF9BC2EDB7F6" progress="1" status="Queueing..." delay="10" />
+22:10:02 media.php group=mash&index=0&count=20&unique=D74985F2-EB6B-1DBA-5875-8D4B86A980CC&label=
+22:10:02 media.php <moviemasher>
+</moviemasher>
+
+22:10:02 media.php group=mash&index=0&count=20&unique=9B3BBB58-3EE1-0F23-170C-8D4B87AC7F50&label=
+22:10:02 media.php <moviemasher>
+</moviemasher>
+
+22:35:56 media.php group=mash&index=0&count=20&unique=191B1ED0-C3C6-6C22-C426-8D633AA7CC84&label=
+22:35:56 media.php <moviemasher>
+</moviemasher>
+
+22:35:56 media.php group=mash&index=0&count=20&unique=2CA38826-0A9B-BCCE-D0F0-8D633BAEC909&label=
+22:35:56 media.php <moviemasher>
+</moviemasher>
+
+22:35:57 media.php group=video&index=0&count=20&unique=2E19F0CD-A4C1-7BD4-54DB-8D63405E2E45&label=
+22:35:57 media.php <moviemasher>
+</moviemasher>
+
+22:36:01 import_init.php file=Timeless%20Evolution%20in%20Motion.m4v&size=9760320
+22:36:01 import_init.php <moviemasher  key='moviemasher/example/transcode/media/user/marcelozimmler/7324510E-5F28-4D37-9721-A0EEDDEB3718/original.m4v' mime='video/x-m4v' bucket='admaker' acl='public-read' policy='eyJleHBpcmF0aW9uIjoiMjAxMy0wMS0zMFQyMjozNjowMS4wMDBaIiwiY29uZGl0aW9ucyI6W1siZXEiLCIkYnVja2V0IiwiYWRtYWtlciJdLFsiZXEiLCIka2V5IiwibW92aWVtYXNoZXIvZXhhbXBsZS90cmFuc2NvZGUvbWVkaWEvdXNlci9tYXJjZWxvemltbWxlci83MzI0NTEwRS01RjI4LTREMzctOTcyMS1BMEVFRERFQjM3MTgvb3JpZ2luYWwubTR2Il0sWyJlcSIsIiRhY2wiLCJwdWJsaWMtcmVhZCJdLFsiZXEiLCIkQ29udGVudC1UeXBlIiwidmlkZW8veC1tNHYiXSxbInN0YXJ0cy13aXRoIiwiJEZpbGVuYW1lIiwiIl0sWyJzdGFydHMtd2l0aCIsIiRzdWNjZXNzX2FjdGlvbl9zdGF0dXMiLCIyMDEiXV19' signature='LYnx4lA4d/1d7YrsCyDmYACeg8Q=' keyid='AKIAIYOOWGGDC3F5ABOQ' region='us-east-1' url="media/php/import_api.php?label=Timeless+Evolution+in+Motion.m4v&amp;id=7324510E-5F28-4D37-9721-A0EEDDEB3718&amp;type=video&amp;extension=m4v" status="Transferring" />
+22:36:06 import_api.php label=Timeless+Evolution+in+Motion.m4v&id=7324510E-5F28-4D37-9721-A0EEDDEB3718&type=video&extension=m4v
+22:36:06 import_api.php Client SQS request:
+<MovieMasher>
+  <Signature>Hx1X+j+CuXFG95TjcnaxKbCXu8lp0bNajZZrMTOVPUE=</Signature>
+  <Authentication>
+    <Nonce>47D9DFDC-5AAC-4588-B105-C277E24BDA34</Nonce>
+    <Date>2013-01-30T21:36:06Z</Date>
+    <Identifier>AKIAIYOOWGGDC3F5ABOQ</Identifier>
+    <Name>AccessKey</Name>
+  </Authentication>
+  <Job>
+    <TransferType>http</TransferType>
+    <TransferHost>localhost</TransferHost>
+    <Transfer>
+      <Inherit>1</Inherit>
+      <Host>admaker.s3.amazonaws.com</Host>
+      <Path>moviemasher/example/transcode/media/user/marcelozimmler/7324510E-5F28-4D37-9721-A0EEDDEB3718/{Transfer.File}</Path>
+      <SeparateRequests>1</SeparateRequests>
+      <Retries>3</Retries>
+      <Method>put</Method>
+      <HeaderName>Authorization</HeaderName>
+      <HeaderName>x-amz-acl</HeaderName>
+      <HeaderName>Content-Type</HeaderName>
+      <HeaderName>Content-MD5</HeaderName>
+      <HeaderName>Date</HeaderName>
+      <HeaderValue>AWS {AccessKey.Identifier}:{Transfer.Signature}</HeaderValue>
+      <HeaderValue>public-read</HeaderValue>
+      <HeaderValue>{Transfer.Mime}</HeaderValue>
+      <HeaderValue>{Transfer.MD5}</HeaderValue>
+      <HeaderValue>{Transfer.Date}</HeaderValue>
+      <Signature>
+        <Base64Encode>
+          <HMACSHA1>
+            <Join>
+              <NewLine/>
+              <UpperCase>{Transfer.Method}</UpperCase>
+              <Value>{Transfer.MD5}</Value>
+              <Value>{Transfer.Mime}</Value>
+              <Value>{Transfer.Date}</Value>
+              <Value>x-amz-acl:public-read</Value>
+              <Value>/admaker/{Transfer.Path}</Value>
+            </Join>
+            <Value>{AccessKey.Secret}</Value>
+          </HMACSHA1>
+        </Base64Encode>
+      </Signature>
+    </Transfer>
+    <Input>
+      <Type>video</Type>
+      <Transfer>
+        <Inherit>1</Inherit>
+        <Path>moviemasher/example/transcode/media/user/marcelozimmler/7324510E-5F28-4D37-9721-A0EEDDEB3718/original.m4v</Path>
+        <Host>admaker.s3.amazonaws.com</Host>
+      </Transfer>
+    </Input>
+    <Output>
+      <Type>text</Type>
+      <Payload>1</Payload>
+      <Body>
+        <Response>
+          <WarningLog>{Job.Warnings}</WarningLog>
+          <ErrorLog>{Job.Errors}</ErrorLog>
+          <Error>{Job.Error}</Error>
+          <Version>{Job.Version}</Version>
+        </Response>
+      </Body>
+      <Transfer>
+        <Host>localhost</Host>
+        <Type>http</Type>
+        <ParameterName>id</ParameterName>
+        <ParameterName>job</ParameterName>
+        <ParameterName>uid</ParameterName>
+        <ParameterName>sig</ParameterName>
+        <ParameterName>date</ParameterName>
+        <ParameterValue>7324510E-5F28-4D37-9721-A0EEDDEB3718</ParameterValue>
+        <ParameterValue>{Job.ID}</ParameterValue>
+        <ParameterValue>marcelozimmler</ParameterValue>
+        <ParameterValue>{Transfer.Signature}</ParameterValue>
+        <ParameterValue>{Transfer.DateTimestamp}</ParameterValue>
+        <Signature>
+          <Base64Encode>
+            <HMACSHA1>
+              <Join>
+                <NewLine/>
+                <Value>{AccessKey.Identifier}</Value>
+                <Value>{Transfer.DateTimestamp}</Value>
+              </Join>
+              <Value>{AccessKey.Secret}</Value>
+            </HMACSHA1>
+          </Base64Encode>
+        </Signature>
+        <Path>moviemasher/example/transcode/media/php/import_error.php</Path>
+      </Transfer>
+      <Trigger>error</Trigger>
+    </Output>
+    <Output>
+      <Type>text</Type>
+      <Payload>1</Payload>
+      <Body>
+        <Response>
+          <Progress>
+            <Percent>{Job.Percent}</Percent>
+            <PercentEstimate>{Job.PercentEstimate}</PercentEstimate>
+            <Status>{Job.Status}</Status>
+          </Progress>
+          <Version>{Job.Version}</Version>
+        </Response>
+      </Body>
+      <Transfer>
+        <Host>localhost</Host>
+        <Type>http</Type>
+        <ParameterName>id</ParameterName>
+        <ParameterName>job</ParameterName>
+        <ParameterName>uid</ParameterName>
+        <ParameterName>sig</ParameterName>
+        <ParameterName>date</ParameterName>
+        <ParameterValue>7324510E-5F28-4D37-9721-A0EEDDEB3718</ParameterValue>
+        <ParameterValue>{Job.ID}</ParameterValue>
+        <ParameterValue>marcelozimmler</ParameterValue>
+        <ParameterValue>{Transfer.Signature}</ParameterValue>
+        <ParameterValue>{Transfer.DateTimestamp}</ParameterValue>
+        <Signature>
+          <Base64Encode>
+            <HMACSHA1>
+              <Join>
+                <NewLine/>
+                <Value>{AccessKey.Identifier}</Value>
+                <Value>{Transfer.DateTimestamp}</Value>
+              </Join>
+              <Value>{AccessKey.Secret}</Value>
+            </HMACSHA1>
+          </Base64Encode>
+        </Signature>
+        <Path>moviemasher/example/transcode/media/php/import_progress.php</Path>
+      </Transfer>
+      <Trigger>progress</Trigger>
+    </Output>
+    <Output>
+      <Type>text</Type>
+      <Payload>1</Payload>
+      <Body/>
+      <Transfer>
+        <Host>localhost</Host>
+        <Type>http</Type>
+        <ParameterName>id</ParameterName>
+        <ParameterName>job</ParameterName>
+        <ParameterName>uid</ParameterName>
+        <ParameterName>sig</ParameterName>
+        <ParameterName>date</ParameterName>
+        <ParameterName>started</ParameterName>
+        <ParameterValue>7324510E-5F28-4D37-9721-A0EEDDEB3718</ParameterValue>
+        <ParameterValue>{Job.ID}</ParameterValue>
+        <ParameterValue>marcelozimmler</ParameterValue>
+        <ParameterValue>{Transfer.Signature}</ParameterValue>
+        <ParameterValue>{Transfer.DateTimestamp}</ParameterValue>
+        <ParameterValue>1359581766</ParameterValue>
+        <Signature>
+          <Base64Encode>
+            <HMACSHA1>
+              <Join>
+                <NewLine/>
+                <Value>{AccessKey.Identifier}</Value>
+                <Value>{Transfer.DateTimestamp}</Value>
+              </Join>
+              <Value>{AccessKey.Secret}</Value>
+            </HMACSHA1>
+          </Base64Encode>
+        </Signature>
+        <Path>moviemasher/example/transcode/media/php/import_done.php</Path>
+        <VariableName>label</VariableName>
+        <VariableName>extension</VariableName>
+        <VariableName>type</VariableName>
+        <VariableName>audio</VariableName>
+        <VariableName>duration</VariableName>
+        <VariableValue>Timeless Evolution in Motion.m4v</VariableValue>
+        <VariableValue>m4v</VariableValue>
+        <VariableValue>{Input.Type}</VariableValue>
+        <VariableValue>{Input.Audio}</VariableValue>
+        <VariableValue>{Input.Duration}</VariableValue>
+      </Transfer>
+      <Trigger>done</Trigger>
+      <Required>1</Required>
+    </Output>
+    <Output>
+      <Type>audio</Type>
+      <AudioBitrate>128</AudioBitrate>
+      <Basename>audio</Basename>
+      <Extension>mp3</Extension>
+      <NoVideo>1</NoVideo>
+      <Frequency>44100</Frequency>
+    </Output>
+    <Output>
+      <Type>waveform</Type>
+      <Forecolor>000000</Forecolor>
+      <Backcolor>FFFFFF</Backcolor>
+      <Basename>waveform</Basename>
+      <Dimensions>8000x32</Dimensions>
+      <Extension>png</Extension>
+    </Output>
+    <Output>
+      <Type>sequence</Type>
+      <FPS>10</FPS>
+      <ImageQuality>1</ImageQuality>
+      <Basename>256x144x10</Basename>
+      <Dimensions>256x144</Dimensions>
+    </Output>
+  </Job>
+</MovieMasher>
+
+22:36:06 import_api.php Client SQS response:
+<?xml version="1.0"?><SendMessageResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><SendMessageResult><MessageId>94d904f7-c1ec-45ee-9658-56e32a387b05</MessageId><MD5OfMessageBody>44244623d27875fa36446a96dac7fd4a</MD5OfMessageBody></SendMessageResult><ResponseMetadata><RequestId>27b080c2-a72a-5d1c-9e4a-c94133ac92ff</RequestId></ResponseMetadata></SendMessageResponse>
+22:36:06 import_api.php <moviemasher url="media/php/import_monitor.php?type=video&amp;job=94d904f7-c1ec-45ee-9658-56e32a387b05&amp;id=7324510E-5F28-4D37-9721-A0EEDDEB3718" progress="1" status="Queueing..." delay="10" />
+22:36:21 media.php group=mash&index=0&count=20&unique=17A45A75-14B5-1CB5-DA26-8D639D2156BB&label=
+22:36:21 media.php <moviemasher>
+</moviemasher>
+
+22:36:21 media.php group=mash&index=0&count=20&unique=4B54E37D-D669-C35E-BF33-8D639E2E3931&label=
+22:36:21 media.php <moviemasher>
+</moviemasher>
+

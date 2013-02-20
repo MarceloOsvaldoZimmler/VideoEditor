@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moviemasher>
+
+	<media group="video" type="video" id="kirikivideo" label="Kiriki" 
+		url="../media/video/Kiriki/" pattern="%.jpg" 
+		duration="10.8" fps="10" 
+	/>
+		
+	<media group="video" type="video" id="trainvideo" label="Train" 
+		url="../media/video/Train/" pattern="%.jpg" 
+		duration="13.7" fps="10" 
+	/>
+		
+	<media group="video" type="video" id="trainmanvideo" label="Train Man" 
+		url="../media/video/TrainMan/" pattern="%.jpg" 
+		duration="8.3" fps="10" begin="71"
+	/>
+
+</moviemasher>

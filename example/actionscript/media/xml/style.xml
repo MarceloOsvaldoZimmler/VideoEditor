@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moviemasher>
+		
+	<!-- VARIOUS SIZE ATTRIBUTES REFERENCED THROUGHOUT THE LAYOUT -->
+	<option type='layout' 
+		padding='20' spacing='10' barsize='26' scrollsize='18' panelwidth='320' navwidth='90'
+	/>
+	
+	<!-- DEFAULT TEXT IN INTERFACE, THOUGH OTHER STYLES OVERRIDE -->
+	<option type='style' id='text' 
+		font='default' textsize="11" wrap="0" multiline='0' forecolor='FFFFFF' width='*' 
+		symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Text" 
+	/>
+	
+	<option type='style' id='label' 
+		textvalign='bottom'
+	/>
+	<!-- PANELS STYLE -->
+	<option type='style' id='panel' 
+		curve='4' shadow='3' shadowcolor='333333' shadowblur='3' shadowstrength='1'
+	/>
+	<!-- TOP AND BOTTOM PANELS BARS STYLE -->
+	<option type='style' id='bar' 
+		color='CFCFCF' grad='30' size='{layout.barsize}' padding='4' spacing='6' 
+	/>
+	<!-- TEXT IN PANEL BARS STYLE -->
+	<option type='style' id='title' 
+		forecolor='333333'
+	/>
+	<!-- SCROLLBARS STYLE -->
+	<option type='style' id='scrollbar' 
+		angle='270' align='right' size='{layout.scrollsize}' padding='0' spacing='0' 
+	/>
+	<!-- PREVIEWS STYLE -->
+	<option type='style' id='preview' 
+		textheight="18"
+		waveblend='darken'
+		color="CCCCCC" overcolor='99CCCC' grad="30" overgrad='50' angle="90" alpha="50"
+		curve="8" border="2" bordercolor="999999" overbordercolor="FFFFFF"
+		shadow="1" overshadow="2" shadowcolor="333333" shadowblur="2" overshadowblur="3" shadowstrength="1" overshadowstrength='2'
+		textbackalpha="50" textbackcolor="FFFFFF"
+		blend='multiply' overblend='normal'
+	/>
+	<!-- BROWSER, TIMELINE AND INSPECTOR PANELS STYLE -->
+	<option type='style' id='background' 
+		color='666666' grad='20' angle='180' 
+	/> 
+	<!-- BUTTON STYLE -->
+ 	<option type='style' id='button' 
+ 		symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Text' 
+		width='45' textalign='center' textsize="11" 
+		curve='4' border='1' shadowstrength='1' shadowcolor='666666'
+		overcolor='48D0EA' overbordercolor='3C8CAC' overshadow='0' 
+		discolor='CCCCCC' disbordercolor='CCCCCC' disshadow='0' disforecolor='999999' disgrad='0' 
+		color='D5D5D5' bordercolor='999999' shadow='1' forecolor='333333' angle='90' grad='20' shadowblur='2'
+ 	/>
+ 	<!-- PLOTTER AND EFFECTS, MEDIA BROWSERS STYLE -->
+	<option type='style' id='well' 
+		width="*" height="*" color="999999" angle="270" curve="4" padding="2" grad="20" 
+	/>
+	<!-- LOCATION FIELDS STYLE -->
+	<option type='style' id='location' 
+		tooltip='Current Position / Duration' width='105' forecolor='333333' color='CFCFCF' grad='40' angle='270' curve='3' textalign='center'  textsize="10" 
+	/>
+	<!-- BROWSER NAVIGATION TABS STYLE -->
+	<option type='style' id='tab' 
+		bind="browser.parameters.group" width='*' height='*' textalign='center' 
+		overforecolor='CCCCCC' overcolor='666666' overangle='0' 
+		forecolor='333333' color='CACACA' angle='180' grad='20'
+		symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Text' 
+	/>
+
+</moviemasher>

@@ -1,0 +1,34 @@
+<languageVersion : 1.0;>
+
+kernel AudioMixerFilter
+<   namespace : "moviemasher";
+    vendor : "moviemasher";
+    version : 1;
+    description : "Audio mixer with four tracks";
+>
+{
+    input image4 track1;
+    input image4 track2;
+    input image4 track3;
+    input image4 track4;
+    
+    parameter float vol1;
+    parameter float vol2;
+    parameter float vol3;
+    parameter float vol4;
+    
+    output pixel4 dst;
+
+    void
+    evaluatePixel()
+    {
+        pixel4 tmp1 = sampleNearest(track1,outCoord()) * vol1;
+        pixel4 tmp2 = sampleNearest(track2,outCoord()) * vol2;
+        pixel4 tmp3 = sampleNearest(track3,outCoord()) * vol3;
+        pixel4 tmp4 = sampleNearest(track4,outCoord()) * vol4;
+        
+        pixel4 tmp_out = tmp1 + tmp2 + tmp3 + tmp4;
+      
+        dst = tmp_out;
+    }
+}

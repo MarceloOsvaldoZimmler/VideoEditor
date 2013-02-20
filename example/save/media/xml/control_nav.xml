@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moviemasher config='media/xml/control_nav_module.xml'>
+	
+<!--
+	<control style='text,tab' preselected="1" pattern='VIDEO' select='browser.source=video_source' bind="browser.source" value="video_source" />
+	<control style='text,tab' pattern='AUDIO' select='browser.source=audio_source' bind='browser.source' value='audio_source' />
+	<control style='text,tab' pattern='IMAGES' select='browser.source=image_source' bind='browser.source' value='image_source' />
+-->
+
+<!-- MEDIA TYPE FILTER CONTROLS -->
+
+<control style='text,tab' preselected="1" pattern='VIDEO' select='browser.parameters.group=video' value="video" />
+	<control style='text,tab' pattern='AUDIO' select='browser.parameters.group=audio' value='audio' />
+	<control style='text,tab' preselected="1" pattern='IMAGES' select='browser.parameters.group=image' value='image' />
+	
+</moviemasher>

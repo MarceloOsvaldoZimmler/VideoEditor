@@ -1,0 +1,115 @@
+<languageVersion : 1.0;>
+
+kernel Spotlight
+<   namespace : "com.rphelan";
+    vendor : "Ryan Phelan";
+    version : 1;
+    description : "Colored lighting effect that generates a spotlight and ambient light.";
+>
+{    
+    parameter float3 ambientColor
+    <
+        minValue:float3(0.0, 0.0, 0.0);
+        maxValue:float3(1.0, 1.0, 1.0);
+        defaultValue:float3(0.05, 0.05, 0.1);
+    >;
+    
+    parameter float angle
+    <
+        minValue:0.0;
+        maxValue:360.0;
+        defaultValue:240.0;
+    >;
+    
+    parameter float azimuth
+    <
+        minValue:0.0;
+        maxValue:90.0;
+        defaultValue:20.0;
+    >;
+    
+    parameter float coneAngle
+    <
+        minValue:0.1;
+        maxValue:10.0;
+        defaultValue:2.0;
+    >;
+    
+    parameter float distance
+    <
+        minValue:0.1;
+        maxValue:50.0;
+        defaultValue:10.0;
+    >;
+    
+    parameter float intensity
+    <
+        minValue:0.01;
+        maxValue:50.0;
+        defaultValue:15.0;
+    >;
+    
+    parameter float3 position
+    <
+        minValue:float3(0.0, 0.0, 0.0);
+        maxValue:float3(1000.0, 1000.0, 1000.0);
+        defaultValue:float3(100.0, 100.0, 100.0);
+    >;    
+    
+    parameter float3 spotColor
+    <
+        minValue:float3(0.0, 0.0, 0.0);
+        maxValue:float3(1.0, 1.0, 1.0);
+        defaultValue:float3(1.0, 0.95, 0.85);
+    >;
+    
+    input image4 src;
+    output pixel4 dst;
+
+    void
+    evaluatePixel()
+    {
+        // store the current coordinate
+        float2 coord = outCoord();
+        
+        // caculate the spotlight's direction
+        float zr = radians(angle);
+        float yr = radians(azimuth);
+        float3 dir = float3(-sin(yr));
+        float a = cos(yr);
+        dir.x = a * cos(zr);
+        dir.y = a * sin(zr);
+        float3 spotDir = -normalize(dir) * distance;
+        
+        // calculate the spotlight's position
+        float3 ctr = float3(position.x, position.y, position.z);
+        float3 spotPos = ctr - spotDir;
+        
+        // distance from spotlight to the current pixel
+        float3 delta = spotPos - float3(coord.x, coord.y, 0.0);
+
+        // calculate the spotlight color value
+        float cosCone = cos(radians(coneAngle));
+        float fall = intensity / dot(delta, delta);
+        float3 dn = normalize(delta);
+        float cone = -dot(dn, spotDir);
+        cone = max(0.0, ((cone - cosCone) / (1.0 - cosCone)));
+        float3 light = (fall * cone * spotColor);
+        float4 spotlight = float4(light.r, light.g, light.b, 1.0);
+        
+        // use a "soft light" algorithm to blend the spotlight with the source image
+        float c = 0.0;
+        float4 Color = sampleLinear(src, coord);        
+        c = spotlight.r * Color.r * ambientColor.r;
+        Color.r = c + Color.r * (1.0 - ((1.0 - Color.r) * (1.0 - spotlight.r) * (1.0 - ambientColor.r) - c));
+        c = spotlight.g * Color.g * ambientColor.g;
+        Color.g = c + Color.g * (1.0 - ((1.0 - Color.g) * (1.0 - spotlight.g) * (1.0 - ambientColor.g) - c));
+        c = spotlight.b * Color.b * ambientColor.b;
+        Color.b = c + Color.b * (1.0 - ((1.0 - Color.b) * (1.0 - spotlight.b) * (1.0 - ambientColor.b) - c)); 
+        c = spotlight.a * Color.a;
+        Color.a = c + Color.a * (1.0 + c);
+        
+        // set the output value
+        dst = Color; 
+    }
+}

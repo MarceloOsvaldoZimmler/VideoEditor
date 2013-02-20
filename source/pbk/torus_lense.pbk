@@ -1,0 +1,64 @@
+<languageVersion : 1.0;>
+/*
+@author Karthik: huangnankun@gmail.com
+I'm using the distortion algorithm from Joa Ebert because its a lot easier to use than mine.
+*/
+kernel NewFilter
+<   namespace : "Karthik filters";
+    vendor : "huangnankun@gmail.com";
+    version : 1;
+    description : "torus lense";
+>
+{
+    parameter float r_index
+    <
+        minValue:       0.0;
+        maxValue:       1.0;
+        defaultValue:   0.3;
+        description:    "Refraction index of the torus lense.";
+    >;
+    
+    parameter float thickness
+    <
+        minValue:       2.0;
+        maxValue:       100.0;
+        defaultValue:   80.0;
+        description:    "Thickness of the torus lense.";
+    >;
+        
+    parameter float radius
+    <   
+        minValue:       1.0;
+        maxValue:       2880.0;
+        defaultValue:   120.0;
+        description:    "Average radius of the torus.";
+    >;
+    input image4 source;
+    output pixel4 result;
+    parameter float2 center
+    <
+        minValue:       float2(0.0);
+        maxValue:       float2(2880.0);
+        defaultValue:   float2(230.0,172.8);
+        description:    "Center of the the torus";
+    >;
+    
+    const float sqrt_2 = 1.414213562;
+    const float pi =  3.14159265;
+    
+    void evaluatePixel()
+    {
+        float2 out_cor = outCoord(); // compute output coordinate
+        float2 out_vector = out_cor - center; // vector from center of torus to current point
+        float len = length( out_vector ); // length of the vector
+        
+        if( len > radius - thickness/2.0 && len < radius + thickness/2.0 ){ // make sure we actually need to distort this part
+            float d_center = len - radius; // distance from center of torus band
+            float z = sqrt( thickness*thickness + d_center+d_center ); // displacement
+            out_cor -= out_vector/len*z*tan( atan(d_center/z)*r_index); // update sampling info
+        }
+        result = sampleLinear(source,out_cor); // sample
+    }
+}
+
+    

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moviemasher>
+	<!-- STATIC MODULE SOURCES --> 
+	<source id='effect_source' config='media/xml/media_effect.xml' />
+	<source id='transition_source' config='media/xml/media_transition.xml' />
+	<source id='theme_source' config='media/xml/media_theme.xml' />
+</moviemasher>
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- TOP TIER CONFIGURATION LOADED DIRECTLY BY APPLET -->
+<moviemasher>
+	<!-- DEFAULT MASH -->
+	<moviemasher config='media/xml/mash.xml' />
+	
+	<!-- PANEL INTERFACE LAYOUT -->
+	<moviemasher config='media/xml/panel.xml' />
+	
+	<!-- DYNAMIC MEDIA SOURCES --> 
+	<moviemasher config='media/xml/source.xml' />
+
+</moviemasher>
+

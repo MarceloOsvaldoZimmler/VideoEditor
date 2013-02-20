@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moviemasher>
+
+<!--FRAMES FROM VIDEOS AS IMAGES -->
+
+	<media group="image" type="frame" id="kirikiframe" label="Kiriki" 
+		url="../media/video/Kiriki/" pattern="%.jpg" 
+		duration="10.8" fps="10" frame='54' length='3'
+	/>
+
+	<media group="image" type="frame" id="trainframe" label="Train" 
+		url="../media/video/Train/" pattern="%.jpg" 
+		duration="13.7" fps="10" frame='68' length='4'
+	/>
+
+	<media group="image" type="frame" id="trainmanframe" label="Train Man" 
+		url="../media/video/TrainMan/" pattern="%.jpg" 
+		duration="8.3" fps="10" begin="71" frame='10' length='2'
+	/>
+
+<!-- IMAGES -->
+
+	<media group="image" type="image" id="beachimage" label="Beach" url="../media/image/Beach/media.jpg" icon="../media/image/Beach/media.jpg" />
+	<media group="image" type="image" id="lightsimage" label="Lights" url="../media/image/Lights/media.jpg" icon="../media/image/Lights/media.jpg" />
+	<media group="image" type="image" id="riversimage" label="Rivers" url="../media/image/Rivers/media.jpg" icon="../media/image/Rivers/media.jpg" />
+	<media group="image" type="image" id="cableimage" label="Cable" url="../media/image/Cable/media.jpg" icon="../media/image/Cable/media.jpg" />
+	<media group="image" type="image" id="globeimage" label="Globe" url="../media/image/Globe/media.jpg" icon="../media/image/Globe/media.jpg" fill="scale" />
+	<media group="image" type="image" id="frogimage" label="Frog" icon="../media/image/Frog/icon.jpg" url="../media/image/Frog/media.jpg" />
+	<media group="image" type="image" id="logoimage" label="Logo" url="../media/image/Logo/media.png" length='4' fill='scale' />
+	<media group="image" type="image" id="starburstimage" label="Starburst" url="../media/image/Starburst/media.png" icon="../media/image/Starburst/media.png" />
+
+
+</moviemasher>

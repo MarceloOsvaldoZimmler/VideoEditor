@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moviemasher>	
+
+	<control style='text,tab' pattern='Effects' select='browser.source=effect_source' bind='browser.source' value='effect_source' />
+	<control style='text,tab' pattern='Transitions' select='browser.source=transition_source' bind='browser.source' value='transition_source' />
+	<control style='text,tab' pattern='Themes' select='browser.source=theme_source' bind='browser.source' value='theme_source' />
+
+</moviemasher>

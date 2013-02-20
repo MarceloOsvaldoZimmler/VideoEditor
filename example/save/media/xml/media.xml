@@ -1,0 +1,18 @@
+<moviemasher>
+	<media type="image" id="2d27b1d030ee43e6534ea7c610cdbcdd" label="SQ base" group="image" source="media/user/2d27b1d030ee43e6534ea7c610cdbcdd.png" url="media/user/2d27b1d030ee43e6534ea7c610cdbcdd.png" icon="media/user/2d27b1d030ee43e6534ea7c610cdbcdd.png"/>
+	<media type="image" id="623cc18aba3f86a72165ad2e0fde40a3" label="Color Abstraction" group="image" source="media/user/623cc18aba3f86a72165ad2e0fde40a3.png" url="media/user/623cc18aba3f86a72165ad2e0fde40a3.png" icon="media/user/623cc18aba3f86a72165ad2e0fde40a3.png"/>
+
+	<media group="audio" type="audio" id="Swing" label="Swing" duration="5.6" audio="../media/audio/Swing/audio.mp3" wave="../media/audio/Swing/audio.png" icon="../media/audio/Swing/audio.png" />
+	<media type="audio" id="DrumLoop" loop="1" label="Drum Loop" group="audio" audio="../media/audio/DrumLoop/media.mp3" duration="4.54" wave="../media/audio/DrumLoop/audio.png" icon="../media/audio/DrumLoop/audio.png"/>
+	
+	<media group="video" type="video" id="trainmanvideo" label="Train Man" 
+		url="../media/video/TrainMan/" pattern="%.jpg" 
+		duration="8.3" fps="10" begin="71" audio="../media/audio/Abstract/abstract.mp3" wave="../media/audio/Abstract/audio.png"
+	/>
+
+	<media group="video" type="video" id="evol" label="Evolution" 
+		url="https://s3.amazonaws.com/admaker/example/transcode/media/user/dragon/5B95818F-B177-4BEB-B9DE-1A290B99872A/256x144x10/" pattern="%.jpg" 
+		duration="21.7" fps="10"
+	/>
+
+</moviemasher>

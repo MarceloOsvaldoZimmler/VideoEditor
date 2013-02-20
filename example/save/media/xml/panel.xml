@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moviemasher config='media/xml/style.xml'>
+	
+	<!-- TOOLTIP OPTIONS -->
+	<option type="tooltip" wordwrap='0' symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@com.moviemasher.display.Tooltip" font="default" color="FEFEC9" shadowcolor="000000" shadow="1" />
+	
+	<!-- PLAYER PANEL -->
+	<panel id='player_panel' style='panel' width='2*{video_width}-3*{layout.barsize}' height='{video_height}+4*{layout.barsize}+{layout.spacing}' x='{layout.padding}' y='{layout.padding}-{layout.spacing}'>
+<!--
+		<bar style='bar'>
+
+			<control tooltip='Movie Masher' id='logo'
+				symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@CGI" 
+				get='javascript:window.open("ABOUT.html", "moviemasher_license", "width=400,height=400");'
+				icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#MovieMasher' 
+			/>			
+
+			
+		</bar>
+-->
+		<!-- PLAYER -->
+		<bar style='background' size='*'>
+			<control id='player' source='mash'
+				 symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Player' 
+				 fps='20' width="*" height="*" volume='50' autostop='0'
+			/>
+		</bar>
+		
+		<!-- PLAYER CONTROL BAR -->
+		<bar style='bar'>
+			
+			<!-- PLAY/PAUSE TOGGLE -->
+			<control tooltip='Play/Pause' bind="player.play" 
+				symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Toggle' 
+				toggleicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#PauseOff' 
+				toggleovericon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#PauseOn' 
+				icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#PlayOff' 
+				overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#PlayOn' 
+			/>
+			
+			<!-- SCRUBBER SLIDER -->
+			<control tooltip='Change Playhead Position' width='*' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Slider' bind='player.completed' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#ScrubBtnOff' back='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrubBackOff' reveal='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrubBackOn' />
+			
+			<!-- POSITION FIELD -->
+			<control style='text,location' pattern="{player.position} / {player.duration}" />
+			
+			<!-- VOLUME ICON AND SLIDER -->
+			
+			<control trigger='player.volume=0' disable='player.volume=empty' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#Volume' disicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#VolumeOff' />				
+			<control tooltip='Change Playback Volume' bind='player.volume' width='40' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Slider' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOff' overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOn' back='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOff' reveal='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOn' />
+<!--
+			<control style='text,title' pattern="{player.label}" />
+-->
+			<!-- FULLSCREEN ICON -->
+			<control tooltip='Toggle Full Screen Mode' 
+				bind='player_panel.fullscreen' disable='player_panel.fullscreen=null'
+				symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Toggle' 
+				icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#FullscreenOff' 
+				overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#FullscreenOn' 
+				disicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#FullscreenDis' 
+				toggleicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#UnfullscreenOff' 
+				toggleovericon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#UnfullscreenOn' 
+				toggledisicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#FullscreenDis' 
+			/>
+		</bar>
+	</panel>
+
+	<!-- PLAYER STALLING PROGRESS PANEL -->
+	<panel width='{video_width}' height='{video_height}' x='{layout.padding}' y='{layout.padding}+{layout.barsize}'>
+		<bar size='*'>
+			<control width='*' hide='player.stalling=empty' />
+			<control width='100' height='100' hide='player.stalling=empty' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ProgressIndicator' />
+			<control width='*' hide='player.stalling=empty' />
+		</bar>
+	</panel>
+
+	<!-- BROWSER PANEL (changed height='{video_height}+2*{layout.barsize}')-->
+	<panel style='panel' width='{moviemasher.width}-(6*{layout.padding}+5*{layout.spacing}+{layout.panelwidth})' height='{video_height}+4*{layout.barsize}+{layout.spacing}' x='2*{video_width}-(2*{layout.spacing}+{layout.padding})' y='{layout.padding}-{layout.spacing}'>
+
+		<!-- SEARCH BAR -->
+<!--
+		<bar style='bar'>
+			<control style="text,title" text="Media" />
+		</bar>
+-->
+		<!-- BROWSER NAVIGATION BAR -->
+		<bar size='{layout.navwidth}' align='left' config='media/xml/control_nav.xml' spacing='2' padding='2' style='background' angle='0' />
+		
+		<!-- BROWSER VERTICAL SCROLLBAR -->
+		<bar style='bar,scrollbar'>
+			<control hide='browser.vscrollsize=0' height='10' bind='browser.vscrollunit' value='-10' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#VertScrollUpOff' overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#VertScrollUpOn' />	
+			<control hide='browser.vscrollsize=0' height='*' bind='browser.vscroll' symbol='{mm_path}moviemasher/com/moviemasher/control/Editor/stable.swf@Scrollbar' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrollVertBtnOff' overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrollVertBtnOn' back='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrollVertBackOff' />	
+			<control hide='browser.vscrollsize=0' height='10' bind='browser.vscrollunit' value='10' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#VertScrollDownOff' overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#VertScrollDownOn' />	
+		</bar>
+	
+		<!-- BROWSER BAR (deleted tooltip='{type.toUpperCase}: {label}')-->
+		<bar style='background' size='*' align='right'>
+			<control id='browser' source='media'
+				symbol='{mm_path}moviemasher/com/moviemasher/control/Editor/stable.swf@Browser'
+				hovericon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#HandOpen"
+				dragicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#HandClose"
+				
+				height='*' width="*" previewwidth='130' padding='10' spacing='10' 
+			>
+
+				<preview style='text,preview' type="*"
+					spacing='3' padding='3' align='left' vertical='0' valign='top'
+					symbol='{mm_path}moviemasher/com/moviemasher/control/Editor/stable.swf@ButtonPreview' 
+				>
+<!--
+					<button height='22' 
+						trigger='previewer.mash={browser.focus.tag.id};previewer.play=1' tooltip='View Preview' 
+						icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#PlayOff' 
+						overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#PlayOn' 
+					/>
+					<button height='22' 
+						trigger='downloader.downloadname={browser.focus.tag.label};downloader.click=1' tooltip='Download' 
+						hide='browser.focus.tag.source=empty'
+						icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#DownOff' 
+						overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#DownOn' 
+					/>
+					<button height='22' 
+						trigger='deleter.click=1' tooltip='Delete' 
+						hide='player.dirty!=empty|browser.focus.tag.symbol!=empty'
+						icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#DeleteOff' 
+						overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#DeleteOn' 
+					/>
+-->
+				</preview>
+<!--
+				<preview type="mash" icon="@com.moviemasher.module.AVMash">
+					<button height='22' 
+						trigger='player.source={browser.focus.tag.url}' tooltip='Edit Mash'
+						hide='player.dirty!=empty'
+						icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#EditOff' 
+						overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#EditOn' 
+					/>
+					<button height='22' 
+						trigger='flvplayer.url={browser.focus.tag.source};flvplayer.play=1' tooltip='View Rendered'
+						hide='browser.focus.tag.source=empty'
+						icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#VideoOff' 
+						overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#VideoOn' 
+					/>
+				</preview>
+-->
+				<preview type="audio" blend="darken" overblend='darken' icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@AudioPreview" />
+				<preview type="effect" preview='../media/image/Logo/preview.jpg' icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@EffectPreview" />
+				<preview type="image" icon="@com.moviemasher.module.AVImage" />
+				<preview type="frame" icon="@com.moviemasher.module.AVFrame" />
+				<preview type="theme" blend='normal' overblend='multiply' icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ThemePreview" />
+				<preview type="transition" preview='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@PreviewTransitionFrom,{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@PreviewTransitionTo' icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@TransitionPreview" />
+				<preview type="video"  icon="@com.moviemasher.module.AVSequence" />
+				
+			</control>
+		</bar>
+
+		<!-- SEARCH BAR (deleted config='media/xml/control_search.xml')-->
+
+		<bar style='bar' align="bottom">
+			<control style='text,title' pattern="Title: {browser.selection.label} {browser.selection.duration}" hide="browser.selection.label=null"/>
+			<control style='text,title' hide="browser.selection.label!=null" pattern="SELECT AN AD TO EDIT"/>
+		</bar>
+
+	</panel>
+
+	<!-- TIMELINE PANEL (changed y from "{layout.padding}+{layout.spacing}+{video_height}+2*{layout.barsize}")--> 
+	<panel style='panel' width='{moviemasher.width}-({layout.panelwidth}+2*{layout.padding}+2*{layout.spacing})' height='{moviemasher.height}-(3*{layout.padding}+{layout.spacing}+{video_height}+3*{layout.barsize})' x='{layout.padding}' y='2*{layout.padding}+2*{layout.spacing}+{video_height}+3*{layout.barsize}'>
+		<!-- TIMELINE VERTICAL SCROLLBAR -->
+		<bar style='bar,scrollbar'>
+			<control height='10' bind='timeline.vscrollunit' value='-10' hide='timeline.vscrollsize=0' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#VertScrollUpOff' overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#VertScrollUpOn' />	
+			<control bind='timeline.vscroll' hide='timeline.vscrollsize=0' symbol='{mm_path}moviemasher/com/moviemasher/control/Editor/stable.swf@Scrollbar' height='*' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrollVertBtnOff' overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrollVertBtnOn' back='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrollVertBackOff' />	
+			<control height='10' bind='timeline.vscrollunit' value='10' hide='timeline.vscrollsize=0' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#VertScrollDownOff' overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#VertScrollDownOn' />	
+		</bar>
+		<!-- TIMELINE BAR -->
+		<bar style='background' align='right' size='*'>
+			<control 
+				symbol='{mm_path}moviemasher/com/moviemasher/control/Editor/stable.swf@Timeline'
+				zoom="1" width='*' height='*'
+				trimbothicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#BothTrim"
+				trimlefticon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#LeftTrim"
+				trimrighticon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#RightTrim"
+				hovericon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#HandOpen"
+				dragicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#HandClose"
+				iconwidth="26"
+				linecolor="CCCCCC" 
+				line="1"
+				autoselect="mash"
+				tooltip='{type.toUpperCase}: {label} {startframe}-{lengthframe}'
+				videoicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#VideoTrack"
+				audioicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#AudioTrack"
+				effecticon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#EffectTrack"
+			>
+				<preview style='text,preview' type="*" />
+				<preview type="audio" blend="darken" overblend='darken' icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@AudioPreview" />
+				<preview type="effect" preview='../media/image/Logo/preview.jpg' icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@EffectPreview" />
+				<preview type="image" icon="@com.moviemasher.module.AVImage" />
+				<preview type="theme" blend='normal' overblend='multiply' icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ThemePreview" />
+				<preview type="transition" preview='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@PreviewTransitionFrom,{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@PreviewTransitionTo' icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@TransitionPreview" />
+				<preview type="video" icon="@com.moviemasher.module.AVSequence" />
+				<preview type="mash" icon="@com.moviemasher.module.AVMash" />
+				<preview type="frame" icon="@com.moviemasher.module.AVFrame" />
+			</control>
+		</bar>
+		<!-- BUTTON BAR (changed text to allCaps)-->
+		<bar style='bar' config='media/xml/control_save.xml'>
+			<control text='UNDO' style='text,button' tooltip='Undo Last Action' bind='timeline.undo' disable='timeline.undo=null' />
+			<control text='REDO' style='text,button' tooltip='Redo Last Action' bind='timeline.redo' disable='timeline.redo=null' />
+			
+			<control icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#Separator' width='6' fill='stretch' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' />
+			
+			<control text='CUT' style='text,button' tooltip='Cut selected clips to clipboard' bind='timeline.cut' disable='timeline.cut=null' />
+			<control text='COPY' style='text,button' tooltip='Copy selected clips to clipboard' bind='timeline.copy' disable='timeline.copy=null' />
+			<control text='PASTE' style='text,button' tooltip='Paste clipboard at playhead location' bind='timeline.paste' disable='timeline.paste=null' />
+			
+			<control icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#Separator' width='6' fill='stretch' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' />
+
+			<control text='SPLIT' style='text,button' tooltip='Split selected clip at {player.position} seconds' bind='timeline.split' disable='timeline.split=null' />
+<!--
+			<control text='FREEZE' style='text,button' tooltip='Freeze selected clip at {player.position} seconds' bind='timeline.freeze' disable='timeline.freeze=null' />
+-->
+			<control text='DELETE' style='text,button' tooltip='Delete selected clips' bind='timeline.remove' disable='timeline.remove=null' />
+		
+		</bar>
+		<!-- BUFFER BAR (deleted buffer bar)-->
+<!--
+		<bar grad='20' color='666666' angle='90' spacing='4' padding='2' size='5' />
+-->
+		<!-- RULER BAR	(deleted grad='20', changed textcolor="FFFFFF" to ="000000", changed size="18" to ="22")-->
+		<bar dontmask="1" angle='270' size='22' color='FFFFFF'>
+			<control symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' width='26' fill='stretch' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#RulerBackOn' />
+			<control 
+				width="*" incrementsymbol="@Increment" 
+				increment="1" textcolor="000000" pattern="{time}" 
+				symbol='{mm_path}moviemasher/com/moviemasher/control/Editor/stable.swf@Ruler' 
+				back='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#RulerBackOff' 
+				ruleicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@RulerLineOff' 
+				ruleovericon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@RulerLineOn' 
+				reveal='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#RulerBackOn' 
+				icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#RulerBtnOff' 
+				overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#RulerBtnOn' 
+			/>
+			<control hide='timeline.vscrollsize=0' width='{layout.scrollsize}' />
+		</bar>
+		<!-- ZOOM AND HORIZONTAL SCROLLER BAR -->
+		<bar style='bar,scrollbar' angle='90' align='bottom'>
+	<!-- ZOOM SLIDER -->
+			<control width='5' />
+			<control trigger='timeline.zoom=1' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#ZoomOut' />
+			<control width='5' />
+			<control tooltip='View Scale' bind='timeline.zoom' width='140' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Slider' min='1' max='100' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOff' overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOn' back='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOff' reveal='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOn' />
+			<control width='5' />
+			<control trigger='timeline.zoom=100' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#ZoomIn' />
+			
+	<!-- HSCROLL SLIDER -->
+			<control symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' hide='timeline.hscrollsize=0' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#Separator' width='6' fill='stretch' />
+			<control width='10' bind='timeline.hscrollunit' value='-10' hide='timeline.hscrollsize=0' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#HorzScrollLeftOff' overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#HorzScrollLeftOn' />	
+			<control width='*' bind='timeline.hscroll' hide='timeline.hscrollsize=0' symbol='{mm_path}moviemasher/com/moviemasher/control/Editor/stable.swf@Scrollbar' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrollHorzBtnOff' overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrollHorzBtnOn' back='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrollHorzBackOff' />
+			<control width='15' bind='timeline.hscrollunit' value='10' hide='timeline.hscrollsize=0' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#HorzScrollRightOff' overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#HorzScrollRightOn' />	
+			<control width='{layout.scrollsize}-5' hide='timeline.vscrollsize=0' />
+		</bar>
+	</panel>
+
+	<!-- INSPECTOR BACKGROUND AND TITLE PANEL (changed height="{moviemasher.height}-(2*{layout.padding}", y='{layout.padding}')--> 
+	<panel style='panel,background' width='{layout.panelwidth}' height='{moviemasher.height}-(3*{layout.padding}+{layout.spacing}+{video_height}+3*{layout.barsize})' x='{moviemasher.width}-({layout.panelwidth}+{layout.padding})' y='2*{layout.padding}+2*{layout.spacing}+{video_height}+3*{layout.barsize}'>
+		<!-- TITLE BAR -->
+		<bar style='bar'>
+			<control style='text,title' pattern="EDITING: {timeline.selection.label}" hide="timeline.selection.label=null" />
+			<control style='text,title' hide="timeline.selection.label!=null" pattern="TITLES AND EFFECTS EDITOR" />
+		</bar>
+	</panel>
+	
+	<!-- INSPECTOR CONTROL PANEL (changed height='{moviemasher.height}-(2*{layout.padding}+2*{layout.spacing}+{layout.barsize})', y='{layout.padding}+{layout.spacing}+{layout.barsize}')--> 
+	<panel width='{layout.panelwidth}-2*{layout.spacing}' height='{moviemasher.height}-(3*{layout.padding}+3*{layout.spacing}+4*{layout.barsize}+{video_height})' x='{moviemasher.width}-({layout.panelwidth}+{layout.padding})+{layout.spacing}' y='2*{layout.padding}+3*{layout.spacing}+4*{layout.barsize}+{video_height}'>
+
+		<!-- LABEL FIELD -->	
+<!--		
+		<bar size="20" spacing="5">
+			<control width="*" hide="timeline.selection.label=null" style='text,label' pattern="Label" />
+		</bar>	
+-->
+<!--		
+		<bar size="22" spacing="5">
+			<control style='text' color="FFFFFF" forecolor='333333' height="*" multiline="0" wrap="0" hide="timeline.selection.label=null" bind="timeline.selection.label" symbol="{mm_path}moviemasher/com/moviemasher/control/Editor/stable.swf@Field" />
+		</bar>
+-->				
+		<!-- TRIMMER -->
+		<bar size="20" spacing="5">
+			<control hide="timeline.selection.trim=null" style='text,label' pattern="Trim" />
+		</bar>
+		<bar size="20" spacing="5">
+			<control hide="timeline.selection.trim=null" bind="timeline.selection.trim" symbol="{mm_path}moviemasher/com/moviemasher/control/Editor/stable.swf@Trimmer" height="14" width="*" overicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOn" icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOff" back="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOff" reveal="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOn" />
+		</bar>
+		
+		<!-- LENGTH SLIDER (omitted pattern="Length: {timeline.selection.lengthseconds} seconds", changed control width="*")-->
+		<bar size="20" spacing="5">
+			<control hide="timeline.selection.lengthseconds=null|timeline.selection.track&lt;0" style='text,label' pattern="Length" />
+
+			<control width="{video_width}-{layout.spacing}" hide="timeline.selection.lengthseconds=null|timeline.selection.track&lt;0" bind="timeline.selection.lengthseconds" symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Slider" height="14" min=".01" max="20" icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOff" overicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOn" back="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOff" reveal="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOn" />
+		</bar>
+<!--
+		<bar size="20" spacing="5">
+			<control width="*" hide="timeline.selection.lengthseconds=null|timeline.selection.track&lt;0" bind="timeline.selection.lengthseconds" symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Slider" height="14" min=".01" max="20" icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOff" overicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOn" back="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOff" reveal="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOn" />
+		</bar>
+-->
+		
+		<!-- SPEED SLIDER -->
+		<bar size="20" spacing="5">
+			<control hide="timeline.selection.speed=null" style='text,label' pattern="Speed: {timeline.selection.speed}" />
+		</bar>
+		<bar size="20" spacing="5">
+			<control width="*" hide="timeline.selection.speed=null" bind="timeline.selection.speed" symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Slider" height="14" min="10" max=".2" decimals='1' icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOff" overicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOn" back="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOff" reveal="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOn" />
+			<control hide="timeline.selection.speed=null|timeline.selection.speed=1" bind="timeline.selection.speed" value="1" symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon" icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#CancelX" />
+		</bar>
+		<!-- INSTANCES SLIDER -->
+		<bar size="20" spacing="5">
+			<control hide="timeline.selection.instances=null" style='text,label' pattern="Instances: {timeline.selection.instances}" />
+		</bar>
+		<bar size="20" spacing="5">
+			<control width="*" hide="timeline.selection.instances=null" bind="timeline.selection.instances" symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Slider" height="14" min="1" increment="1" max="30" icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOff" overicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOn" back="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOff" reveal="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOn" />
+		</bar>
+		
+		<!-- BRIGHTNESS SLIDER -->
+		<bar size="20" spacing="5">
+			<control hide="timeline.selection.brightness=null" style='text,label' text="Brightness" />
+		</bar>
+		<bar size="20" spacing="5">
+			<control width="*" hide="timeline.selection.brightness=null" bind="timeline.selection.brightness" symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Slider" height="14" min="-255" max="255" icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOff" overicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOn" back="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOff" reveal="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOn" />
+		</bar>
+		
+		<!-- CONTRAST SLIDER -->
+		<bar size="20" spacing="5">
+			<control hide="timeline.selection.contrast=null" style='text,label' text="Contrast" />
+		</bar>
+		<bar size="20" spacing="5">
+			<control width="*" hide="timeline.selection.contrast=null" bind="timeline.selection.contrast" symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Slider" height="14" min="-2" max="5" icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOff" overicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOn" back="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOff" reveal="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOn" />
+		</bar>
+		
+		<!-- HUE SLIDER -->
+		<bar size="20" spacing="5">
+			<control hide="timeline.selection.hue=null" style='text,label' text="Hue" />
+		</bar>
+		<bar size="20" spacing="5">
+			<control width="*" hide="timeline.selection.hue=null" bind="timeline.selection.hue" symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Slider" height="14" min="-180" max="180" icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOff" overicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOn" back="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOff" reveal="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOn" />
+		</bar>
+		
+		<!-- SATURATION SLIDER -->
+		<bar size="20" spacing="5">
+			<control hide="timeline.selection.saturation=null" style='text,label' text="Saturation" />
+		</bar>
+		<bar size="20" spacing="5">
+			<control width="*" hide="timeline.selection.saturation=null" bind="timeline.selection.saturation" symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Slider" height="14" min="-2" max="5" icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOff" overicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOn" back="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOff" reveal="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOn" />
+		</bar>
+		
+		<!-- FORE AND BACK COLOR PICKER (changed "Back Alpha" to "Alpha")-->
+		<bar size="20" spacing="5">
+			<control width="*" hide="timeline.selection.forecolor=null" style='text,label' text="Color" />
+			<control hide="timeline.selection.forecolor=null" symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon" width="16" />
+			<control width="*" hide="timeline.selection.backcolor=null" style='text,label' text="Back Color" />
+			<control hide="timeline.selection.backcolor=null" symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon" width="16" />
+			<control width="*" hide="timeline.selection.backalpha=null" style='text,label' text="Alpha" />
+		</bar>
+		<bar size="20" spacing="5">
+			<control hide="timeline.selection.forecolor=null" bind="timeline.selection.forecolor" symbol="{mm_path}moviemasher/com/moviemasher/control/Component/stable.swf@MMColorPicker" width="16" />
+			<control hide="timeline.selection.forecolor=null" symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon" width="*" />
+			<control hide="timeline.selection.backcolor=null" bind="timeline.selection.backcolor" symbol="{mm_path}moviemasher/com/moviemasher/control/Component/stable.swf@MMColorPicker" width="16" />
+			<control hide="timeline.selection.backcolor=null" symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon" width="*" />
+			<control hide="timeline.selection.backalpha=null" bind="timeline.selection.backalpha" symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Slider" height="14" width="*" icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOff" overicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOn" back="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOff" reveal="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOn" />
+		</bar>
+	
+		<!--FONT AND TEXTSIZE COMBOBOX -->
+		<bar size="20" spacing="5">
+			<control hide="timeline.selection.font=null" style='text,label' text="Font" />
+			<control hide="timeline.selection.textsize=null" style='text,label' text="Size" />
+		</bar>
+		
+		<bar size="22" spacing="5">
+			<control hide="timeline.selection.font=null" bind="timeline.selection.font" width="*" symbol="{mm_path}moviemasher/com/moviemasher/control/Component/stable.swf@MMComboBox" config="media/xml/option_font.xml" />
+			<control hide="timeline.selection.textsize=null" bind="timeline.selection.textsize" width="*" symbol="{mm_path}moviemasher/com/moviemasher/control/Component/stable.swf@MMComboBox">
+				
+				<size id="90" label="XXX Large" />
+				<size id="40" label="XX Large" />
+				<size id="20" label="X Large" />
+				<size id="18" label="Large" />
+				<size id="14" label="Medium" />
+				<size id="12" label="Small" />
+				<size id="10" label="X Small" />
+				<size id="8" label="XX Small" />
+			</control>
+		</bar>
+
+		<!-- TEXT LABEL (repositioned from "Media, Effects, and Text")-->
+		<bar size="20" spacing="5">
+			<control hide="timeline.selection.longtext=null" style='text,label' pattern="Text" />
+		</bar>
+
+		<!-- LONGTEXT VERTICAL SCROLLBAR (repositioned)-->
+		<bar style='bar,scrollbar'>
+			<control hide='textfield.vscrollsize=0' height='10' bind='textfield.vscrollunit' value='-1' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#VertScrollUpOff' overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#VertScrollUpOn' />	
+			<control hide='textfield.vscrollsize=0' height='*' bind='textfield.vscroll' symbol='{mm_path}moviemasher/com/moviemasher/control/Editor/stable.swf@Scrollbar' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrollVertBtnOff' overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrollVertBtnOn' back='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrollVertBackOff' />	
+			<control hide='textfield.vscrollsize=0' height='10' bind='textfield.vscrollunit' value='1' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#VertScrollDownOff' overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#VertScrollDownOn' />	
+		</bar>
+		
+		<!-- LONGTEXT FIELD -->			
+		<bar size="*" spacing="5">
+			<control id='textfield' wrap='1' multiline='1' forecolor='333333' color="FFFFFF" height="*" hide="timeline.selection.longtext=null" bind="timeline.selection.longtext" style='text' symbol="{mm_path}moviemasher/com/moviemasher/control/Editor/stable.swf@Field" />
+		</bar>
+
+		<!--ORIENTATION COMBOBOX -->
+		<bar size="20" spacing="5">
+			<control hide="timeline.selection.orientation=null" style='text,label' text="Orientation" />
+		</bar>
+		<bar size="22" spacing="5">
+			
+			<control hide="timeline.selection.orientation=null" bind="timeline.selection.orientation" width="*" symbol="{mm_path}moviemasher/com/moviemasher/control/Component/stable.swf@MMComboBox">
+				<orientation id="horizontal" label="Horizontal" />
+				<orientation id="vertical" label="Vertical" />
+			</control>
+		</bar>
+		
+		<!--FILL COMBOBOX -->
+		<bar size="20" spacing="5">
+			<control hide="timeline.selection.fill=null" style='text,label' text="Resizing" />
+		</bar>
+		<bar size="22" spacing="5">
+			
+			<control hide="timeline.selection.fill=null" bind="timeline.selection.fill" width="*" symbol="{mm_path}moviemasher/com/moviemasher/control/Component/stable.swf@MMComboBox">
+				<fill id="stretch" label="Stretch to Fill" />
+				<fill id="crop" label="Scale with Crop" />
+				<fill id="scale" label="Scale without Crop" />
+			</control>
+		</bar>
+		
+		<!-- VOLUME PLOTTER -->
+		<bar size="20" spacing="5">
+			<control hide="timeline.selection.volume=null" style='text,label' text="Volume" />
+			<control trigger='timeline.selection.volume=0,0,100,0' hide="timeline.selection.volume=null" style='button' text="Mute" />
+			<control trigger='timeline.selection.volume=0,50,100,50' hide="timeline.selection.volume=null" style='button' text="Reset" />
+		</bar>
+		<bar size="80" spacing="5">
+			<control style='well' hide="timeline.selection.volume=null" bind="timeline.selection.volume" symbol="{mm_path}moviemasher/com/moviemasher/control/Editor/stable.swf@Plotter" />
+		</bar>
+		
+
+		<!-- HREF FIELD -->			
+		<bar size="20" spacing="5">
+			<control hide="timeline.selection.href=null" style='text,label' pattern="URL"  />
+		</bar>
+		<bar size="*" spacing="5">
+			<control forecolor='333333' color="FFFFFF" height="*" multiline="1" hide="timeline.selection.href=null" bind="timeline.selection.href" style='text' symbol="{mm_path}moviemasher/com/moviemasher/control/Editor/stable.swf@Field" />
+		</bar>
+
+		<!-- MATRIX MENU -->			
+		<bar size="20" spacing="5">
+			<control hide="timeline.selection.matrix=null" style='text,label' pattern="Matrix" />
+		</bar>
+		<bar size="22" spacing="5">
+			<control hide="timeline.selection.matrix=null" bind="timeline.selection.matrix" width="*" symbol="{mm_path}moviemasher/com/moviemasher/control/Component/stable.swf@MMComboBox">
+				<matrix label="Blur 1" id="0,8,0,8,-19,8,0,8,0" />
+				<matrix label="Blur 2" id="8,0,8,0,-21,0,8,0,8" />
+				<matrix label="Borders" id="10,10,10,10,10,-10,-10,-10,-10" />
+				<matrix label="Carve A" id="10,0,0,0,6,0,0,0,-10" />
+				<matrix label="Carve B" id="10,0,0,0,6,0,0,0,-10" />
+				<matrix label="Carve B Inv" id="10,10,-10,40,5,-40,10,-10,-10" />
+				<matrix label="Cleanup" id="1,-1,-1,1,10,-1,1,1,1" />
+				<matrix label="Emboss L" id="10,10,0,10,0,-10,0,-10,-10" />
+				<matrix label="Emboss R" id="0,10,10,-10,10,10,-10,-10,-10" />
+				<matrix label="Clouds" id="2,7,2,7,-33,7,2,7,2" />
+				<matrix label="Chrome 1" id="10,0,-10,20,1,-20,10,0,-10" />
+				<matrix label="Outline" id="10,10,10,10,-70,10,10,10,10" />
+				<matrix label="Splotch A" id="10,10,-10,40,0,-40,10,-10,-10" />
+				<matrix label="Splotch B" id="-10,10,-10,10,10,10,-10,10,-10" />
+				<matrix label="Hi Pass A" id="-10,-10,-10,-10,90,-10,-10,-10,-10" />
+				<matrix label="Hi Pass B" id="10,10,10,-10,60,10,-10,-10,-10" />
+				<matrix label="Lo Pass A" id="1,1,1,1,2,1,1,1,1" />
+				<matrix label="Lo Pass B" id="1,1,10,1,2,1,1,1,1" />
+				<matrix label="Edge Line" id="0,-10,0,-10,40,-10,0,-10,0" />
+				<matrix label="Edge Normal A" id="10,10,10,-10,-5,10,-10,-10,-10" />
+				<matrix label="Edge Normal B" id="10,10,10,-10,0,10,-10,-10,-10" />
+				<matrix label="Mistery" id="-10,-10,-10,-10,80,-10,-10,-10,-10" />
+				<matrix label="Funky" id="10,0,0,0,-15,0,10,0,-10" />
+				<matrix label="Ghost Blur" id="16,0,16,0,-55,0,16,0,16" />
+			</control>
+		</bar>
+		
+		<!-- BLEND MENU -->			
+		<bar size="20" spacing="5">
+			<control hide="timeline.selection.blend=null" style='text,label' pattern="Blend" />
+		</bar>
+		<bar size="22" spacing="5">
+			<control hide="timeline.selection.blend=null" bind="timeline.selection.blend" width="*" symbol="{mm_path}moviemasher/com/moviemasher/control/Component/stable.swf@MMComboBox">
+				<blend label="Normal" id="normal" />
+				<blend label="Multiply" id="multiply" />
+				<blend label="Screen" id="screen" />
+				<blend label="Lighten" id="lighten" />
+				<blend label="Darken" id="darken" />
+				<blend label="Difference" id="difference" />
+				<blend label="Add" id="add" />
+				<blend label="Subtract" id="subtract" />
+				<blend label="Invert" id="invert" />
+				<blend label="Overlay" id="overlay" />
+				<blend label="Hard Light" id="hardlight" />
+									
+			</control>
+		</bar>
+
+		<!-- LOOPS SLIDER -->
+		<bar size="20" spacing="5">
+			<control hide="timeline.selection.loops=null" style='text,label' pattern="Loops: {timeline.selection.loops}" />
+		</bar>
+		<bar size="20" spacing="5">
+			<control width="*" hide="timeline.selection.loops=null" bind="timeline.selection.loops" symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Slider" height="14" min="1" max="100" icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOff" overicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOn" back="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOff" reveal="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOn" />
+		</bar>
+
+		<!-- ALPHA SLIDER -->
+		<bar size="20" spacing="5">
+			<control hide="timeline.selection.alpha=null" style='text,label' pattern="Alpha: {timeline.selection.alpha}" />
+		</bar>
+		<bar size="20" spacing="5">
+			<control width="*" hide="timeline.selection.alpha=null" bind="timeline.selection.alpha" symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Slider" height="14" value="0" min="-180" max="180" icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOff" overicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOn" back="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOff" reveal="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOn" />
+		</bar>
+
+		<!-- ROTATE SLIDER -->
+		<bar size="20" spacing="5">
+			<control hide="timeline.selection.rotate=null" style='text,label' text="Rotation" />
+		</bar>
+		<bar size="20" spacing="5">
+			<control width="*" hide="timeline.selection.rotate=null" bind="timeline.selection.rotate" symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Slider" height="14" value="0" min="-180" max="180" icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOff" overicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOn" back="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOff" reveal="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOn" />
+		</bar>
+		
+		<!-- POSITION SCALE AND SHEAR PLOTTERS -->
+		<bar size="20" spacing="5">
+			<control width="*" hide="timeline.selection.position=null" style='text,label' text="Position" />
+			<control width="*" hide="timeline.selection.scale=null" style='text,label' text="Scale" />
+			<control width="*" hide="timeline.selection.shear=null" style='text,label' text="Shear" />
+		</bar>
+		<bar size="*" spacing="5">
+			<control style='well' multiple="0" hide="timeline.selection.position=null" bind="timeline.selection.position" symbol="{mm_path}moviemasher/com/moviemasher/control/Editor/stable.swf@Plotter"/>
+			<control style='well' multiple="0" hide="timeline.selection.scale=null" bind="timeline.selection.scale" symbol="{mm_path}moviemasher/com/moviemasher/control/Editor/stable.swf@Plotter"  />
+			<control style='well' multiple="0" hide="timeline.selection.shear=null" bind="timeline.selection.shear" symbol="{mm_path}moviemasher/com/moviemasher/control/Editor/stable.swf@Plotter"  />
+		</bar>
+
+		<!-- ROTATE FADE SLIDER -->
+		<bar size="20" spacing="5">
+			<control hide="timeline.selection.rotatefade=null" style='text,label' text="Fade Rotation" />
+		</bar>
+		<bar size="20" spacing="5">
+			<control width="*" hide="timeline.selection.rotatefade=null" bind="timeline.selection.rotatefade" symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Slider" height="14" value="0" min="-180" max="180" icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOff" overicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOn" back="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOff" reveal="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOn" />
+		</bar>
+		
+		<!-- POSITIONFADE SCALEFADE AND SHEARFADE PLOTTERS -->
+		<bar size="20" spacing="5">
+			<control width="*" hide="timeline.selection.positionfade=null" style='text,label' text="Fade Position" />
+			<control width="*" hide="timeline.selection.scalefade=null" style='text,label' text="Fade Scale" />
+			<control width="*" hide="timeline.selection.shearfade=null" style='text,label' text="Fade Shear" />
+		</bar>
+		<bar size="*" spacing="5">
+			<control style='well' multiple="0" hide="timeline.selection.positionfade=null" bind="timeline.selection.positionfade" symbol="{mm_path}moviemasher/com/moviemasher/control/Editor/stable.swf@Plotter"/>
+			<control style='well' multiple="0" hide="timeline.selection.scalefade=null" bind="timeline.selection.scalefade" symbol="{mm_path}moviemasher/com/moviemasher/control/Editor/stable.swf@Plotter"  />
+			<control style='well' multiple="0" hide="timeline.selection.shearfade=null" bind="timeline.selection.shearfade" symbol="{mm_path}moviemasher/com/moviemasher/control/Editor/stable.swf@Plotter"  />
+		</bar>
+		
+		<!-- FADE PLOTTER  -->
+		<bar size="20" spacing="5">
+			<control hide="timeline.selection.fade=null" style='text,label' text="Fade" />
+		</bar>
+		<bar size="*" spacing="5">
+			<control style='well' hide="timeline.selection.fade=null" bind="timeline.selection.fade" symbol="{mm_path}moviemasher/com/moviemasher/control/Editor/stable.swf@Plotter" />
+		</bar>
+
+		<!-- MEDIA, EFFECTS and TEXT LABELS -->
+		<bar size="20" spacing="5">
+			<control hide="timeline.selection.composites=null" style='text,label' text="Media" />
+			<control hide="timeline.selection.effects=null" style='text,label' text="Effects" />
+<!--
+			<control hide="timeline.selection.longtext=null" style='text,label' pattern="Text" />
+-->
+		</bar>		
+		<!-- LONGTEXT VERTICAL SCROLLBAR -->
+<!--
+		<bar style='bar,scrollbar'>
+			<control hide='textfield.vscrollsize=0' height='10' bind='textfield.vscrollunit' value='-1' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#VertScrollUpOff' overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#VertScrollUpOn' />	
+			<control hide='textfield.vscrollsize=0' height='*' bind='textfield.vscroll' symbol='{mm_path}moviemasher/com/moviemasher/control/Editor/stable.swf@Scrollbar' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrollVertBtnOff' overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrollVertBtnOn' back='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrollVertBackOff' />	
+			<control hide='textfield.vscrollsize=0' height='10' bind='textfield.vscrollunit' value='1' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#VertScrollDownOff' overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#VertScrollDownOn' />	
+		</bar>
+-->
+		<!-- LONGTEXT FIELD -->		
+<!--	
+		<bar size="*" spacing="5" align='right'>
+			<control id='textfield' wrap='1' multiline='1' forecolor='333333' color="FFFFFF" height="*" hide="timeline.selection.longtext=null" bind="timeline.selection.longtext" style='text' symbol="{mm_path}moviemasher/com/moviemasher/control/Editor/stable.swf@Field" />
+		</bar>
+-->
+		<!-- EFFECTS VERTICAL SCROLLBAR -->
+		<bar style='bar,scrollbar'>
+			<control hide='effects.vscrollsize=0' height='10' bind='effects.vscrollunit' value='-10' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#VertScrollUpOff' overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#VertScrollUpOn' />	
+			<control hide='effects.vscrollsize=0' height='*' bind='effects.vscroll' symbol='{mm_path}moviemasher/com/moviemasher/control/Editor/stable.swf@Scrollbar' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrollVertBtnOff' overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrollVertBtnOn' back='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrollVertBackOff' />	
+			<control hide='effects.vscrollsize=0' height='10' bind='effects.vscrollunit' value='10' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#VertScrollDownOff' overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#VertScrollDownOn' />	
+		</bar>
+		<!-- EFFECTS VIEW -->
+		<bar size="*" align='right'>
+			<control style='well' 
+				spacing='10'
+				id='effects'
+				hide="timeline.selection.effects=null" bind="timeline.selection.effects" 
+				symbol='{mm_path}moviemasher/com/moviemasher/control/Editor/stable.swf@Browser'
+				previewwidth='80' 
+				selection='timeline.selection'
+			>
+				<drop type='effect' />
+				<preview  style='text,preview' type="*" />
+				<preview type="effect" 
+					preview='../media/image/Logo/preview.jpg' 
+					icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@EffectPreview"											
+				/>
+			</control>
+		</bar>
+		<bar align='right' size='5' hide="timeline.selection.composites=null|timeline.selection.effects=null" />
+		
+		<!-- COMPOSITES VERTICAL SCROLLBAR -->
+		<bar style='bar,scrollbar'>
+			<control hide='composites.vscrollsize=0' height='10' bind='composites.vscrollunit' value='-10' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#VertScrollUpOff' overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#VertScrollUpOn' />	
+			<control hide='composites.vscrollsize=0' height='*' bind='composites.vscroll' symbol='{mm_path}moviemasher/com/moviemasher/control/Editor/stable.swf@Scrollbar' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrollVertBtnOff' overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrollVertBtnOn' back='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrollVertBackOff' />	
+			<control hide='composites.vscrollsize=0' height='10' bind='composites.vscrollunit' value='10' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#VertScrollDownOff' overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#VertScrollDownOn' />	
+		</bar>
+		
+		<!-- COMPOSITES VIEW -->
+		<bar size="*" align='right'>
+			<control style='well' 
+				spacing='10' 
+				id='composites' 
+				hide="timeline.selection.composites=null" bind="timeline.selection.composites" 
+				symbol='{mm_path}moviemasher/com/moviemasher/control/Editor/stable.swf@Browser'
+				previewwidth='80' 
+				selection='timeline.selection'
+			>
+				<drop type='image' />
+				<drop type='theme' />
+				<drop type='video' />
+				
+				<preview  style='text,preview' type="*" />
+				<preview type="video" icon="@com.moviemasher.module.AVSequence" />
+				<preview type="image" icon="@com.moviemasher.module.AVImage" />
+				<preview type="frame" icon="@com.moviemasher.module.AVFrame" />
+				<preview type="theme" blend='normal' overblend='multiply' icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ThemePreview" />
+			</control>
+			
+		</bar>
+		
+	</panel>
+
+	<!-- BLACKOUT PANEL -->
+	<panel width='{moviemasher.width}' height='{moviemasher.height}' hide='previewer.mash=empty&amp;flvplayer.url=empty' color='0' alpha='50'>
+		<bar size='*'>
+			<control trigger='previewer.mash=' width='*' height='*' fill='stretch' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#Blank' />
+		</bar>
+	</panel>
+	
+	<!-- PREVIEWER PLAYER PANEL -->
+	<panel id='previewer_panel' alpha='20' style='panel' hide='previewer.mash=empty' width='{video_width}' height='{video_height}+2*{layout.barsize}' x='({moviemasher.width}-{video_width})/2' y='({moviemasher.height}-({video_height}+2*{layout.barsize}))/2'>
+
+		<!-- CLOSE AND FULLSCREEN BAR -->
+		<bar style='bar'>
+			<control 
+				symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon" 
+				icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#CancelX"
+				trigger='previewer.mash=;previewer_panel.fullscreen=null' 
+			/>
+			<control style='text,title' pattern="{previewer.label}" />
+			<!-- FULLSCREEN ICON -->
+			<control tooltip='Toggle Full Screen Mode' 
+				bind='previewer_panel.fullscreen' disable='previewer_panel.fullscreen=null'
+				symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Toggle' 
+				icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#FullscreenOff' 
+				overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#FullscreenOn' 
+				disicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#FullscreenDis' 
+				toggleicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#UnfullscreenOff' 
+				toggleovericon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#UnfullscreenOn' 
+				toggledisicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#FullscreenDis' 
+			/>
+		</bar>
+		
+		<!-- PREVIEWER PLAYER -->
+		<bar color='0' size='*'>
+			<control 
+				id='previewer'
+				 symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Player' 
+				 fps='10' width="*" height="*" volume='50'
+				 effectpreview='../media/image/Logo/preview.jpg' 
+				 transitionpreview='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@PreviewTransitionFrom,{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@PreviewTransitionTo'
+			/>
+		</bar>
+		
+		<!-- PREVIEWER PLAYER CONTROL BAR -->
+		<bar style='bar'>
+			
+			<!-- PLAY/PAUSE TOGGLE -->
+			<control tooltip='Play/Pause' bind="previewer.play" symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Toggle' toggleicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#PauseOff' toggleovericon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#PauseOn' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#PlayOff' overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#PlayOn' />
+			
+			<!-- SCRUBBER SLIDER -->
+			<control tooltip='Change Playhead Position' width='*' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Slider' bind='previewer.completed' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#ScrubBtnOff' back='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrubBackOff' reveal='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrubBackOn' />
+			
+			<!-- POSITION FIELD -->
+			<control style='text,location' pattern="{previewer.position}/{previewer.duration}"/>
+			
+			<!-- VOLUME ICON AND SLIDER -->
+			
+			<control trigger='previewer.volume=0' disable='previewer.volume=empty' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#Volume' disicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#VolumeOff' />				
+			<control tooltip='Change Playback Volume' bind='previewer.volume' width='40' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Slider' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOff' overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOn' back='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOff' reveal='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOn' />
+			
+		</bar>
+	</panel>
+
+	<!-- PREVIEWER PLAYER STALLING PROGRESS PANEL -->
+	<panel hide='previewer.stalling=empty' width='{video_width}' height='{video_height}' x='({moviemasher.width}-{video_width})/2' y='({moviemasher.height}-({video_height}))/2'>
+		<bar size='*'>
+			<control width='*' />
+			<control width='100' height='100' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ProgressIndicator' />
+			<control width='*' />
+		</bar>
+	</panel>
+	<!-- FLV PLAYER PANEL -->
+	<panel z='2' id='flvplayer_panel' style='panel' hide='flvplayer.url=empty' width='{preview_width}' height='{preview_height}+2*{layout.barsize}' x='({moviemasher.width}-{preview_width})/2' y='({moviemasher.height}-({preview_height}+2*{layout.barsize}))/2'>
+		<bar style='bar'>
+			<control 
+				symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon" 
+				icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#CancelX"
+				trigger='flvplayer.url=;flvplayer_panel.fullscreen=null' 
+			/>
+			<control style='text,title' pattern="{flvplayer.label}" />
+			<!-- FULLSCREEN ICON -->
+			<control tooltip='Toggle Full Screen Mode' 
+				bind='flvplayer_panel.fullscreen' disable='flvplayer_panel.fullscreen=null'
+				symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Toggle' 
+				icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#FullscreenOff' 
+				overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#FullscreenOn' 
+				disicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#FullscreenDis' 
+				toggleicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#UnfullscreenOff' 
+				toggleovericon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#UnfullscreenOn' 
+				toggledisicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#FullscreenDis' 
+			/>
+		</bar>
+		<bar size='*' style='background'>
+			<control id='flvplayer'
+				symbol='{mm_path}moviemasher/com/moviemasher/control/PlayerFLV/stable.swf@PlayerFLV' 
+				color='0' width="*" height="*" volume='50'
+			/>
+		</bar>
+		<bar style='bar'>
+			
+			<!-- PLAY/PAUSE TOGGLE -->
+			<control tooltip='Play/Pause' bind="flvplayer.play" symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Toggle' toggleicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#PauseOff' toggleovericon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#PauseOn' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#PlayOff' overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#PlayOn' />
+			
+			<!-- SCRUBBER SLIDER -->
+			<control tooltip='Change Playhead Position' width='*' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Slider' bind='flvplayer.completed' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#ScrubBtnOff' back='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrubBackOff' reveal='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrubBackOn' />
+			
+			<!-- POSITION FIELD -->
+			<control style='text,location' pattern="{flvplayer.position}/{flvplayer.duration}" />
+			
+			<!-- VOLUME ICON AND SLIDER -->
+			
+			<control trigger='flvplayer.volume=0' disable='flvplayer.volume=empty' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#Volume' disicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#VolumeOff' />				
+			<control tooltip='Change Playback Volume' bind='flvplayer.volume' width='40' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Slider' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOff' overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOn' back='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOff' reveal='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOn' />
+			
+		</bar>
+	</panel>
+
+	<!-- FLV PLAYER PLAYER STALLING PROGRESS PANEL -->
+	<panel z='3' hide='flvplayer.stalling=empty' width='{preview_width}' height='{preview_height}' x='({moviemasher.width}-{preview_width})/2' y='({moviemasher.height}-({preview_height}))/2'>
+		<bar size='*'>
+			<control width='*' />
+			<control width='100' height='100' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ProgressIndicator' />
+			<control width='*' />
+		</bar>
+	</panel>
+	
+
+</moviemasher>
