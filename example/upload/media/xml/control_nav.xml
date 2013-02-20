@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moviemasher config='media/xml/control_nav_module.xml'>
+	
+	<!-- MEDIA TYPE FILTER CONTROLS -->
+	<control style='text,tab' preselected="1" pattern='Images' select='browser.parameters.group=image' value='image' />
+	
+</moviemasher>

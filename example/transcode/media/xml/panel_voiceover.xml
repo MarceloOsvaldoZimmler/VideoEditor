@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moviemasher>
+
+	<!-- VOICEOVER PANEL BACK --> 
+	<panel hide='voiceover.active!=1' width='{moviemasher.width}' height='{moviemasher.height}' color='FFFFFF' alpha='50' />
+
+	<!-- VOICEOVER PANEL --> 
+	<panel style='panel' hide='voiceover.active=0' width='{video_width}' height='{video_height}+{layout.barsize}' x='({moviemasher.width}-{video_width})/2' y='({moviemasher.height}-({video_height}+{layout.barsize}))/2'>
+			
+		<!-- VOICEOVER BAR -->
+		<bar color='808080' grad='40' size='*'>
+			
+			<!-- VOICEOVER CONTROL -->
+			<control id='voiceover' symbol="{mm_path}moviemasher/com/moviemasher/control/Recorder/stable.swf@VoiceOver" 
+				hide='voiceover.active=0' active="0"
+				width="*" height="*"
+				rewind='1'
+			/>
+			
+		</bar>
+		<bar size='{layout.barsize}' style='bar'>
+			
+			<!-- START/STOP RECORD TOGGLE -->
+			<control tooltip='Start/Stop Recording' bind="voiceover.record" 
+				hide='voiceover.active=0|voiceover.record=null'
+				symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Toggle' 
+				icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#RecordOff"
+				overicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#RecordOn"
+				toggleicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#RecordingOff"
+				toggleovericon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#RecordingOn"
+			/>
+			
+
+			<control hide='voiceover.active=0|voiceover.status!=null' width='*' />	
+						
+			<!-- VOICEOVER INDICATOR CONTROL -->
+			<control hide='voiceover.active=0|voiceover.record=null'
+				symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon" 
+				icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@RedPulse"
+				width='10' height='10'
+			/>
+			
+			<!-- RETRY BUTTON -->
+			<control hide='voiceover.active=0|voiceover.retry=null|voiceover.record=1'
+				symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Text" 
+				pattern='Retry'
+				icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@BtnOff"
+				overicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@BtnOn"
+				disicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@BtnDis"
+				fill='stretch' width='65' textalign='center' textsize="11" textcolor='333333'
+				trigger='voiceover.retry=1'
+			/>
+
+			<!-- MICROPHONES MENU -->
+			<control bind="voiceover.microphone" 
+				width="*" symbol="{mm_path}moviemasher/com/moviemasher/control/Component/stable.swf@MMComboBox" 
+				source='voiceover.microphones' 
+			/>
+			
+			<!-- VOICEOVER REFRESH CONTROL -->
+			<control trigger='voiceover.refresh='
+				symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon" 
+				icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#Refresh"
+			/>
+			
+		
+
+			
+			<!-- STATUS FIELD -->
+			<control trigger='voiceover.status=' hide="voiceover.active=0|voiceover.status=null" pattern='{voiceover.status}' width='*' textsize="11" height='*' textcolor="333333" multiline="0" wrap="0" symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Text" />
+
+					
+		
+		</bar>
+	</panel>
+	<!-- VOICEOVER CLOSE PANEL -->
+	<panel style='panel' width='28' height='28' x='(({moviemasher.width}+{video_width})/2)-14' y='({moviemasher.height}-({video_height}+24))/2-14'>
+		<bar size='*'>
+			<control hide='voiceover.active=0'
+				symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon" 
+				disable='voiceover.progress!=null'
+				icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#CancelX"
+				trigger='voiceover.active=0' 
+			/>
+		</bar>
+	</panel>
+	
+</moviemasher>

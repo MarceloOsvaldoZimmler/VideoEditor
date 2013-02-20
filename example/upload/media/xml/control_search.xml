@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moviemasher>
+
+
+	<control style='text,button' width='65' id="downloader" symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@CGI" 
+		tooltip="Download Selected Media" 
+		download="{browser.selection.source}" 
+		disable="browser.selection.type=null|browser.selection.type=effect|browser.selection.type=transition|browser.selection.type=theme" 
+		pattern='Download' 
+	/>
+	<control width='4'/>
+	<control style='text,button' width='65' id="uploader" symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@CGI" 
+		tooltip="Transfer and Encode Your Media" upload="media/php/upload.php" 
+		disable="uploader.progress!=null" 
+		pattern='Upload' 
+	>
+		<filetype description="Image files" extension="*.jpeg;*.jpg;*.giff;*.gif;*.ping;*.png" />
+	</control>
+	<control width='4'/>
+	
+	<control bind="uploader.progress" disable="uploader.progress!=null" hide="uploader.progress=null" width='200' symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Slider" back='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrubBackOff' reveal='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrubBackOn' />
+	<control width='4'/>
+	<control pattern="{uploader.status}" bind="uploader.status" symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Text" forecolor='FFFFFF' textalign="left" textsize="11" wrap="0" width="*" />
+
+	<!-- MEDIA SEARCH ICON AND FIELD -->
+	<control height='18' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SearchLeft' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' />
+	<control height='18' style='text'
+		color='FFFFFF' 
+		width='64' 
+		forecolor='000000' 
+		bind='browser.parameters.terms' 
+		symbol='{mm_path}moviemasher/com/moviemasher/control/Editor/stable.swf@Field' 
+	/>
+	
+	<!-- CLEAR FIELD CONTROL -->
+	<control height='18' hide='browser.parameters.terms=empty' bind='browser.parameters.terms' value='' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SearchRightX' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' />
+	<control height='18' hide='browser.parameters.terms!=empty' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SearchRight' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' />
+
+	
+</moviemasher>

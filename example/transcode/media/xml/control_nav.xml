@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moviemasher config='media/xml/control_nav_media_cgi.xml'>
+	
+	<!-- MEDIA TYPE FILTER CONTROLS -->
+	<control preselected="1" style='text,tab' pattern='Mashes' value="mash" select='browser.parameters.group=mash' />
+	
+</moviemasher>

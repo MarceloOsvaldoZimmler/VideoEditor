@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moviemasher config='media/xml/control_nav_module.xml'>
+	
+	<!-- MEDIA FILTER CONTROLS -->
+	<control style='text,tab' pattern='Flickr' preselected='1' select='browser.source=flickr_source' bind='browser.source' value='flickr_source' />
+	
+</moviemasher>

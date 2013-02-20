@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<moviemasher config='media/xml/source_module.xml'>
+	<source id='flickr_source' is_commons="1" api_key="9172beed68f9d7479f3bf7bb296a6c40" symbol='{mm_path}moviemasher/com/moviemasher/source/FlickrSource/stable.swf@FlickrSource' />	
+</moviemasher>
+

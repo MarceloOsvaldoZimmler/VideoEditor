@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moviemasher>
+		
+	<!-- CLOUDS -->
+	<media id='cloudstheme' group='theme' type='theme' label='Clouds' 
+		editable='forecolor,backcolor,quality,speed' 
+		forecolor='CCCCCC' backcolor='333333'
+		speed='2' quality='4'
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Clouds' 
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Clouds'
+	/>
+	<!-- TITLE -->
+	<media id='titletheme' group='theme' type='theme' label='Title' 
+		editable='font,forecolor,backcolor,longtext,textsize' 
+		forecolor='CCCCCC' backcolor='333333'
+		longtext='Editable Text' 
+		textsize='14' font='default'
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Title' 
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Title' 
+	/>
+	
+	<!-- COLORFADE -->
+	<media id='colorfadetheme' group='theme' type='theme' label='Color Fade' 
+		editable='forecolor,backcolor,fade' 
+		forecolor='CCCCCC' backcolor='333333'
+		fade='0,0,100,100' 
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Colorfade' 
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Colorfade' 
+	/>
+
+	<!-- BARS -->
+	<media id='barstheme' group='theme' type='theme' label='Bars' 
+		editable='fade,forecolor,backcolor,orientation,instances' 
+		forecolor='CCCCCC' backcolor='333333'
+		fade='0,0,100,100' 
+		orientation='vertical'
+		instances='25'
+		map='bars'
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Shapes' 
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Shapes' 
+	/>
+	
+	<!-- RECTS -->
+	<media id='rectstheme' group='theme' type='theme' label='Rects' 
+		editable='fade,forecolor,backcolor,instances' 
+		forecolor='CCCCCC' backcolor='333333'
+		fade='0,0,100,100' 
+		instances='25'
+		curve="10"
+		map='rects'
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Shapes' 
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Shapes' 
+	/>
+	
+	<!-- CIRCLE -->
+	<media id='circletheme' group='theme' type='theme' label='Circle' 
+		editable='fade,forecolor,backcolor' 
+		forecolor='CCCCCC' backcolor='333333'
+		fade='0,0,100,100' 
+		map='circle'
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Shapes' 
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Shapes' 
+	/>
+	<!-- RIPPLE -->
+	<media id='rippletheme' group='theme' type='theme' label='Ripple' 
+		editable='fade,forecolor,backcolor'
+		forecolor='CCCCCC' backcolor='333333'
+		fade="0,0,100,100"
+		map='ripple'
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Gradientmap' 
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Gradientmap' 
+	/>
+	<!-- GRADIENT -->
+	<media id='gradtheme' group='theme' type='theme' label='Gradient' 
+		editable='fade,forecolor,backcolor'
+		forecolor='CCCCCC' backcolor='333333'
+		fade="0,0,100,100"
+		map='grad'
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Gradientmap' 
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Gradientmap' 
+	/>
+	<!-- FISHEYE MAP -->
+	<media id='fisheyetheme' group='theme' type='theme' label='Fish Eye' 
+		editable='fade,instances,forecolor,backcolor'
+		forecolor='CCCCCC' backcolor='333333'
+		fade="0,0,100,100"
+		map='fisheye'
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Gradientmap' 
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Gradientmap' 
+	/>
+	<!-- RAIN MAP -->
+	<media id='raintheme' group='theme' type='theme' label='Rain' 
+		editable='fade,instances,forecolor,backcolor'
+		forecolor='CCCCCC' backcolor='333333'
+		fade="0,0,100,100"
+		map='rain'
+		instances='30' stickiness='5' size='30'
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Gradientmap' 
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Gradientmap' 
+	/>
+	
+</moviemasher>

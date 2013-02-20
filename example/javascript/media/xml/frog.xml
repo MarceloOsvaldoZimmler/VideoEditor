@@ -1,0 +1,6 @@
+<moviemasher>
+<mash id='frogmash' width="16" height="9" crop="1" label="Frog Mash" quantize="10">
+	<clip id="frog" />
+</mash>
+<media type="image" id="frog" label="Frog" url="../media/image/Frog/media.jpg" />
+</moviemasher>

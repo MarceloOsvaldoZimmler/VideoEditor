@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moviemasher>
+	
+	<!-- BETA RECORD BUTTON/PANEL 
+	<control style='text,button' config='media/xml/panel_record.xml'
+		tooltip="Record from Webcam" 
+		trigger='recorder.active=1'
+		pattern='Record' 
+	/>
+	<control width='4' />
+	-->
+
+	<!-- BETA VOICEOVER BUTTON/PANEL 
+	<control style='text,button' config='media/xml/panel_voiceover.xml'
+		tooltip="Record Voice Over" 
+		trigger='voiceover.active=1'
+		zdisable='player.location&gt;{player.length}-10'
+		pattern='VoiceOver' 
+		width='70'
+	/>
+	<control width='4' />
+	-->
+	<control style='text,button' id="uploader" symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@CGI" 
+		tooltip="Transfer and Encode Your Media" 
+		choose="media/php/import_init.php?file={uploader.filename}&amp;size={uploader.filesize}"
+		pattern='Upload' 
+	>
+		<filetype description="All files" extension="*.mpeg;*.avi;*.mpg;*.mov;*.m4v;*.mp4;*.mp3;*.wav;*.jpeg;*.jpg;*.gif;*.png;*.flv;*.f4v;*.f4p;*.wmv;*.m2ts" />
+		<filetype description="Video files" extension="*.mpeg;*.avi;*.mpg;*.mov;*.m4v;*.mp4;*.flv;*.f4v;*.f4p;*.wmv;*.m2ts" />
+		<filetype description="Image files" extension="*.jpeg;*.jpg;*.gif;*.png" />
+		<filetype description="Audio files" extension="*.mp3;*.wav" />
+	</control>
+	<control width='4' />
+	<control bind="uploader.progress" disable="uploader.progress!=null" hide="uploader.progress=null" width='*' symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Slider" back='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrubBackOff' reveal='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrubBackOn' />
+	<control width='4' />
+	<control style='text' forecolor='333333' pattern="{uploader.status}" />
+	
+	<!-- INVISIBLE DOWNLOAD CGI TRIGGERED BY PREVIEW BUTTON -->
+	<control id="downloader" symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@CGI" 
+		download="{browser.focus.tag.source}" width='1' height='1'
+	/>
+	<!-- INVISIBLE DELETE CGI TRIGGERED BY PREVIEW BUTTON -->
+	<control id="deleter" symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@CGI" 
+		url="media/php/delete.php?type={browser.focus.tag.type}&amp;id={browser.focus.tag.id}" width='1' height='1'
+	/>
+	
+	<!-- MEDIA SEARCH ICON AND FIELD -->
+	<control height='18' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SearchLeft' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' />
+	<control height='18' id='search_field' style='text'
+		color='FFFFFF' 
+		width='64' 
+		forecolor='000000' 
+		bind='browser.parameters.terms' 
+		symbol='{mm_path}moviemasher/com/moviemasher/control/Editor/stable.swf@Field' 
+	/>
+	
+	<!-- CLEAR FIELD CONTROL -->
+	<control height='18' hide='browser.parameters.terms=empty' bind='browser.parameters.terms' value='' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SearchRightX' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' />
+	<control height='18' hide='browser.parameters.terms!=empty' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SearchRight' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' />
+
+</moviemasher>

@@ -1,0 +1,6 @@
+<moviemasher>
+  <mash width="16" height="9" label="Untitled Mash" quantize="10" id="81713609-9CBC-D31E-E0D9-F8FE574A070A">
+    <clip type="video" id="trainmanvideo" fill="crop" speed="1" start="0" audio="../media/audio/Abstract/abstract.mp3" volume="0,50,100,50" trimstart="0" trimend="0" label="Train Man" track="0" length="83"/>
+    <media group="video" type="video" id="trainmanvideo" label="Train Man" url="../media/video/TrainMan/" pattern="%.jpg" duration="8.3" fps="10" begin="71" audio="../media/audio/Abstract/abstract.mp3" wave="../media/audio/Abstract/audio.png"/>
+  </mash>
+</moviemasher>

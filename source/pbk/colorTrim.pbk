@@ -1,0 +1,43 @@
+<languageVersion : 1.0;>
+
+kernel NewFilter
+<   namespace : "com.om-labs.filters.colorTrim";
+    vendor : "Om Labs";
+    version : 1;
+    description : "Trim colours to individual values";
+>
+{
+    input image4 src;
+    output pixel4 dst;
+
+    parameter float4 minColor<
+        defaultValue: float4(0.0);
+        maxValue: float4(1.0);
+        minValue: float4(0.0);                
+    >;
+    
+    parameter float4 maxColor<
+        defaultValue: float4(1.0);
+        maxValue: float4(1.0);
+        minValue: float4(0.0);                 
+    >;
+    
+    
+    void evaluatePixel(){  
+        float4 srcColor = sampleNearest(src,outCoord());
+        dst = float4(0.0);
+        if(srcColor.r >= minColor.r && srcColor.r <= maxColor.r){
+            dst.r = srcColor.r;
+        }
+        if(srcColor.g >= minColor.g && srcColor.g <= maxColor.g){
+            dst.g = srcColor.g;
+        }
+        if(srcColor.b >= minColor.b && srcColor.b <= maxColor.b){
+            dst.b = srcColor.b;
+        }
+        if(srcColor.a >= minColor.a && srcColor.a <= maxColor.a){
+            dst.a = srcColor.a;
+        }
+
+    }
+}

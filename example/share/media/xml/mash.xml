@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<moviemasher>
+  <mash crop="1" label="Example Mash" quantize="10">
+    <clip type="effect" id="rippleeffect" track="1" start="233" scale="5,5" length="21" label="Ripple">
+      <clip type="theme" id="rippleeffecttheme" track="-1" audio="0" length="21" label="Gradientmap" start="0"/>
+    </clip>
+    <clip type="effect" id="textboxeffect" track="1" start="272" backalpha="0" longtext="Open source online video editor available on MovieMasher.com" textsize="10" scale="97,44" forecolor="ffffff" position="49,44" fade="0,0,10,100,100,100" backcolor="FFFFFF" font="Valken" label="Check it out" length="70"/>
+    <clip type="effect" id="compositeeffect" scale="69.5,69.5" fade="0,0,59,100,92,100,100,0" position="52,53" positionfade="0,100" shearfade="100,47" rotatefade="-56.47058823529413" scalefade="0,0" start="36" label="Composite" length="33" rotate="0" track="1" shear="50,50">
+      <clip type="image" id="logoimage" audio="0" label="Logo" length="33" track="-1" fill="scale" start="0"/>
+    </clip>
+    <clip type="effect" id="desaturateeffect" track="1" start="184" length="11" label="Desaturate"/>
+    <clip type="effect" id="convolutioneffect" track="1" start="200" matrix="2,7,2,7,-33,7,2,7,2" length="13" label="Convolution"/>
+    <clip type="effect" id="adjusteffect" contrast="-0.6045751633986927" brightness="100" saturation="2.666666666666667" hue="180" fade="0,0,35,100,100,100" length="18" track="1" start="166" label="Adjust"/>
+    <clip type="effect" id="conembosseffect" track="1" start="213" length="16" label="Emboss"/>
+    <clip type="effect" id="pbcirclesplasheffect" track="1" start="254" length="8" fade="0,0,50,100,100,0" label="Circle Splash"/>
+    <clip type="effect" id="textboxeffect" longtext="Movie Masher" scale="100,38" font="Valken" forecolor="66ffff" backalpha="0" fade="0,0,4,0,27,99,90,100,100,0" position="57,33" textsize="14" backcolor="FFFFFF" start="5" label="Textbox" length="31" track="1"/>
+    <clip type="effect" id="captioneffect" track="2" start="111" longtext="Distorting Transitions" textsize="8" length="20" backalpha="62.82051282051281" forecolor="ffffcc" font="default" label="Distorting Transitions" backcolor="000000" padding="3"/>
+    <clip type="effect" id="captioneffect" track="2" start="13" longtext="Titling with custom fonts" textsize="8" length="20" backalpha="62.82051282051281" forecolor="ffffcc" font="default" label="Titling with custom fonts" backcolor="000000" padding="3"/>
+    <clip type="effect" id="captioneffect" track="2" start="204" longtext="Texturizing Effects" textsize="8" length="20" backalpha="62.82051282051281" forecolor="ffffcc" font="default" label="Texturizing Effects" backcolor="000000" padding="3"/>
+    <clip type="effect" id="captioneffect" track="2" start="46" longtext="Transforming Overlays" textsize="8" length="20" backalpha="62.82051282051281" forecolor="ffffcc" font="default" label="Transforming Overlays" backcolor="000000" padding="3"/>
+    <clip type="effect" id="captioneffect" track="2" start="141" longtext="Pixel Bending Transitions" textsize="8" length="20" backalpha="62.82051282051281" forecolor="ffffcc" font="default" label="Bending Transitions" backcolor="000000" padding="3"/>
+    <clip type="effect" id="captioneffect" track="2" start="238" longtext="Distorting Effects" textsize="8" length="20" backalpha="62.82051282051281" forecolor="ffffcc" font="default" label="Distorting Effects" backcolor="000000" padding="3"/>
+    <clip type="effect" id="captioneffect" track="2" start="80" longtext="Masking Transitions" textsize="8" length="20" backalpha="62.82051282051281" forecolor="ffffcc" font="default" label="Masking Transitions" backcolor="000000" padding="3"/>
+    <clip type="effect" id="captioneffect" track="2" start="175" longtext="Colorizing Effects" textsize="8" length="20" backalpha="62.82051282051281" forecolor="ffffcc" font="default" label="Colorizing Effects" backcolor="000000" padding="3"/>
+    <clip type="transition" id="crossfadetransition" label="Crossfade" length="10" freezestart="0" track="0" freezeend="0" start="0"/>
+    <clip type="theme" id="cloudstheme" forecolor="ffffcc" backcolor="cc0000" speed="8.888421052631578" label="Clouds" length="80" quality="4" track="0" start="0"/>
+    <clip type="transition" id="crossfadetransition" freezeend="0" freezestart="0" length="10" track="0" label="Crossfade" start="70"/>
+    <clip type="image" id="globeimage" fill="crop" length="27" track="0" label="Globe" start="70"/>
+    <clip type="transition" id="roundedboxestransition" freezeend="0" freezestart="0" length="11" track="0" label="Rounded Boxes" start="86">
+      <clip type="theme" id="roundedboxestransitiontheme" track="-1" audio="0" length="11" label="roundedboxestransitiontheme" start="0"/>
+    </clip>
+    <clip type="image" id="lightsimage" fill="crop" length="25" track="0" label="Lights" start="86"/>
+    <clip type="transition" id="cuberighttransition" freezeend="0" freezestart="0" length="10" track="0" label="Cube Left to Right" start="101"/>
+    <clip type="image" id="riversimage" fill="crop" length="26" track="0" label="Rivers" start="101"/>
+    <clip type="transition" id="cubedowntransition" freezeend="0" freezestart="0" length="10" track="0" label="Cube Top to Bottom" start="117"/>
+    <clip type="image" id="beachimage" label="Beach" length="25" track="0" fill="crop" start="117"/>
+    <clip type="transition" id="pbholetransition" freezestart="0" length="10" freezeend="0" track="0" label="Hole" start="132"  swap='1'/>
+    <clip type="image" id="cableimage" fill="crop" length="26" track="0" label="Cable" start="132"/>
+    <clip type="transition" id="pbzoomblurtransition" label="Zoom Blur" freezeend="0" length="10" track="0" freezestart="0" start="148"  swap='1' />
+    <clip type="image" id="frogimage" fill="crop" length="124" track="0" label="Frog" start="148"/>
+    <clip type="transition" id="pbsimplepointlighttransition" freezestart="0" length="10" freezeend="0" track="0" label="Simple Point Light" start="262" swap='1' />
+    <clip type="theme" id="cloudstheme" forecolor="ffffcc" backcolor="cc0000" speed="8.888421052631578" label="Clouds" length="80" quality="4" track="0" start="262"/>
+    <media group="effect" type="effect" id="adjusteffect" label="Adjust" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Adjust" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Adjust" hue="0" saturation="1" brightness="0" contrast="0" editable="fade,hue,saturation,brightness,contrast" fade="0,0,50,100,100,0"/>
+    <media group="effect" type="effect" id="captioneffect" label="Caption" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Caption" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Caption" padding="3" longtext="Caption" forecolor="000000" backalpha="50" backcolor="FFFFFF" textsize="14" font="default" editable="padding,font,textsize,longtext,forecolor,backcolor,backalpha"/>
+    <media group="effect" type="effect" id="compositeeffect" label="Composite" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Composite" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Composite" fade="0,0,10,100,90,100,100,0" scale="100,100" position="50,50" rotate="0" shear="50,50" scalefade="0,0" positionfade="50,50" rotatefade="0" shearfade="50,50" editable="fade,position,scale,composites,rotate,shear,shearfade,rotatefade,positionfade,scalefade"/>
+    <media group="effect" type="effect" id="conembosseffect" label="Emboss" matrix="-2,-1,0,-1,1,1,0,1,2" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Convolution" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Convolution"/>
+    <media group="effect" type="effect" id="convolutioneffect" label="Convolution" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Convolution" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Convolution" editable="matrix" matrix="1,1,1,1,1,1,1,1,1"/>
+    <media group="effect" type="effect" id="desaturateeffect" label="Desaturate" saturation="0" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Adjust" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Adjust"/>
+    <media group="effect" type="effect" id="pbcirclesplasheffect" label="Circle Splash" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Bender" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Bender" source="{mm_path}moviemasher/com/moviemasher/pbj/CircleSplash.pbj" Radius="20" Radiusfade="80" center="0,0" centerfade="100,100" editable="fade" fade="0,0,50,100,100,0" positions="1" scales="0" ignorescale="1"/>
+    <media group="effect" type="effect" id="rippleeffect" label="Ripple" editable="scale" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Displace" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Displace" composites="rippleeffecttheme" scale="5,5"/>
+    <media group="effect" type="effect" id="textboxeffect" label="Textbox" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Textbox" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Textbox" longtext="Textbox" fade="0,0,10,100,90,100,100,0" forecolor="000000" backalpha="50" backcolor="FFFFFF" textsize="14" font="default" scale="50,50" position="50,50" editable="fade,font,scale,position,textsize,longtext,forecolor,backalpha,backcolor"/>
+	<media group="image" type="image" id="beachimage" label="Beach" url="../media/image/Beach/media.jpg" icon="../media/image/Beach/media.jpg" />
+	<media group="image" type="image" id="cableimage" label="Cable" url="../media/image/Cable/media.jpg" icon="../media/image/Cable/media.jpg" />
+	<media group="image" type="image" id="frogimage" label="Frog" icon="../media/image/Frog/icon.jpg" url="../media/image/Frog/media.jpg" />
+	<media group="image" type="image" id="globeimage" label="Globe" url="../media/image/Globe/media.jpg" icon="../media/image/Globe/media.jpg" fill="scale" />
+	<media group="image" type="image" id="lightsimage" label="Lights" url="../media/image/Lights/media.jpg" icon="../media/image/Lights/media.jpg" />
+	<media group="image" type="image" id="logoimage" label="Logo" url="../media/image/Logo/media.png" length='4' fill='scale' />
+	<media group="image" type="image" id="riversimage" label="Rivers" url="../media/image/Rivers/media.jpg" icon="../media/image/Rivers/media.jpg" />
+    <media group="transition" type="transition" id="crossfadetransition" label="Crossfade" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Crossfade" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Crossfade"/>
+    <media group="transition" type="transition" id="cubedowntransition" label="Cube Top to Bottom" direction="down" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Cube" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Cube"/>
+    <media group="transition" type="transition" id="cuberighttransition" label="Cube Left to Right" direction="right" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Cube" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Cube"/>
+    <media group="transition" type="transition" id="pbholetransition" label="Hole" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Bender" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Bender" source="{mm_path}moviemasher/com/moviemasher/pbj/hole.pbj" parameter0="10" parameter0fade="70" parameter1="90,10" parameter1fade="50,50" parameter2="1" parameter2fade="3" positions="1" scales="0" ignorescale="1" swap="1"/>
+    <media group="transition" type="transition" id="pbsimplepointlighttransition" label="Simple Point Light" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Bender" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Bender" source="{mm_path}moviemasher/com/moviemasher/pbj/SimplePointLight.pbj" parameter0="0,0" parameter0fade="100,100" parameter1="0" parameter1fade="200" parameter2="0" parameter2fade="2" parameter3="0" parameter3fade="2" positions="0" swap="1"/>
+    <media group="transition" type="transition" id="pbzoomblurtransition" label="Zoom Blur" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Bender" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Bender" source="{mm_path}moviemasher/com/moviemasher/pbj/zoomBlur.pbj" parameter0="0,0" parameter0fade="100,100" parameter1="0" parameter1fade=".5" positions="0" swap="1"/>
+    <media group="transition" type="transition" id="roundedboxestransition" label="Rounded Boxes" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Matte" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Matte" composites="roundedboxestransitiontheme"/>
+    <media group="theme" type="theme" id="cloudstheme" label="Clouds" editable="forecolor,backcolor,quality,speed" forecolor="CCCCCC" backcolor="333333" speed="2" quality="4" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Clouds" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Clouds"/>
+    <media group="theme" type="theme" id="rippleeffecttheme" label="Gradientmap" map="ripple" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Gradientmap"/>
+    <media group="theme" type="theme" id="roundedboxestransitiontheme" fade="0,0,100,100" instances="25" map="rects" curve="10" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Shapes"/>
+    <option type="font" id="default" url="{mm_path}moviemasher/com/moviemasher/font/FreeSans/stable.swf@FreeSans" label="Free Sans"/>
+    <option type="font" id="Valken" url="{mm_path}moviemasher/com/moviemasher/font/Valken/stable.swf@Valken" label="Valken"/>
+  </mash>
+</moviemasher>

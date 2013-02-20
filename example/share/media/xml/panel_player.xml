@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moviemasher >
+	<moviemasher config="media/xml/option_font.xml" />
+	<moviemasher config="media/xml/style.xml" />
+	
+	<panels>
+		<!-- PLAYER PANEL -->
+		<panel id='player_panel' style='panel' width='{moviemasher.width}-10' height='{moviemasher.height}-10' x='0' y='0'>
+			
+			<bar style='bar'>
+				<control tooltip='Movie Masher' id='logo'
+					symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@CGI" 
+					get='http://www.moviemasher.com/demo/example/share/' target='_blank'
+					icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#MovieMasher' 
+				/>			
+				<control style='text,title' pattern="{player.label}" />
+				<!-- FULLSCREEN ICON -->
+				<control tooltip='Toggle Full Screen Mode' 
+					bind='player_panel.fullscreen' disable='player_panel.fullscreen=null'
+					symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Toggle' 
+					icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#FullscreenOff' 
+					overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#FullscreenOn' 
+					disicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#FullscreenDis' 
+					toggleicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#UnfullscreenOff' 
+					toggleovericon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#UnfullscreenOn' 
+					toggledisicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#FullscreenDis' 
+				/>
+			</bar>
+
+			<!-- PLAYER -->
+			<bar style='background' size='*'>
+				<control id='player' source='mash' autostart='1' autostop='1' 
+					 symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Player' 
+					 fps='20' width="*" height="*" volume='75'
+				/>
+			</bar>
+			
+			<!-- PLAYER CONTROL BAR -->
+			<bar style='bar'>
+				
+				<!-- PLAY/PAUSE TOGGLE -->
+				<control tooltip='Play/Pause' bind="player.play" 
+					symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Toggle' 
+					toggleicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#PauseOff' 
+					toggleovericon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#PauseOn' 
+					icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#PlayOff' 
+					overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#PlayOn' 
+				/>
+				
+				<!-- SCRUBBER SLIDER -->
+				<control tooltip='Change Playhead Position' width='*' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Slider' bind='player.completed' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#ScrubBtnOff' back='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrubBackOff' reveal='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrubBackOn' />
+				
+				<!-- POSITION FIELD -->
+				<control style='text,location' pattern="{player.position} / {player.duration}" />
+				
+				<!-- VOLUME ICON AND SLIDER -->
+				
+				<control trigger='player.volume=0' disable='player.volume=empty' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#Volume' disicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#VolumeOff' />				
+				<control tooltip='Change Playback Volume' bind='player.volume' width='40' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Slider' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOff' overicon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#SliderHorzBtnOn' back='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOff' reveal='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@SliderHorzBackOn' />
+				
+			</bar>
+		</panel>
+	
+		<!-- PLAYER STALLING PROGRESS PANEL -->
+		<panel width='{moviemasher.width}-10' height='{moviemasher.height}-10' x='0' y='0'>
+			<bar size='*'>
+				<control width='*' hide='player.stalling=empty' />
+				<control width='100' height='100' hide='player.stalling=empty' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ProgressIndicator' />
+				<control width='*' hide='player.stalling=empty' />
+			</bar>
+		</panel>
+	
+	
+	</panels>
+
+</moviemasher>

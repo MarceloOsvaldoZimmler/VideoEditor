@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moviemasher>	
+
+	<control style='text,tab' pattern='Effects' select='browser.parameters.group=effect' value='effect' />
+	<control style='text,tab' pattern='Transitions' select='browser.parameters.group=transition' value='transition' />
+	<control style='text,tab' pattern='Themes' select='browser.parameters.group=theme' value='theme' />
+</moviemasher>

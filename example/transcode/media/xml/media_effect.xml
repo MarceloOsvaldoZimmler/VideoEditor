@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<moviemasher>
+	<!-- CIRCLE/OVAL OVERLAY -->
+	<media group='effect' type='effect' id='circlecompositeeffect' label='Circle/Oval'
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Drawing'
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Drawing'
+		editable='rotate,scale,position,forecolor,backcolor' 
+		rotate='0' scale='50,50' position='50,50' forecolor='FF0000' backcolor='' 
+		shape='circle' line='2' 
+		shadow="1" shadowcolor="333333" shadowblur="2" shadowstrength="1" 
+	/>
+
+	<!-- ARROW OVERLAY -->
+	<media group='effect' type='effect' id='arrowcompositeeffect' label='Arrow'
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Drawing'
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Drawing'
+		editable='rotate,shear,scale,position,forecolor,backcolor' 
+		rotate='0' shear='50,50' scale='50,50' position='50,50' forecolor='0' backcolor='FFFF00' 
+		shape='polygon' fillalpha='20' line='1' 
+		shadow="1" shadowcolor="333333" shadowblur="2" shadowstrength="1" 
+		points='0,35,65,35,65,0,100,50,65,100,65,65,0,65,0,35'
+	/>
+	
+	<!-- LINE/RECTANGLE OVERLAY -->
+	<media group='effect' type='effect' id='rectcompositeeffect' label='Line/Rectangle'
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Drawing'
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Drawing'
+		editable='rotate,scale,position,forecolor,backcolor' 
+		rotate='0' scale='50,3' position='50,50' forecolor='' backcolor='00FFFF' 
+		shape='rect' line='1' 
+		shadow="1" shadowcolor="333333" shadowblur="2" shadowstrength="1" 
+	/>
+	
+	<!-- LOGO OVERLAY -->
+	<media group='effect' type='effect' id='logocompositeeffect' label='Station Identifier'
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Picturebox'
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Picturebox'
+		fade='0,100,100,100' 
+		scale='25,15' position='95,5' blend='screen'
+		editable='composites,href'
+		composites='logocompositeeffectimage' href='http://www.moviemasher.com/'
+	>
+		<media label="Movie Masher Logo" fill='scale' group='image' type="image" id="logocompositeeffectimage" icon="../media/image/Logo/media.png" url="../media/image/Logo/media.png" source="../media/image/Logo/media.png" />
+	</media>
+
+	<!-- COLORIZE -->
+	<media group='effect' type='effect' id='colorizeeffect' label='Colorize' 
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Colorize'
+		forecolor='FF6666' backcolor='66FF66' 
+		editable='fade,forecolor,backcolor' 
+		fade="0,0,50,100,100,0"
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Colorize'
+	/>
+	
+	<!-- REVERSE -->
+	<media group='effect' type='effect' id='reverseeffect' label='Reverse' 
+		contrast='-2' 
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Adjust' 
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Adjust' 
+	/>
+	<!-- INVERSE -->
+	<media group='effect' type='effect' id='inverseeffect' label='Inverse' 
+		hue='180' 
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Adjust' 
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Adjust' 
+	/>
+	<!-- DESATURATE -->
+	<media group='effect' type='effect' id='desaturateeffect' label='Desaturate' 
+		saturation='0' 
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Adjust'
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Adjust'
+	/>
+
+	<!-- BRIGHTNESS CONTRAST -->
+	<media group='effect' type='effect' id='brightnesscontrasteffect' label='Brightness/Contrast' 
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Adjust' 
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Adjust'
+		brightness='0' contrast='0'
+		editable='fade,brightness,contrast' 
+		fade="0,100,100,100"
+	/>	
+
+	<!-- CAPTION -->
+	<media group='effect' type='effect' id='captioneffect' label='Caption'
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Caption' 
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Caption' 
+		padding='3'
+		longtext='Caption'
+		forecolor='000000' backalpha='50' backcolor='FFFFFF' textsize='14' font='default'
+		editable='padding,font,textsize,longtext,forecolor,backcolor,backalpha'
+	/>
+	
+	<!-- TICKER -->
+	<media group='effect' type='effect' id='tickereffect' label='Ticker'
+		longtext='Ticker'
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Ticker'
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Ticker'
+		forecolor='000000' backalpha='50' backcolor='FFFFFF' textsize='14' font='default'
+		editable='font,textsize,longtext,forecolor,backalpha,backcolor'
+	/>
+	
+	<!-- TEXTBOX -->
+	<media group='effect' type='effect' id='textboxeffect' label='Textbox'
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Textbox' 
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Textbox' 
+		longtext='Textbox'
+		fade='0,0,10,100,90,100,100,0' 
+		forecolor='000000' backalpha='50' backcolor='FFFFFF' textsize='14' font='default'
+		scale='50,50' position='50,50'
+		editable='fade,font,scale,position,textsize,longtext,forecolor,backalpha,backcolor'
+	/>
+	
+	
+	<!-- PICTUREBOX -->
+	<media group='effect' type='effect' id='pictureboxeffect' label='Picturebox'
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Picturebox'
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Picturebox'
+		fade='0,0,10,100,90,100,100,0' 
+		scale='50,50' position='50,50'
+		editable='fade,position,scale,composites,href,blend'
+		composites='logoimage' href=''
+	>
+		<media group="image" type="image" id="logoimage" label="Logo" url="../media/image/Logo/media.png"  source="../media/image/Logo/media.png" />
+
+	</media>
+
+	<!-- CHROMAKEY -->
+	<media group='effect' type='effect' id='chromakeyeffect' label='Chroma Key'
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Chromakey'
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Chromakey'
+		forecolor='669933'
+		editable='forecolor,composites'
+		composites='chromakeyeffectvideo'
+	>
+		<media group="video" type="video" id="chromakeyeffectvideo" label="Chromakey Candle" 
+			source="../media/video/ChromakeyCandle/media.mpg" url="../media/video/ChromakeyCandle/media/320x240x12/"  
+			fps="12" pattern="%.jpg" zeropadding="3" duration="9.97" audio="0"
+		/>
+	</media>
+	
+
+	<!-- RAIN -->
+	<media group='effect' type='effect' id='raineffect' label='Rain' 
+		editable='scale'
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Displace' 
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Displace' 
+		composites="raineffecttheme"
+		scale="70,70"
+	>
+		<media id='raineffecttheme' group='theme' type='theme'
+			instances='30' size='15'
+			symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Gradientmap' 
+		/>
+	</media>
+	
+	<!-- ICE -->
+	<media group='effect' type='effect' id='iceeffect' label='Ice' 
+		editable='scale'
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Displace' 
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Displace' 
+		composites="iceeffecttheme"
+		scale="10,10"
+	>
+		<media id='iceeffecttheme' group='theme' type='theme'
+			symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Clouds' 
+		/>
+	</media>
+
+	<!-- WAVE -->
+	<media group='effect' type='effect' id='waveeffect' label='Wave' 
+		editable='scale'
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Displace' 
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Displace' 
+		composites="waveeffecttheme"
+		scale="10,10"
+	>
+		<media id='waveeffecttheme' group='theme' type='theme' 
+			editable='fade,forecolor,backcolor'
+			forecolor='CCCCCC' backcolor='333333'
+			fade="0,0,100,100"
+			map='grad' 
+			symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Gradientmap' 
+			icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Gradientmap'
+		/>
+	</media>
+	
+	<!-- RIPPLE -->
+	<media group='effect' type='effect' id='rippleeffect' label='Ripple' 
+		editable='scale'
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Displace' 
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Displace' 
+		composites="rippleeffecttheme"
+		scale="60,60"
+	>
+		<media id='rippleeffecttheme' group='theme' type='theme'
+			map='ripple' 
+			symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Gradientmap' 
+		/>
+	</media>
+
+	<!-- CIRCLE SPLASH -->
+	<media group='effect' type='effect' id='pbcirclesplasheffect' label='Circle Splash'
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Bender' 
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Bender' 
+		source='{mm_path}moviemasher/com/moviemasher/pbj/CircleSplash.pbj' 
+		Radius="20" Radiusfade="80" 
+		center="0,0" centerfade="100,100" 
+		editable="fade"
+		fade="0,0,50,100,100,0"
+		positions="1" scales="0"
+		ignorescale="1" 
+	/>
+	
+	<!-- MAGNIFY -->
+	<media group='effect' type='effect' id='pbmagnifyeffect' label='Magnify'
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Bender' 
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Bender' 
+		source='{mm_path}moviemasher/com/moviemasher/pbj/magnify.pbj'
+		parameter0="0,0" parameter0fade="100,100" 
+		parameter1="20" parameter1fade="50" 
+		parameter2="40" parameter2fade="70" 
+		parameter3="1" parameter3fade="2" 
+		positions="0" scales="1,2"
+		ignorescale="1"
+		editable="fade"
+		fade="0,0,50,100,100,0"
+	/>
+	
+	<!-- TORUS LENS -->
+	<media group='effect' type='effect' id='pbtoruslenseffect' label='Torus Lens'
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Bender' 
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Bender' 
+		source='{mm_path}moviemasher/com/moviemasher/pbj/torus_lense.pbj'
+		parameter0="0.1" parameter0fade=".5" 
+		parameter1="40" parameter1fade="80" 
+		parameter2="10" parameter2fade="30" 
+		parameter3="50,50" 
+		positions="3" scales="2"
+		ignorescale="1"
+		editable="fade"
+		fade="0,0,50,100,100,0"
+	/>
+	
+	<!-- SPOTLIGHT -->
+	<media group='effect' type='effect' id='pbspotlighteffect' label='Spotlight'
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Bender' 
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Bender' 
+		source='{mm_path}moviemasher/com/moviemasher/pbj/spotlight.pbj'
+		parameter0="0,1,0" parameter0fade="0,0,1" 
+		parameter1="0" parameter1fade="180" 
+		parameter2="20" parameter2fade="40" 
+		parameter3="1" parameter3fade="5" 
+		parameter6="50,0" 
+		parameter7="1,1,0" parameter7fade="0,1,1" 
+		positions="6" scales="4"
+		ignorescale="1"
+		editable="fade"
+		fade="0,0,50,100,100,0"
+	/>
+
+	<!-- COLOR TRIM -->
+	<media group='effect' type='effect' id='pbcolortrimeffect' label='Color Trim'
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Bender' 
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Bender' 
+		source='{mm_path}moviemasher/com/moviemasher/pbj/colorTrim.pbj'
+		parameter0="0,0,0,0" parameter0fade="0.5,0.5,0.5,0" 
+		parameter1="1,1,1,1" parameter1fade="0.5,0.5,0.5,1" 
+		editable="fade"
+		fade="0,0,50,100,100,0"
+	/>
+	
+	<!-- DYNAMIC PALETTE -->
+	<media group='effect' type='effect' id='pbdynamicpaletteeffect' label='Dynamic Palette'
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Bender' 
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Bender' 
+		source='{mm_path}moviemasher/com/moviemasher/pbj/dynamic_palette.pbj'
+		parameter0="64" parameter0fade="1" 
+		editable="fade"
+		fade="0,0,50,100,100,0"
+	/>
+	
+	<!-- WAVE REFLECTION -->
+	<media group='effect' type='effect' id='pbwavereflectioneffect' label='Wave Reflection'
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Bender' 
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Bender' 
+		source='{mm_path}moviemasher/com/moviemasher/pbj/waveReflection.pbj'
+		parameter0="0" parameter0fade="1" 
+		parameter1="0" parameter1fade="1" 
+		parameter2=".22" parameter2fade=".22" 
+		editable="fade"
+		fade="0,0,50,100,100,0"
+	/>
+	
+	<!-- SHARPEN -->
+	<media group='effect' type='effect' id='pbsharpeneffect' label='Sharpen'
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Bender' 
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Bender' 
+		source='{mm_path}moviemasher/com/moviemasher/pbj/sharpen.pbj'
+		parameter0="1" parameter0fade="20" 
+		editable="fade"
+		fade="0,0,50,100,100,0"
+	/>
+	
+	<!-- BLUR -->
+	<media group='effect' type='effect' id='conblureffect' label='Blur' 
+		matrix='1,1,1,1,1,1,1,1,1' 
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Convolution' 
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Convolution' 
+	/>
+
+	<!-- SHARPEN -->
+	<media group='effect' type='effect' id='consharpeneffect' label='Sharpen' 
+		matrix='0,-1,0,-1,5,-1,0,-1,0' 
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Convolution' 
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Convolution' 
+	/>
+	
+	<!-- FIND EDGES -->
+	<media group='effect' type='effect' id='confindedgeseffect' label='Find Edges' 
+		matrix='-1,-1,-1,-1,8,-1,-1,-1,-1'
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Convolution'
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Convolution' 
+	/>
+
+	<!-- EMBOSS -->
+	<media group='effect' type='effect' id='conembosseffect' label='Emboss' 
+		matrix='-2,-1,0,-1,1,1,0,1,2' 
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Convolution' 
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Convolution' 
+	/>
+
+	<!-- SOUTH EAST EMBOSS -->
+	<media group='effect' type='effect' id='conseembosseffect' label='South East Emboss' 
+		matrix='-1,-1,0,-1,1,1,0,1,1' 
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Convolution' 
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Convolution' 
+	/>
+
+	<!-- SOUTH EMBOSS -->
+	<media group='effect' type='effect' id='consembosseffect' label='South Emboss' 
+		matrix='-1,-1,-1,0,1,0,1,1,1' 
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Convolution' 
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Convolution' 
+	/>
+	
+	<!-- ADJUST -->
+	<media group='effect' type='effect' id='adjusteffect' label='Adjust' 
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Adjust' 
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Adjust' 
+		hue='0' saturation='1' brightness='0' contrast='0'
+		editable='fade,hue,saturation,brightness,contrast' 
+		fade="0,0,50,100,100,0"
+	/>
+
+	<!-- CONVOLUTION -->
+	<media group='effect' type='effect' id='convolutioneffect' label='Convolution' 
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Convolution' 
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Convolution' 
+		editable='matrix' matrix='1,1,1,1,1,1,1,1,1' 
+	/>
+	
+	
+	<!-- COMPOSITE -->
+	<media group='effect' type='effect' id='compositeeffect' label='Composite'
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Composite'
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Composite'
+		fade='0,0,10,100,90,100,100,0' 
+		scale='100,100' position='50,50' rotate='0' shear='50,50'
+		scalefade='0,0' positionfade='50,50' rotatefade='0' shearfade='50,50'
+		editable='fade,position,scale,composites,rotate,shear,shearfade,rotatefade,positionfade,scalefade'
+	>
+	</media>
+
+	<!-- DISPLACEMENT -->
+	<media group='effect' type='effect' id='displaceeffect' label='Displace' 
+		symbol='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Displace' 
+		icon='{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Displace' 
+		fade="0,0,100,100" scale="25,25"
+		editable='scale,composites'
+		composites=''
+	/>
+	
+	
+</moviemasher>

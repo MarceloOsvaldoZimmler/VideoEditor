@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moviemasher>
+	<control icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#Separator' width='6' fill='stretch' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' />
+
+	<!-- NEW CONTROL -->
+	<control pattern='New' style='text,button' tooltip='New Mash' trigger='player.new=' disable="player.dirty=1" />
+	<!-- REVERT CONTROL -->
+	<control pattern='Revert' style='text,button' tooltip='Revert Mash' trigger='player.revert=' disable="player.revert=empty" />
+	<!-- SAVE CGI CONTROL -->
+	<control pattern='Save' style='text,button' tooltip='Save Mash' id='saver' media="1" mash="player.mash" disable="player.dirty=0|player.length=0" url="media/php/save.php?id={player.mash.id}&amp;duration={player.length}" symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@CGI" />
+	
+	<!-- RENDER CGI CONTROL -->
+	<control pattern='Render' style='text,button' tooltip="Render Mash" id='renderer' 
+		disable="renderer.progress!=null|player.length=0|player.dirty=1" 
+		url="media/php/export_init.php?id={player.mash.id}" 
+		symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@CGI" />
+	<control bind="renderer.progress" disable="renderer.progress!=null" hide="renderer.progress=null" width='*' symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Slider" back='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrubBackOff' reveal='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrubBackOn' />
+	<control style='text' forecolor='333333' pattern="{renderer.status}"  />
+
+</moviemasher>

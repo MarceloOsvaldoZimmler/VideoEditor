@@ -1,0 +1,351 @@
+05:11:58 media.php group=mash&index=0&count=20&unique=B4BC11E7-3FD2-2D40-D2CF-8ECDD0E2A5E0&label=
+05:11:58 media.php <moviemasher>
+</moviemasher>
+
+05:11:58 media.php group=mash&index=0&count=20&unique=4D529034-957C-A107-9CFE-8ECDD257176B&label=
+05:11:58 media.php <moviemasher>
+</moviemasher>
+
+05:12:01 media.php group=video&index=0&count=20&unique=EA910401-0B8B-836A-EA7E-8ECDDB207DA2&label=
+05:12:01 media.php <moviemasher>
+</moviemasher>
+
+05:12:02 media.php group=transition&index=0&count=20&unique=04AA0CB2-5856-ECF3-00D2-8ECDE09856F9&label=
+05:12:02 media.php <moviemasher>
+</moviemasher>
+
+05:12:22 media.php group=mash&index=0&count=20&unique=3092B8C2-3C0A-A83B-B62B-8ECE2EDDD5C8&label=
+05:12:22 media.php <moviemasher>
+</moviemasher>
+
+05:12:23 media.php group=mash&index=0&count=20&unique=EDEC92B3-9BEF-4F58-5689-8ECE3048EF60&label=
+05:12:23 media.php <moviemasher>
+</moviemasher>
+
+05:12:31 media.php group=video&index=0&count=20&unique=DB98243D-AE95-1A2B-745B-8ECE50E5C303&label=
+05:12:31 media.php <moviemasher>
+</moviemasher>
+
+05:12:33 media.php group=transition&index=0&count=20&unique=AF8E9ACA-E120-E676-8704-8ECE58400F88&label=
+05:12:33 media.php <moviemasher>
+</moviemasher>
+
+05:12:45 media.php group=theme&index=0&count=20&unique=45102A7A-C4C8-61B0-20C9-8ECE8731D9C5&label=
+05:12:45 media.php <moviemasher>
+</moviemasher>
+
+05:12:46 media.php group=transition&index=0&count=20&unique=21AC0DA9-738C-67F2-CFDD-8ECE8B4B9D89&label=
+05:12:46 media.php <moviemasher>
+</moviemasher>
+
+05:12:51 media.php group=video&index=0&count=20&unique=1E5D83D8-7AC4-8001-0344-8ECEA094E5DF&label=
+05:12:51 media.php <moviemasher>
+</moviemasher>
+
+05:12:55 import_init.php file=Timeless%20Evolution%20in%20Motion.m4v&size=9760320
+05:12:55 import_init.php <moviemasher  upload="media/php/import_upload.php?u=dragon&amp;id=1FC64ED0-1BAA-42EE-98EC-F8531DFC8CB2&amp;type=video&amp;extension=m4v" status="Uploading" />
+05:12:56 import_upload.php Saved to: /Applications/MAMP/htdocs/moviemasher/example/transcode/media/user/dragon/1FC64ED0-1BAA-42EE-98EC-F8531DFC8CB2/original.m4v
+05:12:57 import_api.php id=1FC64ED0-1BAA-42EE-98EC-F8531DFC8CB2&type=video&extension=m4v&label=Timeless+Evolution+in+Motion.m4v
+05:12:57 import_api.php Client REST request:
+<MovieMasher>
+  <Signature>gw1/w4g2HEQezINvcCliwxoGc8MN5H4aCiM/qSQtw5epYctwdlzRstPlqYr//EIFXwFwZuB5u4DmtKtPpTOvf0YFsZTXhihdopIjso+wi0zja3at9saKvBlUelmXjIieSO0eHyDn9+KGypnYcmqo0Fu+Zi1ugEiZq4CpgCXa4HiCNDrWcavRGX9tzns54w/sBNQS6gi+xOjPg62aLik2QAxQJaBRllAxjviLh1TzNuPQ4Ajq5pUURETXiQJ+ilM102HV8n9S78X9eJC5Zmbd27ZQlwCHCTNfUtFyh/jEg/wZ7RtVQG92aPbtY8vvzPvHEAYdLk7ZKFrOZYkmtplk4g==</Signature>
+  <Authentication>
+    <Nonce>3E1C160D-6935-4B0A-B34C-349009048E41</Nonce>
+    <Date>2013-01-31T04:12:57Z</Date>
+    <Name>KeyPair</Name>
+  </Authentication>
+  <Job>
+    <TransferType>http</TransferType>
+    <TransferHost>10.0.1.3</TransferHost>
+    <Transfer>
+      <Inherit>1</Inherit>
+      <Path>moviemasher/example/transcode/media/php/import_transfer.php</Path>
+      <ParameterName>id</ParameterName>
+      <ParameterName>type</ParameterName>
+      <ParameterName>extension</ParameterName>
+      <ParameterValue>1FC64ED0-1BAA-42EE-98EC-F8531DFC8CB2</ParameterValue>
+      <ParameterValue>video</ParameterValue>
+      <ParameterValue>m4v</ParameterValue>
+      <User>dragon</User>
+      <Pass>dragon</Pass>
+      <ArchiveExtension>tgz</ArchiveExtension>
+    </Transfer>
+    <Input>
+      <Type>video</Type>
+      <Transfer>
+        <Inherit>1</Inherit>
+        <Path>moviemasher/example/transcode/media/user/dragon/1FC64ED0-1BAA-42EE-98EC-F8531DFC8CB2/original.m4v</Path>
+        <Host>10.0.1.3</Host>
+      </Transfer>
+    </Input>
+    <Output>
+      <Type>text</Type>
+      <Payload>1</Payload>
+      <Body>
+        <Response>
+          <WarningLog>{Job.Warnings}</WarningLog>
+          <ErrorLog>{Job.Errors}</ErrorLog>
+          <Error>{Job.Error}</Error>
+          <Version>{Job.Version}</Version>
+        </Response>
+      </Body>
+      <Transfer>
+        <Host>10.0.1.3</Host>
+        <Type>http</Type>
+        <ParameterName>id</ParameterName>
+        <ParameterName>job</ParameterName>
+        <ParameterName>uid</ParameterName>
+        <ParameterValue>1FC64ED0-1BAA-42EE-98EC-F8531DFC8CB2</ParameterValue>
+        <ParameterValue>{Job.ID}</ParameterValue>
+        <ParameterValue>dragon</ParameterValue>
+        <User>dragon</User>
+        <Pass>dragon</Pass>
+        <Path>moviemasher/example/transcode/media/php/import_error.php</Path>
+      </Transfer>
+      <Trigger>error</Trigger>
+    </Output>
+    <Output>
+      <Type>text</Type>
+      <Payload>1</Payload>
+      <Body/>
+      <Transfer>
+        <Host>10.0.1.3</Host>
+        <Type>http</Type>
+        <ParameterName>id</ParameterName>
+        <ParameterName>job</ParameterName>
+        <ParameterName>uid</ParameterName>
+        <ParameterName>started</ParameterName>
+        <ParameterValue>1FC64ED0-1BAA-42EE-98EC-F8531DFC8CB2</ParameterValue>
+        <ParameterValue>{Job.ID}</ParameterValue>
+        <ParameterValue>dragon</ParameterValue>
+        <ParameterValue>1359605577</ParameterValue>
+        <User>dragon</User>
+        <Pass>dragon</Pass>
+        <Path>moviemasher/example/transcode/media/php/import_done.php</Path>
+        <VariableName>label</VariableName>
+        <VariableName>extension</VariableName>
+        <VariableName>type</VariableName>
+        <VariableName>audio</VariableName>
+        <VariableName>duration</VariableName>
+        <VariableValue>Timeless Evolution in Motion.m4v</VariableValue>
+        <VariableValue>m4v</VariableValue>
+        <VariableValue>{Input.Type}</VariableValue>
+        <VariableValue>{Input.Audio}</VariableValue>
+        <VariableValue>{Input.Duration}</VariableValue>
+      </Transfer>
+      <Trigger>done</Trigger>
+      <Required>1</Required>
+    </Output>
+    <Output>
+      <Type>audio</Type>
+      <AudioBitrate>128</AudioBitrate>
+      <Basename>audio</Basename>
+      <Extension>mp3</Extension>
+      <NoVideo>1</NoVideo>
+      <Frequency>44100</Frequency>
+    </Output>
+    <Output>
+      <Type>waveform</Type>
+      <Forecolor>000000</Forecolor>
+      <Backcolor>FFFFFF</Backcolor>
+      <Basename>waveform</Basename>
+      <Dimensions>8000x32</Dimensions>
+      <Extension>png</Extension>
+    </Output>
+    <Output>
+      <Type>sequence</Type>
+      <FPS>10</FPS>
+      <ImageQuality>1</ImageQuality>
+      <Basename>256x144x10</Basename>
+      <Dimensions>256x144</Dimensions>
+    </Output>
+  </Job>
+</MovieMasher>
+
+05:14:14 import_api.php <moviemasher progress="-1" status="Got no response from REST request" />
+05:14:24 import_api.php id=1FC64ED0-1BAA-42EE-98EC-F8531DFC8CB2&type=video&extension=m4v&label=Timeless+Evolution+in+Motion.m4v
+05:14:24 import_api.php Client REST request:
+<MovieMasher>
+  <Signature>WpfRODRb/wbFT6qYfPa1zhpc/2A6uuVxMWIb2p6HtVkXjdcgO/bqDgcLeCOicVJJ0rjY0wMqiPNTcg11ODetLuBepRxkfdhaIPdz+M59+1Lb4eJd6G/zzT/rVGFzZnLv8/glJG2cN0zd6G/sTNRqgnHT+SV0llcZRjDooLRxTPZnu6CsgbPMLiFno7YEPzUSjzqdtqh+qg7nFD1aye+KzvtPs4VI0ZCFMbV/2f1116Isiz5LbftLNn56djduqNPsvGBjD2sdk7+9ASDduFjsmBT974ahCiHBUVIhTlSswJqYh0AgakfgsVRVx9BqmML+IaPApEcd7en0kCKSdNkW0w==</Signature>
+  <Authentication>
+    <Nonce>C07E310C-4685-4999-865A-C3CB8E4974E5</Nonce>
+    <Date>2013-01-31T04:14:24Z</Date>
+    <Name>KeyPair</Name>
+  </Authentication>
+  <Job>
+    <TransferType>http</TransferType>
+    <TransferHost>10.0.1.3</TransferHost>
+    <Transfer>
+      <Inherit>1</Inherit>
+      <Path>moviemasher/example/transcode/media/php/import_transfer.php</Path>
+      <ParameterName>id</ParameterName>
+      <ParameterName>type</ParameterName>
+      <ParameterName>extension</ParameterName>
+      <ParameterValue>1FC64ED0-1BAA-42EE-98EC-F8531DFC8CB2</ParameterValue>
+      <ParameterValue>video</ParameterValue>
+      <ParameterValue>m4v</ParameterValue>
+      <User>dragon</User>
+      <Pass>dragon</Pass>
+      <ArchiveExtension>tgz</ArchiveExtension>
+    </Transfer>
+    <Input>
+      <Type>video</Type>
+      <Transfer>
+        <Inherit>1</Inherit>
+        <Path>moviemasher/example/transcode/media/user/dragon/1FC64ED0-1BAA-42EE-98EC-F8531DFC8CB2/original.m4v</Path>
+        <Host>10.0.1.3</Host>
+      </Transfer>
+    </Input>
+    <Output>
+      <Type>text</Type>
+      <Payload>1</Payload>
+      <Body>
+        <Response>
+          <WarningLog>{Job.Warnings}</WarningLog>
+          <ErrorLog>{Job.Errors}</ErrorLog>
+          <Error>{Job.Error}</Error>
+          <Version>{Job.Version}</Version>
+        </Response>
+      </Body>
+      <Transfer>
+        <Host>10.0.1.3</Host>
+        <Type>http</Type>
+        <ParameterName>id</ParameterName>
+        <ParameterName>job</ParameterName>
+        <ParameterName>uid</ParameterName>
+        <ParameterValue>1FC64ED0-1BAA-42EE-98EC-F8531DFC8CB2</ParameterValue>
+        <ParameterValue>{Job.ID}</ParameterValue>
+        <ParameterValue>dragon</ParameterValue>
+        <User>dragon</User>
+        <Pass>dragon</Pass>
+        <Path>moviemasher/example/transcode/media/php/import_error.php</Path>
+      </Transfer>
+      <Trigger>error</Trigger>
+    </Output>
+    <Output>
+      <Type>text</Type>
+      <Payload>1</Payload>
+      <Body/>
+      <Transfer>
+        <Host>10.0.1.3</Host>
+        <Type>http</Type>
+        <ParameterName>id</ParameterName>
+        <ParameterName>job</ParameterName>
+        <ParameterName>uid</ParameterName>
+        <ParameterName>started</ParameterName>
+        <ParameterValue>1FC64ED0-1BAA-42EE-98EC-F8531DFC8CB2</ParameterValue>
+        <ParameterValue>{Job.ID}</ParameterValue>
+        <ParameterValue>dragon</ParameterValue>
+        <ParameterValue>1359605664</ParameterValue>
+        <User>dragon</User>
+        <Pass>dragon</Pass>
+        <Path>moviemasher/example/transcode/media/php/import_done.php</Path>
+        <VariableName>label</VariableName>
+        <VariableName>extension</VariableName>
+        <VariableName>type</VariableName>
+        <VariableName>audio</VariableName>
+        <VariableName>duration</VariableName>
+        <VariableValue>Timeless Evolution in Motion.m4v</VariableValue>
+        <VariableValue>m4v</VariableValue>
+        <VariableValue>{Input.Type}</VariableValue>
+        <VariableValue>{Input.Audio}</VariableValue>
+        <VariableValue>{Input.Duration}</VariableValue>
+      </Transfer>
+      <Trigger>done</Trigger>
+      <Required>1</Required>
+    </Output>
+    <Output>
+      <Type>audio</Type>
+      <AudioBitrate>128</AudioBitrate>
+      <Basename>audio</Basename>
+      <Extension>mp3</Extension>
+      <NoVideo>1</NoVideo>
+      <Frequency>44100</Frequency>
+    </Output>
+    <Output>
+      <Type>waveform</Type>
+      <Forecolor>000000</Forecolor>
+      <Backcolor>FFFFFF</Backcolor>
+      <Basename>waveform</Basename>
+      <Dimensions>8000x32</Dimensions>
+      <Extension>png</Extension>
+    </Output>
+    <Output>
+      <Type>sequence</Type>
+      <FPS>10</FPS>
+      <ImageQuality>1</ImageQuality>
+      <Basename>256x144x10</Basename>
+      <Dimensions>256x144</Dimensions>
+    </Output>
+  </Job>
+</MovieMasher>
+
+05:15:04 media.php group=mash&index=0&count=20&unique=466C9780-A86E-43E4-DEC2-8ED0A5C7E7F8&label=
+05:15:04 media.php <moviemasher>
+</moviemasher>
+
+05:15:04 media.php group=mash&index=0&count=20&unique=D528A88A-AC11-9930-903A-8ED0A6CCFF2E&label=
+05:15:04 media.php <moviemasher>
+</moviemasher>
+
+05:15:06 media.php group=video&index=0&count=20&unique=F3B741A9-220E-DA6D-1EC1-8ED0AF22267F&label=
+05:15:06 media.php <moviemasher>
+</moviemasher>
+
+05:15:07 media.php group=transition&index=0&count=20&unique=1CEEA206-E48D-B71E-F4CD-8ED0B3D1AA1A&label=
+05:15:07 media.php <moviemasher>
+</moviemasher>
+
+05:15:08 media.php group=theme&index=0&count=20&unique=423E12BF-41DA-A809-CB9F-8ED0B7126082&label=
+05:15:08 media.php <moviemasher>
+</moviemasher>
+
+05:15:10 media.php group=effect&index=0&count=20&unique=88C5AC6E-377D-C37F-A82E-8ED0BD0028E0&label=
+05:15:10 media.php <moviemasher>
+</moviemasher>
+
+05:15:41 import_api.php <moviemasher progress="-1" status="Got no response from REST request" />
+19:04:20 media.php group=mash&index=0&count=20&unique=A78AE861-5E28-AE56-0910-91C7DD4224FA&label=
+19:04:20 media.php <moviemasher>
+</moviemasher>
+
+19:04:20 media.php group=mash&index=0&count=20&unique=1B44FF35-3E37-62AF-96C7-91C7DEB1EC58&label=
+19:04:20 media.php <moviemasher>
+</moviemasher>
+
+19:05:06 media.php group=video&index=0&count=20&unique=3E4BA6DA-4CB6-415D-A8F3-91C892E4FC1E&label=
+19:05:06 media.php <moviemasher>
+</moviemasher>
+
+19:06:24 media.php group=image&index=0&count=20&unique=8656EAC2-B070-3773-D0F2-91C9C109CD5B&label=
+19:06:24 media.php <moviemasher>
+</moviemasher>
+
+19:06:25 media.php group=effect&index=0&count=20&unique=E58BEAFE-C32E-443A-0229-91C9C5EBFD34&label=
+19:06:25 media.php <moviemasher>
+</moviemasher>
+
+21:53:47 media.php group=mash&index=0&count=20&unique=041148A5-8786-84F1-36C9-926300C21D15&label=
+21:53:47 media.php <moviemasher>
+</moviemasher>
+
+21:53:47 media.php group=mash&index=0&count=20&unique=738AD4CF-904C-13E2-785A-9263020079FC&label=
+21:53:47 media.php <moviemasher>
+</moviemasher>
+
+22:50:38 media.php group=mash&index=0&count=20&unique=794B32A6-60E4-03A5-8FD4-92970EE876E2&label=
+22:50:38 media.php <moviemasher>
+</moviemasher>
+
+22:50:39 media.php group=mash&index=0&count=20&unique=41C247FA-7D0D-7753-93E5-92970FF63769&label=
+22:50:39 media.php <moviemasher>
+</moviemasher>
+
+22:50:49 media.php group=mash&index=0&count=20&unique=CFBF7BCC-1DA3-7DC6-FECF-9297377B78BF&label=
+22:50:49 media.php <moviemasher>
+</moviemasher>
+
+22:50:49 media.php group=mash&index=0&count=20&unique=890A4C66-4901-29BD-2C71-92973885D3C6&label=
+22:50:49 media.php <moviemasher>
+</moviemasher>
+

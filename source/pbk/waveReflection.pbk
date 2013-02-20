@@ -1,0 +1,44 @@
+<languageVersion : 1.0;>
+
+kernel WaveReflection
+<   namespace : "com.rphelan";
+    vendor : "Ryan Phelan";
+    version : 1;
+    description : "Projects an image onto a rippled surface of water";
+>
+{
+    // animate this value to create the ripple effect
+    parameter float progress
+    <
+        minValue:0.0;
+        maxValue:1.0;
+        defaultValue:0.0;
+    >;
+    
+    // controls the height of the waves
+    parameter float amplitude
+    <
+        minValue:0.0;
+        maxValue:1.0;
+        defaultValue:.33;
+    >;
+    
+    // controls the frequency of the waves
+    parameter float frequency
+    <
+        minValue:0.0;
+        maxValue:0.54;
+        defaultValue:.22;
+    >;
+
+    input image4 src;
+    output pixel4 dst;
+
+    void
+    evaluatePixel()
+    {
+        float2 coord = outCoord();
+        coord.y += sin((coord.y-(1.0-progress))*(100.54-frequency))*(amplitude*0.1)*(1.0-coord.y);    
+        dst = sampleNearest(src, coord);
+    }
+}

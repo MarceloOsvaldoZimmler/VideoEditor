@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moviemasher>
+
+	<control width='6' fill='stretch' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#Separator' />
+			
+	<!-- SAVE CGI CONTROL -->
+	<control pattern='SAVE' 
+		style='text,button' id='saver'
+		disable="player.dirty=0" 
+		url="media/php/save.php?duration={mash.duration}" 
+		media="1" mash="player.mash" 
+		symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@CGI" 
+	/>
+	
+</moviemasher>

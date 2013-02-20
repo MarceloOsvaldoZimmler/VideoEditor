@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moviemasher>
+
+	<control width='6' fill='stretch' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' icon='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#Separator' />
+	<!-- NEW CONTROL -->
+	<control style='text,button' tooltip='New Mash!' pattern='New'
+		trigger='player.new='
+		symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Text" 
+	/>
+				
+	<!-- SHARE CGI CONTROL -->
+	<control pattern='     Share     ' 
+		id='sharer'
+		url="media/php/share.php?id={player.mash.id}&amp;duration={player.mash.duration}" 
+		media="1" mash="player.mash" 
+		symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@CGI" 
+		icon="media/image/f_logo_button.swf"
+		textalign='center' textsize="11" textcolor='FFFFFF'
+	/>	
+</moviemasher>

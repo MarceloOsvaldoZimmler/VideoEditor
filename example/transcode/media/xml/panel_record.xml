@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moviemasher>
+
+	<!-- RECORDING PANEL BACK --> 
+	<panel hide='recorder.active!=1' width='{moviemasher.width}' height='{moviemasher.height}' color='FFFFFF' alpha='50' />
+
+	<!-- RECORDER PANEL --> 
+	<panel style='panel' hide='recorder.active=0' width='{video_width}' height='{video_height}+{layout.barsize}' x='({moviemasher.width}-{video_width})/2' y='({moviemasher.height}-({video_height}+{layout.barsize}))/2'>
+			
+		<!-- RECORDER BAR -->
+		<bar color='808080' grad='40' size='*'>
+			
+			<!-- RECORDER CONTROL -->
+			<control id='recorder' symbol="{mm_path}moviemasher/com/moviemasher/control/Recorder/stable.swf@Recorder" 
+				host="ec2-107-20-57-246.compute-1.amazonaws.com"
+				rtmpurl='rtmp://{recorder.host}/vod/recordings'
+				url="media/php/import_init.php?type={recorder.recordmode}&amp;label={recorder.label}&amp;file=http://{recorder.host}:8080/media/{recorder.streamname}.flv"
+				recordmode='video'
+				hide='recorder.active=0' active="0"
+				fps="15" gain="75"
+				width="*" height="*"
+			/>
+			
+		</bar>
+		<bar size='{layout.barsize}' style='bar'>
+			
+			<!-- START/STOP RECORD TOGGLE -->
+			<control tooltip='Start/Stop Recording' bind="recorder.record" 
+				hide='recorder.active=0|recorder.recorded=1|recorder.record=null'
+				symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Toggle' 
+				icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#RecordOff"
+				overicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#RecordOn"
+				toggleicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#RecordingOff"
+				toggleovericon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#RecordingOn"
+			/>
+			
+			<!-- PROGRESS BAR -->
+			<control hide="recorder.active=0|recorder.progress=null" width='10' symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon' />
+			<control hide="recorder.active=0|recorder.progress=null" bind="recorder.progress" width='*' symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Slider" back='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrubBackOff' reveal='{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ScrubBackOn' />
+			
+			<!-- STATUS FIELD -->
+			<control trigger='recorder.status=' hide="recorder.active=0|recorder.status=null" pattern='{recorder.status}' width='*' textsize="11" height='*' textcolor="333333" multiline="0" wrap="0" symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Text" />
+
+			
+			<!-- PLAY/PAUSE RECORDING TOGGLE -->
+			<control tooltip='Play/Pause Preview' bind="recorder.play" 
+				hide='recorder.active=0|recorder.play=null'
+				symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Toggle' 
+				icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#PlayOff"
+				overicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#PlayOn"
+				toggleicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#PauseOff"
+				toggleovericon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#PauseOn"
+			/>
+			
+
+
+			
+			<!-- CONNECTING INDICATOR CONTROL -->
+			<control hide='recorder.active=0|recorder.connecting=empty'
+				symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon" 
+				icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@ProgressIndicator"
+			/>
+		
+			<!-- LABEL FIELD -->
+			<control hide="recorder.active=0|recorder.recorded=empty" textsize="11" height='*' color="FFFFFF" width="*" multiline="0" wrap="0" bind="recorder.label" symbol="{mm_path}moviemasher/com/moviemasher/control/Editor/stable.swf@Field" />
+		
+
+			<control hide='recorder.active=0|recorder.status!=null|recorder.recorded=1' width='*' />				
+			<!-- RECORDER INDICATOR CONTROL -->
+			<control hide='recorder.active=0|recorder.record=empty'
+				symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon" 
+				icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@RedPulse"
+				width='10' height='10'
+			/>
+			
+			<!-- SAVE CAPTURE BUTTON -->
+			<control hide='recorder.active=0|recorder.recorded=empty'
+				symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Text" 
+				pattern='Save'
+				icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@BtnOff"
+				overicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@BtnOn"
+				disicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@BtnDis"
+				fill='stretch' width='65' textalign='center' textsize="11" textcolor='333333'
+				trigger='recorder.save=1'
+			/>
+			
+			<!-- CANCEL CAPTURE BUTTON -->
+			<control hide='recorder.active=0|recorder.recorded=empty'
+				symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Text" 
+				pattern='Cancel'
+				icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@BtnOff"
+				overicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@BtnOn"
+				disicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@BtnDis"
+				fill='stretch' width='65' textalign='center' textsize="11" textcolor='333333'
+				trigger='recorder.recorded='
+			/>
+			
+			<!-- RETRY BUTTON -->
+			<control hide='recorder.active=0|recorder.retry=null|recorder.recorded=1|recorder.record=1'
+				symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Text" 
+				pattern='Scan'
+				icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@BtnOff"
+				overicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@BtnOn"
+				disicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf@BtnDis"
+				fill='stretch' width='65' textalign='center' textsize="11" textcolor='333333'
+				trigger='recorder.retry=1'
+			/>
+
+			<!-- VIDEO/CAMERA TOGGLE -->
+			<control tooltip='Enable/Disable Camera' bind="recorder.video" 
+				hide='recorder.active=0|recorder.recorded=1'
+				disable='recorder.video=null'
+				symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Toggle' 
+				toggleicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#EnabledCamOff"
+				toggleovericon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#EnabledCamOn"
+				toggledisicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#CamDis"
+				icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#DisabledCamOff"
+				overicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#DisabledCamOn"
+				disicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#CamDis"
+			/>
+			
+			<!-- AUDIO/MICROPHONE TOGGLE -->
+			<control tooltip='Enable/Disable Microphone' bind="recorder.audio" 
+				hide='recorder.active=0|recorder.recorded=1'
+				disable='recorder.audio=null'
+				symbol='{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Toggle' 
+				toggleicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#EnabledMicOff"
+				toggleovericon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#EnabledMicOn"
+				toggledisicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#MicDis"
+				icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#DisabledMicOff"
+				overicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#DisabledMicOn"
+				disicon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#MicDis"
+			/>
+		
+		</bar>
+	</panel>
+	<!-- RECORDER CLOSE PANEL -->
+	<panel style='panel' width='28' height='28' x='(({moviemasher.width}+{video_width})/2)-14' y='({moviemasher.height}-({video_height}+24))/2-14'>
+		<bar size='*'>
+			<control hide='recorder.active=0'
+				symbol="{mm_path}moviemasher/com/moviemasher/control/Player/stable.swf@Icon" 
+				disable='recorder.progress!=null'
+				icon="{mm_path}moviemasher/com/moviemasher/skin/Liquid/stable.swf#CancelX"
+				trigger='recorder.active=0' 
+			/>
+		</bar>
+	</panel>
+	
+</moviemasher>

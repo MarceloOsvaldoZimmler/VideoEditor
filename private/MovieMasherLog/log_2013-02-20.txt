@@ -1,0 +1,634 @@
+04:35:03 media.php group=mash&index=0&count=20&unique=5115ABFD-503A-8E43-7F94-F5AB354D0047&label=
+04:35:03 media.php <moviemasher>
+</moviemasher>
+
+04:35:04 media.php group=mash&index=0&count=20&unique=BB958985-7AEB-C21D-8F16-F5AB36BDAEFC&label=
+04:35:04 media.php <moviemasher>
+</moviemasher>
+
+04:35:05 media.php group=video&index=0&count=20&unique=7BACE479-4BA4-5E4B-11D7-F5AB3CDC0C3D&label=
+04:35:05 media.php <moviemasher>
+</moviemasher>
+
+04:35:06 media.php group=audio&index=0&count=20&unique=86A1FC81-570C-EE6A-A901-F5AB3FEB30AC&label=
+04:35:06 media.php <moviemasher>
+</moviemasher>
+
+04:35:07 media.php group=theme&index=0&count=20&unique=2CAC322D-4D01-CB08-6789-F5AB4468DB33&label=
+04:35:07 media.php <moviemasher>
+	<media id="cloudstheme" group="theme" type="theme" label="Clouds" editable="forecolor,backcolor,quality,speed" forecolor="CCCCCC" backcolor="333333" speed="2" quality="4" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Clouds" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Clouds"/>
+	<media id="titletheme" group="theme" type="theme" label="Title" editable="font,forecolor,backcolor,longtext,textsize" forecolor="CCCCCC" backcolor="333333" longtext="Editable Text" textsize="14" font="default" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Title" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Title"/>
+	<media id="colorfadetheme" group="theme" type="theme" label="Color Fade" editable="forecolor,backcolor,fade" forecolor="CCCCCC" backcolor="333333" fade="0,0,100,100" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Colorfade" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Colorfade"/>
+	<media id="barstheme" group="theme" type="theme" label="Bars" editable="fade,forecolor,backcolor,orientation,instances" forecolor="CCCCCC" backcolor="333333" fade="0,0,100,100" orientation="vertical" instances="25" map="bars" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Shapes" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Shapes"/>
+	<media id="rectstheme" group="theme" type="theme" label="Rects" editable="fade,forecolor,backcolor,instances" forecolor="CCCCCC" backcolor="333333" fade="0,0,100,100" instances="25" curve="10" map="rects" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Shapes" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Shapes"/>
+	<media id="circletheme" group="theme" type="theme" label="Circle" editable="fade,forecolor,backcolor" forecolor="CCCCCC" backcolor="333333" fade="0,0,100,100" map="circle" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Shapes" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Shapes"/>
+	<media id="rippletheme" group="theme" type="theme" label="Ripple" editable="fade,forecolor,backcolor" forecolor="CCCCCC" backcolor="333333" fade="0,0,100,100" map="ripple" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Gradientmap" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Gradientmap"/>
+	<media id="gradtheme" group="theme" type="theme" label="Gradient" editable="fade,forecolor,backcolor" forecolor="CCCCCC" backcolor="333333" fade="0,0,100,100" map="grad" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Gradientmap" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Gradientmap"/>
+	<media id="fisheyetheme" group="theme" type="theme" label="Fish Eye" editable="fade,instances,forecolor,backcolor" forecolor="CCCCCC" backcolor="333333" fade="0,0,100,100" map="fisheye" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Gradientmap" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Gradientmap"/>
+	<media id="raintheme" group="theme" type="theme" label="Rain" editable="fade,instances,forecolor,backcolor" forecolor="CCCCCC" backcolor="333333" fade="0,0,100,100" map="rain" instances="30" stickiness="5" size="30" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Gradientmap" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Gradientmap"/>
+</moviemasher>
+
+04:35:08 media.php group=image&index=0&count=20&unique=75A05B40-F4B3-1BBE-E84E-F5AB495BB264&label=
+04:35:08 media.php <moviemasher>
+</moviemasher>
+
+04:35:09 media.php group=effect&index=0&count=20&unique=BB9DEE7B-9A4C-4916-CD47-F5AB4CBE89EB&label=
+04:35:09 media.php <moviemasher>
+	<media group="effect" type="effect" id="circlecompositeeffect" label="Circle/Oval" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Drawing" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Drawing" editable="rotate,scale,position,forecolor,backcolor" rotate="0" scale="50,50" position="50,50" forecolor="FF0000" backcolor="" shape="circle" line="2" shadow="1" shadowcolor="333333" shadowblur="2" shadowstrength="1"/>
+	<media group="effect" type="effect" id="arrowcompositeeffect" label="Arrow" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Drawing" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Drawing" editable="rotate,shear,scale,position,forecolor,backcolor" rotate="0" shear="50,50" scale="50,50" position="50,50" forecolor="0" backcolor="FFFF00" shape="polygon" fillalpha="20" line="1" shadow="1" shadowcolor="333333" shadowblur="2" shadowstrength="1" points="0,35,65,35,65,0,100,50,65,100,65,65,0,65,0,35"/>
+	<media group="effect" type="effect" id="rectcompositeeffect" label="Line/Rectangle" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Drawing" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Drawing" editable="rotate,scale,position,forecolor,backcolor" rotate="0" scale="50,3" position="50,50" forecolor="" backcolor="00FFFF" shape="rect" line="1" shadow="1" shadowcolor="333333" shadowblur="2" shadowstrength="1"/>
+	<media group="effect" type="effect" id="logocompositeeffect" label="Station Identifier" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Picturebox" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Picturebox" fade="0,100,100,100" scale="25,15" position="95,5" blend="screen" editable="composites,href" composites="logocompositeeffectimage" href="http://www.moviemasher.com/">
+		<media label="Movie Masher Logo" fill="scale" group="image" type="image" id="logocompositeeffectimage" icon="../media/image/Logo/media.png" url="../media/image/Logo/media.png" source="../media/image/Logo/media.png"/>
+	</media>
+	<media group="effect" type="effect" id="colorizeeffect" label="Colorize" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Colorize" forecolor="FF6666" backcolor="66FF66" editable="fade,forecolor,backcolor" fade="0,0,50,100,100,0" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Colorize"/>
+	<media group="effect" type="effect" id="reverseeffect" label="Reverse" contrast="-2" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Adjust" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Adjust"/>
+	<media group="effect" type="effect" id="inverseeffect" label="Inverse" hue="180" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Adjust" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Adjust"/>
+	<media group="effect" type="effect" id="desaturateeffect" label="Desaturate" saturation="0" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Adjust" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Adjust"/>
+	<media group="effect" type="effect" id="brightnesscontrasteffect" label="Brightness/Contrast" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Adjust" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Adjust" brightness="0" contrast="0" editable="fade,brightness,contrast" fade="0,100,100,100"/>
+	<media group="effect" type="effect" id="captioneffect" label="Caption" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Caption" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Caption" padding="3" longtext="Caption" forecolor="000000" backalpha="50" backcolor="FFFFFF" textsize="14" font="default" editable="padding,font,textsize,longtext,forecolor,backcolor,backalpha"/>
+	<media group="effect" type="effect" id="tickereffect" label="Ticker" longtext="Ticker" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Ticker" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Ticker" forecolor="000000" backalpha="50" backcolor="FFFFFF" textsize="14" font="default" editable="font,textsize,longtext,forecolor,backalpha,backcolor"/>
+	<media group="effect" type="effect" id="textboxeffect" label="Textbox" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Textbox" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Textbox" longtext="Textbox" fade="0,0,10,100,90,100,100,0" forecolor="000000" backalpha="50" backcolor="FFFFFF" textsize="14" font="default" scale="50,50" position="50,50" editable="fade,font,scale,position,textsize,longtext,forecolor,backalpha,backcolor"/>
+	<media group="effect" type="effect" id="pictureboxeffect" label="Picturebox" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Picturebox" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Picturebox" fade="0,0,10,100,90,100,100,0" scale="50,50" position="50,50" editable="fade,position,scale,composites,href,blend" composites="logoimage" href="">
+		<media group="image" type="image" id="logoimage" label="Logo" url="../media/image/Logo/media.png" source="../media/image/Logo/media.png"/>
+
+	</media>
+	<media group="effect" type="effect" id="chromakeyeffect" label="Chroma Key" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Chromakey" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Chromakey" forecolor="669933" editable="forecolor,composites" composites="chromakeyeffectvideo">
+		<media group="video" type="video" id="chromakeyeffectvideo" label="Chromakey Candle" source="../media/video/ChromakeyCandle/media.mpg" url="../media/video/ChromakeyCandle/media/320x240x12/" fps="12" pattern="%.jpg" zeropadding="3" duration="9.97" audio="0"/>
+	</media>
+	<media group="effect" type="effect" id="raineffect" label="Rain" editable="scale" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Displace" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Displace" composites="raineffecttheme" scale="70,70">
+		<media id="raineffecttheme" group="theme" type="theme" instances="30" size="15" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Gradientmap"/>
+	</media>
+	<media group="effect" type="effect" id="iceeffect" label="Ice" editable="scale" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Displace" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Displace" composites="iceeffecttheme" scale="10,10">
+		<media id="iceeffecttheme" group="theme" type="theme" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Clouds"/>
+	</media>
+	<media group="effect" type="effect" id="waveeffect" label="Wave" editable="scale" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Displace" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Displace" composites="waveeffecttheme" scale="10,10">
+		<media id="waveeffecttheme" group="theme" type="theme" editable="fade,forecolor,backcolor" forecolor="CCCCCC" backcolor="333333" fade="0,0,100,100" map="grad" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Gradientmap" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Gradientmap"/>
+	</media>
+	<media group="effect" type="effect" id="rippleeffect" label="Ripple" editable="scale" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Displace" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Displace" composites="rippleeffecttheme" scale="60,60">
+		<media id="rippleeffecttheme" group="theme" type="theme" map="ripple" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Gradientmap"/>
+	</media>
+	<media group="effect" type="effect" id="pbcirclesplasheffect" label="Circle Splash" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Bender" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Bender" source="{mm_path}moviemasher/com/moviemasher/pbj/CircleSplash.pbj" Radius="20" Radiusfade="80" center="0,0" centerfade="100,100" editable="fade" fade="0,0,50,100,100,0" positions="1" scales="0" ignorescale="1"/>
+	<media group="effect" type="effect" id="pbmagnifyeffect" label="Magnify" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Bender" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Bender" source="{mm_path}moviemasher/com/moviemasher/pbj/magnify.pbj" parameter0="0,0" parameter0fade="100,100" parameter1="20" parameter1fade="50" parameter2="40" parameter2fade="70" parameter3="1" parameter3fade="2" positions="0" scales="1,2" ignorescale="1" editable="fade" fade="0,0,50,100,100,0"/>
+</moviemasher>
+
+04:35:10 media.php group=transition&index=0&count=20&unique=B6F27ED7-949B-3045-612C-F5AB5052A3E5&label=
+04:35:10 media.php <moviemasher>
+	<media group="transition" type="transition" id="crossfadetransition" label="Crossfade" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Crossfade" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Crossfade"/>
+	<media group="transition" type="transition" id="blindsmattetransition" label="Blinds" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Matte" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Matte" composites="blindstransitiontheme">
+		<media id="blindstransitiontheme" group="theme" type="theme" map="bars" alpha="100" orientation="vertical" instances="25" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Shapes"/>
+	</media>
+	<media group="transition" type="transition" id="boxtransition" label="Box" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Matte" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Matte" composites="boxtransitiontheme">
+		<media id="boxtransitiontheme" group="theme" type="theme" fade="0,0,100,100" instances="1" map="grid" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Shapes"/>
+	</media>
+	<media group="transition" type="transition" id="gridtransition" label="Grid" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Matte" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Matte" composites="gridtransitiontheme" compositeeditable="instances">
+		<media id="gridtransitiontheme" group="theme" type="theme" fade="0,0,100,100" instances="20" editable="instances" map="grid" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Shapes"/>
+	</media>
+	<media group="transition" type="transition" id="irisopentransition" label="Iris Open" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Matte" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Matte" composites="circleouttransitiontheme">
+		<media id="circleouttransitiontheme" group="theme" type="theme" fade="0,0,100,100" map="circle" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Shapes"/>
+	</media>
+	<media group="transition" type="transition" id="irisclosetransition" label="Iris Close" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Matte" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Matte" composites="circleintransitiontheme" swap="1">
+		<media id="circleintransitiontheme" group="theme" type="theme" fade="0,100,100,0" map="circle" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Shapes"/>
+	</media>
+	<media group="transition" type="transition" id="cubelefttransition" label="Cube Right to Left" direction="left" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Cube" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Cube"/>
+	<media group="transition" type="transition" id="cubedowntransition" label="Cube Top to Bottom" direction="down" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Cube" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Cube"/>
+	<media group="transition" type="transition" id="cubeuptransition" label="Cube Bottom to Top" direction="up" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Cube" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Cube"/>
+	<media group="transition" type="transition" id="cuberighttransition" label="Cube Left to Right" direction="right" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Cube" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Cube"/>
+	<media group="transition" type="transition" id="pbholetransition" label="Hole" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Bender" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Bender" source="{mm_path}moviemasher/com/moviemasher/pbj/hole.pbj" parameter0="10" parameter0fade="70" parameter1="90,10" parameter1fade="50,50" parameter2="1" parameter2fade="3" positions="1" scales="0" ignorescale="1" swap="1"/>
+	<media group="transition" type="transition" id="pbwavereflectiontransition" label="Wave Reflection" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Bender" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Bender" source="{mm_path}moviemasher/com/moviemasher/pbj/waveReflection.pbj" parameter0="0" parameter0fade="1" parameter1="0" parameter1fade="20" parameter2=".22" parameter2fade=".22" swap="1"/>
+	<media group="transition" type="transition" id="pbsimplepointlighttransition" label="Simple Point Light" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Bender" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Bender" source="{mm_path}moviemasher/com/moviemasher/pbj/SimplePointLight.pbj" parameter0="0,0" parameter0fade="100,100" parameter1="0" parameter1fade="200" parameter2="0" parameter2fade="2" parameter3="0" parameter3fade="2" positions="0" swap="1"/>
+	<media group="transition" type="transition" id="pbzoomblurtransition" label="Zoom Blur" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Bender" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Bender" source="{mm_path}moviemasher/com/moviemasher/pbj/zoomBlur.pbj" positions="0" parameter0="0,0" parameter0fade="100,100" parameter1="0" parameter1fade=".5" swap="1"/>
+	<media group="transition" type="transition" id="squareboxestransition" label="Square Boxes" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Matte" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Matte" composites="squareboxestransitiontheme">
+		<media id="squareboxestransitiontheme" group="theme" type="theme" fade="0,0,100,100" instances="25" map="rects" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Shapes"/>
+	</media>
+	<media group="transition" type="transition" id="roundedboxestransition" label="Rounded Boxes" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Matte" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Matte" composites="roundedboxestransitiontheme">
+		<media id="roundedboxestransitiontheme" group="theme" type="theme" fade="0,0,100,100" instances="25" map="rects" curve="10" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Shapes"/>
+	</media>
+	<media group="transition" type="transition" id="rippletransition" label="Ripple" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Matte" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Matte" composites="rippletransitiontheme">
+		<media id="rippletransitiontheme" group="theme" type="theme" fade="0,0,100,100" map="ripple" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Gradientmap"/>
+	</media>
+	<media group="transition" type="transition" id="ovalcrosstransition" label="Oval Crossfade" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Matte" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Matte" composites="ovalcrosstransitiontheme">
+		<media id="ovalcrosstransitiontheme" group="theme" type="theme" fade="0,0,100,100" map="fisheye" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Gradientmap"/>
+	</media>
+	<media group="transition" type="transition" id="wiperightmattetransition" label="Wipe Left to Right" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Matte" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Matte" composites="wiperighttransitiontheme">
+		<media id="wiperighttransitiontheme" group="theme" type="theme" fade="0,0,100,100" map="bars" instances="1" orientation="horizontal" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Shapes"/>
+	</media>
+	<media group="transition" type="transition" id="wipeleftmattetransition" label="Wipe Right to Left" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Matte" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Matte" composites="wipelefttransitiontheme" swap="1">
+		<media id="wipelefttransitiontheme" group="theme" type="theme" fade="0,100,100,0" map="bars" instances="1" orientation="horizontal" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Shapes"/>
+	</media>
+</moviemasher>
+
+04:35:11 media.php group=theme&index=0&count=20&unique=64B44DB3-4402-89DB-F10F-F5AB53D6321B&label=
+04:35:11 media.php <moviemasher>
+	<media id="cloudstheme" group="theme" type="theme" label="Clouds" editable="forecolor,backcolor,quality,speed" forecolor="CCCCCC" backcolor="333333" speed="2" quality="4" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Clouds" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Clouds"/>
+	<media id="titletheme" group="theme" type="theme" label="Title" editable="font,forecolor,backcolor,longtext,textsize" forecolor="CCCCCC" backcolor="333333" longtext="Editable Text" textsize="14" font="default" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Title" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Title"/>
+	<media id="colorfadetheme" group="theme" type="theme" label="Color Fade" editable="forecolor,backcolor,fade" forecolor="CCCCCC" backcolor="333333" fade="0,0,100,100" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Colorfade" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Colorfade"/>
+	<media id="barstheme" group="theme" type="theme" label="Bars" editable="fade,forecolor,backcolor,orientation,instances" forecolor="CCCCCC" backcolor="333333" fade="0,0,100,100" orientation="vertical" instances="25" map="bars" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Shapes" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Shapes"/>
+	<media id="rectstheme" group="theme" type="theme" label="Rects" editable="fade,forecolor,backcolor,instances" forecolor="CCCCCC" backcolor="333333" fade="0,0,100,100" instances="25" curve="10" map="rects" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Shapes" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Shapes"/>
+	<media id="circletheme" group="theme" type="theme" label="Circle" editable="fade,forecolor,backcolor" forecolor="CCCCCC" backcolor="333333" fade="0,0,100,100" map="circle" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Shapes" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Shapes"/>
+	<media id="rippletheme" group="theme" type="theme" label="Ripple" editable="fade,forecolor,backcolor" forecolor="CCCCCC" backcolor="333333" fade="0,0,100,100" map="ripple" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Gradientmap" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Gradientmap"/>
+	<media id="gradtheme" group="theme" type="theme" label="Gradient" editable="fade,forecolor,backcolor" forecolor="CCCCCC" backcolor="333333" fade="0,0,100,100" map="grad" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Gradientmap" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Gradientmap"/>
+	<media id="fisheyetheme" group="theme" type="theme" label="Fish Eye" editable="fade,instances,forecolor,backcolor" forecolor="CCCCCC" backcolor="333333" fade="0,0,100,100" map="fisheye" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Gradientmap" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Gradientmap"/>
+	<media id="raintheme" group="theme" type="theme" label="Rain" editable="fade,instances,forecolor,backcolor" forecolor="CCCCCC" backcolor="333333" fade="0,0,100,100" map="rain" instances="30" stickiness="5" size="30" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Gradientmap" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Gradientmap"/>
+</moviemasher>
+
+04:35:22 media.php group=transition&index=0&count=20&unique=07F3C7FA-9608-830A-26B0-F5AB7F750DE4&label=
+04:35:22 media.php <moviemasher>
+	<media group="transition" type="transition" id="crossfadetransition" label="Crossfade" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Crossfade" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Crossfade"/>
+	<media group="transition" type="transition" id="blindsmattetransition" label="Blinds" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Matte" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Matte" composites="blindstransitiontheme">
+		<media id="blindstransitiontheme" group="theme" type="theme" map="bars" alpha="100" orientation="vertical" instances="25" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Shapes"/>
+	</media>
+	<media group="transition" type="transition" id="boxtransition" label="Box" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Matte" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Matte" composites="boxtransitiontheme">
+		<media id="boxtransitiontheme" group="theme" type="theme" fade="0,0,100,100" instances="1" map="grid" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Shapes"/>
+	</media>
+	<media group="transition" type="transition" id="gridtransition" label="Grid" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Matte" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Matte" composites="gridtransitiontheme" compositeeditable="instances">
+		<media id="gridtransitiontheme" group="theme" type="theme" fade="0,0,100,100" instances="20" editable="instances" map="grid" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Shapes"/>
+	</media>
+	<media group="transition" type="transition" id="irisopentransition" label="Iris Open" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Matte" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Matte" composites="circleouttransitiontheme">
+		<media id="circleouttransitiontheme" group="theme" type="theme" fade="0,0,100,100" map="circle" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Shapes"/>
+	</media>
+	<media group="transition" type="transition" id="irisclosetransition" label="Iris Close" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Matte" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Matte" composites="circleintransitiontheme" swap="1">
+		<media id="circleintransitiontheme" group="theme" type="theme" fade="0,100,100,0" map="circle" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Shapes"/>
+	</media>
+	<media group="transition" type="transition" id="cubelefttransition" label="Cube Right to Left" direction="left" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Cube" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Cube"/>
+	<media group="transition" type="transition" id="cubedowntransition" label="Cube Top to Bottom" direction="down" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Cube" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Cube"/>
+	<media group="transition" type="transition" id="cubeuptransition" label="Cube Bottom to Top" direction="up" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Cube" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Cube"/>
+	<media group="transition" type="transition" id="cuberighttransition" label="Cube Left to Right" direction="right" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Cube" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Cube"/>
+	<media group="transition" type="transition" id="pbholetransition" label="Hole" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Bender" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Bender" source="{mm_path}moviemasher/com/moviemasher/pbj/hole.pbj" parameter0="10" parameter0fade="70" parameter1="90,10" parameter1fade="50,50" parameter2="1" parameter2fade="3" positions="1" scales="0" ignorescale="1" swap="1"/>
+	<media group="transition" type="transition" id="pbwavereflectiontransition" label="Wave Reflection" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Bender" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Bender" source="{mm_path}moviemasher/com/moviemasher/pbj/waveReflection.pbj" parameter0="0" parameter0fade="1" parameter1="0" parameter1fade="20" parameter2=".22" parameter2fade=".22" swap="1"/>
+	<media group="transition" type="transition" id="pbsimplepointlighttransition" label="Simple Point Light" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Bender" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Bender" source="{mm_path}moviemasher/com/moviemasher/pbj/SimplePointLight.pbj" parameter0="0,0" parameter0fade="100,100" parameter1="0" parameter1fade="200" parameter2="0" parameter2fade="2" parameter3="0" parameter3fade="2" positions="0" swap="1"/>
+	<media group="transition" type="transition" id="pbzoomblurtransition" label="Zoom Blur" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Bender" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Bender" source="{mm_path}moviemasher/com/moviemasher/pbj/zoomBlur.pbj" positions="0" parameter0="0,0" parameter0fade="100,100" parameter1="0" parameter1fade=".5" swap="1"/>
+	<media group="transition" type="transition" id="squareboxestransition" label="Square Boxes" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Matte" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Matte" composites="squareboxestransitiontheme">
+		<media id="squareboxestransitiontheme" group="theme" type="theme" fade="0,0,100,100" instances="25" map="rects" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Shapes"/>
+	</media>
+	<media group="transition" type="transition" id="roundedboxestransition" label="Rounded Boxes" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Matte" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Matte" composites="roundedboxestransitiontheme">
+		<media id="roundedboxestransitiontheme" group="theme" type="theme" fade="0,0,100,100" instances="25" map="rects" curve="10" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Shapes"/>
+	</media>
+	<media group="transition" type="transition" id="rippletransition" label="Ripple" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Matte" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Matte" composites="rippletransitiontheme">
+		<media id="rippletransitiontheme" group="theme" type="theme" fade="0,0,100,100" map="ripple" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Gradientmap"/>
+	</media>
+	<media group="transition" type="transition" id="ovalcrosstransition" label="Oval Crossfade" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Matte" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Matte" composites="ovalcrosstransitiontheme">
+		<media id="ovalcrosstransitiontheme" group="theme" type="theme" fade="0,0,100,100" map="fisheye" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Gradientmap"/>
+	</media>
+	<media group="transition" type="transition" id="wiperightmattetransition" label="Wipe Left to Right" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Matte" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Matte" composites="wiperighttransitiontheme">
+		<media id="wiperighttransitiontheme" group="theme" type="theme" fade="0,0,100,100" map="bars" instances="1" orientation="horizontal" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Shapes"/>
+	</media>
+	<media group="transition" type="transition" id="wipeleftmattetransition" label="Wipe Right to Left" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Matte" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Matte" composites="wipelefttransitiontheme" swap="1">
+		<media id="wipelefttransitiontheme" group="theme" type="theme" fade="0,100,100,0" map="bars" instances="1" orientation="horizontal" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Shapes"/>
+	</media>
+</moviemasher>
+
+04:35:24 media.php group=effect&index=0&count=20&unique=E6B16C76-34F2-8DCC-F20E-F5AB84FE4507&label=
+04:35:24 media.php <moviemasher>
+	<media group="effect" type="effect" id="circlecompositeeffect" label="Circle/Oval" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Drawing" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Drawing" editable="rotate,scale,position,forecolor,backcolor" rotate="0" scale="50,50" position="50,50" forecolor="FF0000" backcolor="" shape="circle" line="2" shadow="1" shadowcolor="333333" shadowblur="2" shadowstrength="1"/>
+	<media group="effect" type="effect" id="arrowcompositeeffect" label="Arrow" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Drawing" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Drawing" editable="rotate,shear,scale,position,forecolor,backcolor" rotate="0" shear="50,50" scale="50,50" position="50,50" forecolor="0" backcolor="FFFF00" shape="polygon" fillalpha="20" line="1" shadow="1" shadowcolor="333333" shadowblur="2" shadowstrength="1" points="0,35,65,35,65,0,100,50,65,100,65,65,0,65,0,35"/>
+	<media group="effect" type="effect" id="rectcompositeeffect" label="Line/Rectangle" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Drawing" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Drawing" editable="rotate,scale,position,forecolor,backcolor" rotate="0" scale="50,3" position="50,50" forecolor="" backcolor="00FFFF" shape="rect" line="1" shadow="1" shadowcolor="333333" shadowblur="2" shadowstrength="1"/>
+	<media group="effect" type="effect" id="logocompositeeffect" label="Station Identifier" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Picturebox" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Picturebox" fade="0,100,100,100" scale="25,15" position="95,5" blend="screen" editable="composites,href" composites="logocompositeeffectimage" href="http://www.moviemasher.com/">
+		<media label="Movie Masher Logo" fill="scale" group="image" type="image" id="logocompositeeffectimage" icon="../media/image/Logo/media.png" url="../media/image/Logo/media.png" source="../media/image/Logo/media.png"/>
+	</media>
+	<media group="effect" type="effect" id="colorizeeffect" label="Colorize" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Colorize" forecolor="FF6666" backcolor="66FF66" editable="fade,forecolor,backcolor" fade="0,0,50,100,100,0" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Colorize"/>
+	<media group="effect" type="effect" id="reverseeffect" label="Reverse" contrast="-2" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Adjust" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Adjust"/>
+	<media group="effect" type="effect" id="inverseeffect" label="Inverse" hue="180" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Adjust" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Adjust"/>
+	<media group="effect" type="effect" id="desaturateeffect" label="Desaturate" saturation="0" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Adjust" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Adjust"/>
+	<media group="effect" type="effect" id="brightnesscontrasteffect" label="Brightness/Contrast" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Adjust" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Adjust" brightness="0" contrast="0" editable="fade,brightness,contrast" fade="0,100,100,100"/>
+	<media group="effect" type="effect" id="captioneffect" label="Caption" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Caption" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Caption" padding="3" longtext="Caption" forecolor="000000" backalpha="50" backcolor="FFFFFF" textsize="14" font="default" editable="padding,font,textsize,longtext,forecolor,backcolor,backalpha"/>
+	<media group="effect" type="effect" id="tickereffect" label="Ticker" longtext="Ticker" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Ticker" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Ticker" forecolor="000000" backalpha="50" backcolor="FFFFFF" textsize="14" font="default" editable="font,textsize,longtext,forecolor,backalpha,backcolor"/>
+	<media group="effect" type="effect" id="textboxeffect" label="Textbox" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Textbox" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Textbox" longtext="Textbox" fade="0,0,10,100,90,100,100,0" forecolor="000000" backalpha="50" backcolor="FFFFFF" textsize="14" font="default" scale="50,50" position="50,50" editable="fade,font,scale,position,textsize,longtext,forecolor,backalpha,backcolor"/>
+	<media group="effect" type="effect" id="pictureboxeffect" label="Picturebox" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Picturebox" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Picturebox" fade="0,0,10,100,90,100,100,0" scale="50,50" position="50,50" editable="fade,position,scale,composites,href,blend" composites="logoimage" href="">
+		<media group="image" type="image" id="logoimage" label="Logo" url="../media/image/Logo/media.png" source="../media/image/Logo/media.png"/>
+
+	</media>
+	<media group="effect" type="effect" id="chromakeyeffect" label="Chroma Key" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Chromakey" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Chromakey" forecolor="669933" editable="forecolor,composites" composites="chromakeyeffectvideo">
+		<media group="video" type="video" id="chromakeyeffectvideo" label="Chromakey Candle" source="../media/video/ChromakeyCandle/media.mpg" url="../media/video/ChromakeyCandle/media/320x240x12/" fps="12" pattern="%.jpg" zeropadding="3" duration="9.97" audio="0"/>
+	</media>
+	<media group="effect" type="effect" id="raineffect" label="Rain" editable="scale" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Displace" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Displace" composites="raineffecttheme" scale="70,70">
+		<media id="raineffecttheme" group="theme" type="theme" instances="30" size="15" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Gradientmap"/>
+	</media>
+	<media group="effect" type="effect" id="iceeffect" label="Ice" editable="scale" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Displace" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Displace" composites="iceeffecttheme" scale="10,10">
+		<media id="iceeffecttheme" group="theme" type="theme" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Clouds"/>
+	</media>
+	<media group="effect" type="effect" id="waveeffect" label="Wave" editable="scale" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Displace" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Displace" composites="waveeffecttheme" scale="10,10">
+		<media id="waveeffecttheme" group="theme" type="theme" editable="fade,forecolor,backcolor" forecolor="CCCCCC" backcolor="333333" fade="0,0,100,100" map="grad" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Gradientmap" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Gradientmap"/>
+	</media>
+	<media group="effect" type="effect" id="rippleeffect" label="Ripple" editable="scale" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Displace" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Displace" composites="rippleeffecttheme" scale="60,60">
+		<media id="rippleeffecttheme" group="theme" type="theme" map="ripple" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Gradientmap"/>
+	</media>
+	<media group="effect" type="effect" id="pbcirclesplasheffect" label="Circle Splash" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Bender" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Bender" source="{mm_path}moviemasher/com/moviemasher/pbj/CircleSplash.pbj" Radius="20" Radiusfade="80" center="0,0" centerfade="100,100" editable="fade" fade="0,0,50,100,100,0" positions="1" scales="0" ignorescale="1"/>
+	<media group="effect" type="effect" id="pbmagnifyeffect" label="Magnify" symbol="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@Bender" icon="{mm_path}moviemasher/com/moviemasher/module/All/stable.swf@com.moviemasher.module.Bender" source="{mm_path}moviemasher/com/moviemasher/pbj/magnify.pbj" parameter0="0,0" parameter0fade="100,100" parameter1="20" parameter1fade="50" parameter2="40" parameter2fade="70" parameter3="1" parameter3fade="2" positions="0" scales="1,2" ignorescale="1" editable="fade" fade="0,0,50,100,100,0"/>
+</moviemasher>
+
+04:35:25 media.php group=image&index=0&count=20&unique=7EC2A909-A0A2-D53B-A6A1-F5AB89AE6CC9&label=
+04:35:25 media.php <moviemasher>
+</moviemasher>
+
+04:35:27 media.php group=mash&index=0&count=20&unique=5F36D8F0-4DB2-3C39-035A-F5AB9129BB32&label=
+04:35:27 media.php <moviemasher>
+</moviemasher>
+
+04:35:36 media.php group=image&index=0&count=20&unique=DA416287-03A9-CDA5-3247-F5ABB39B1597&label=
+04:35:36 media.php <moviemasher>
+</moviemasher>
+
+04:35:41 import_init.php file=DSC01404.JPG&size=4978753
+04:35:41 import_init.php <moviemasher  key='moviemasher/example/transcode/media/user/marcelozimmler/276BBF52-EF9C-485C-A766-BE333FCDAEB0/original.jpg' mime='image/jpeg' bucket='admaker' acl='public-read' policy='eyJleHBpcmF0aW9uIjoiMjAxMy0wMi0yMFQwNDozNTo0MS4wMDBaIiwiY29uZGl0aW9ucyI6W1siZXEiLCIkYnVja2V0IiwiYWRtYWtlciJdLFsiZXEiLCIka2V5IiwibW92aWVtYXNoZXIvZXhhbXBsZS90cmFuc2NvZGUvbWVkaWEvdXNlci9tYXJjZWxvemltbWxlci8yNzZCQkY1Mi1FRjlDLTQ4NUMtQTc2Ni1CRTMzM0ZDREFFQjAvb3JpZ2luYWwuanBnIl0sWyJlcSIsIiRhY2wiLCJwdWJsaWMtcmVhZCJdLFsiZXEiLCIkQ29udGVudC1UeXBlIiwiaW1hZ2UvanBlZyJdLFsic3RhcnRzLXdpdGgiLCIkRmlsZW5hbWUiLCIiXSxbInN0YXJ0cy13aXRoIiwiJHN1Y2Nlc3NfYWN0aW9uX3N0YXR1cyIsIjIwMSJdXX0=' signature='YkfNYYvCWI/Z9ed1Q1/WtL4d63Y=' keyid='AKIAIYOOWGGDC3F5ABOQ' region='us-east-1' url="media/php/import_api.php?label=DSC01404.JPG&amp;id=276BBF52-EF9C-485C-A766-BE333FCDAEB0&amp;type=image&amp;extension=jpg" status="Transferring" />
+04:36:23 import_api.php label=DSC01404.JPG&id=276BBF52-EF9C-485C-A766-BE333FCDAEB0&type=image&extension=jpg
+04:36:23 import_api.php Client SQS request:
+<MovieMasher>
+  <Signature>DESzGGZDeyj6L0kQTgWGhBy6JjeFXPISlw/rSL0BLt4=</Signature>
+  <Authentication>
+    <Nonce>E3CF3D53-CF25-4A1D-870B-DB2CEEF9F078</Nonce>
+    <Date>2013-02-20T03:36:23Z</Date>
+    <Identifier>AKIAIYOOWGGDC3F5ABOQ</Identifier>
+    <Name>AccessKey</Name>
+  </Authentication>
+  <Job>
+    <TransferType>http</TransferType>
+    <TransferHost>localhost</TransferHost>
+    <Transfer>
+      <Inherit>1</Inherit>
+      <Host>admaker.s3.amazonaws.com</Host>
+      <Path>moviemasher/example/transcode/media/user/marcelozimmler/276BBF52-EF9C-485C-A766-BE333FCDAEB0/{Transfer.File}</Path>
+      <SeparateRequests>1</SeparateRequests>
+      <Retries>3</Retries>
+      <Method>put</Method>
+      <HeaderName>Authorization</HeaderName>
+      <HeaderName>x-amz-acl</HeaderName>
+      <HeaderName>Content-Type</HeaderName>
+      <HeaderName>Content-MD5</HeaderName>
+      <HeaderName>Date</HeaderName>
+      <HeaderValue>AWS {AccessKey.Identifier}:{Transfer.Signature}</HeaderValue>
+      <HeaderValue>public-read</HeaderValue>
+      <HeaderValue>{Transfer.Mime}</HeaderValue>
+      <HeaderValue>{Transfer.MD5}</HeaderValue>
+      <HeaderValue>{Transfer.Date}</HeaderValue>
+      <Signature>
+        <Base64Encode>
+          <HMACSHA1>
+            <Join>
+              <NewLine/>
+              <UpperCase>{Transfer.Method}</UpperCase>
+              <Value>{Transfer.MD5}</Value>
+              <Value>{Transfer.Mime}</Value>
+              <Value>{Transfer.Date}</Value>
+              <Value>x-amz-acl:public-read</Value>
+              <Value>/admaker/{Transfer.Path}</Value>
+            </Join>
+            <Value>{AccessKey.Secret}</Value>
+          </HMACSHA1>
+        </Base64Encode>
+      </Signature>
+    </Transfer>
+    <Input>
+      <Type>image</Type>
+      <Transfer>
+        <Inherit>1</Inherit>
+        <Path>moviemasher/example/transcode/media/user/marcelozimmler/276BBF52-EF9C-485C-A766-BE333FCDAEB0/original.jpg</Path>
+        <Host>admaker.s3.amazonaws.com</Host>
+      </Transfer>
+    </Input>
+    <Output>
+      <Type>text</Type>
+      <Payload>1</Payload>
+      <Body>
+        <Response>
+          <WarningLog>{Job.Warnings}</WarningLog>
+          <ErrorLog>{Job.Errors}</ErrorLog>
+          <Error>{Job.Error}</Error>
+          <Version>{Job.Version}</Version>
+        </Response>
+      </Body>
+      <Transfer>
+        <Host>localhost</Host>
+        <Type>http</Type>
+        <ParameterName>id</ParameterName>
+        <ParameterName>job</ParameterName>
+        <ParameterName>uid</ParameterName>
+        <ParameterName>sig</ParameterName>
+        <ParameterName>date</ParameterName>
+        <ParameterValue>276BBF52-EF9C-485C-A766-BE333FCDAEB0</ParameterValue>
+        <ParameterValue>{Job.ID}</ParameterValue>
+        <ParameterValue>marcelozimmler</ParameterValue>
+        <ParameterValue>{Transfer.Signature}</ParameterValue>
+        <ParameterValue>{Transfer.DateTimestamp}</ParameterValue>
+        <Signature>
+          <Base64Encode>
+            <HMACSHA1>
+              <Join>
+                <NewLine/>
+                <Value>{AccessKey.Identifier}</Value>
+                <Value>{Transfer.DateTimestamp}</Value>
+              </Join>
+              <Value>{AccessKey.Secret}</Value>
+            </HMACSHA1>
+          </Base64Encode>
+        </Signature>
+        <Path>moviemasher/example/transcode/media/php/import_error.php</Path>
+      </Transfer>
+      <Trigger>error</Trigger>
+    </Output>
+    <Output>
+      <Type>text</Type>
+      <Payload>1</Payload>
+      <Body>
+        <Response>
+          <Progress>
+            <Percent>{Job.Percent}</Percent>
+            <PercentEstimate>{Job.PercentEstimate}</PercentEstimate>
+            <Status>{Job.Status}</Status>
+          </Progress>
+          <Version>{Job.Version}</Version>
+        </Response>
+      </Body>
+      <Transfer>
+        <Host>localhost</Host>
+        <Type>http</Type>
+        <ParameterName>id</ParameterName>
+        <ParameterName>job</ParameterName>
+        <ParameterName>uid</ParameterName>
+        <ParameterName>sig</ParameterName>
+        <ParameterName>date</ParameterName>
+        <ParameterValue>276BBF52-EF9C-485C-A766-BE333FCDAEB0</ParameterValue>
+        <ParameterValue>{Job.ID}</ParameterValue>
+        <ParameterValue>marcelozimmler</ParameterValue>
+        <ParameterValue>{Transfer.Signature}</ParameterValue>
+        <ParameterValue>{Transfer.DateTimestamp}</ParameterValue>
+        <Signature>
+          <Base64Encode>
+            <HMACSHA1>
+              <Join>
+                <NewLine/>
+                <Value>{AccessKey.Identifier}</Value>
+                <Value>{Transfer.DateTimestamp}</Value>
+              </Join>
+              <Value>{AccessKey.Secret}</Value>
+            </HMACSHA1>
+          </Base64Encode>
+        </Signature>
+        <Path>moviemasher/example/transcode/media/php/import_progress.php</Path>
+      </Transfer>
+      <Trigger>progress</Trigger>
+    </Output>
+    <Output>
+      <Type>text</Type>
+      <Payload>1</Payload>
+      <Body/>
+      <Transfer>
+        <Host>localhost</Host>
+        <Type>http</Type>
+        <ParameterName>id</ParameterName>
+        <ParameterName>job</ParameterName>
+        <ParameterName>uid</ParameterName>
+        <ParameterName>sig</ParameterName>
+        <ParameterName>date</ParameterName>
+        <ParameterName>started</ParameterName>
+        <ParameterValue>276BBF52-EF9C-485C-A766-BE333FCDAEB0</ParameterValue>
+        <ParameterValue>{Job.ID}</ParameterValue>
+        <ParameterValue>marcelozimmler</ParameterValue>
+        <ParameterValue>{Transfer.Signature}</ParameterValue>
+        <ParameterValue>{Transfer.DateTimestamp}</ParameterValue>
+        <ParameterValue>1361331383</ParameterValue>
+        <Signature>
+          <Base64Encode>
+            <HMACSHA1>
+              <Join>
+                <NewLine/>
+                <Value>{AccessKey.Identifier}</Value>
+                <Value>{Transfer.DateTimestamp}</Value>
+              </Join>
+              <Value>{AccessKey.Secret}</Value>
+            </HMACSHA1>
+          </Base64Encode>
+        </Signature>
+        <Path>moviemasher/example/transcode/media/php/import_done.php</Path>
+        <VariableName>label</VariableName>
+        <VariableName>extension</VariableName>
+        <VariableName>type</VariableName>
+        <VariableValue>DSC01404.JPG</VariableValue>
+        <VariableValue>jpg</VariableValue>
+        <VariableValue>{Input.Type}</VariableValue>
+      </Transfer>
+      <Trigger>done</Trigger>
+      <Required>1</Required>
+    </Output>
+    <Output>
+      <Type>image</Type>
+      <Basename>256x144x1/0</Basename>
+      <Dimensions>256x144</Dimensions>
+      <Extension>jpg</Extension>
+      <ImageQuality>1</ImageQuality>
+      <NoAudio>1</NoAudio>
+    </Output>
+  </Job>
+</MovieMasher>
+
+04:36:24 import_api.php Client SQS response:
+<?xml version="1.0"?><SendMessageResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><SendMessageResult><MessageId>d80555c1-1ea0-47cb-b53d-b299c231345d</MessageId><MD5OfMessageBody>728250df06908279f93e84a4a363ef33</MD5OfMessageBody></SendMessageResult><ResponseMetadata><RequestId>fcd7841c-a090-5d4d-958f-cd82e6684248</RequestId></ResponseMetadata></SendMessageResponse>
+04:36:24 import_api.php <moviemasher url="media/php/import_monitor.php?type=image&amp;job=d80555c1-1ea0-47cb-b53d-b299c231345d&amp;id=276BBF52-EF9C-485C-A766-BE333FCDAEB0" progress="1" status="Queueing..." delay="10" />
+04:36:34 import_api.php label=DSC01404.JPG&id=276BBF52-EF9C-485C-A766-BE333FCDAEB0&type=image&extension=jpg
+04:36:34 import_api.php Client SQS request:
+<MovieMasher>
+  <Signature>yr4XHWqBY+0lthmPGbQutcaQHnwERvnb1jZ9uL15cNk=</Signature>
+  <Authentication>
+    <Nonce>BE79E167-4860-4EAC-917C-461C19430695</Nonce>
+    <Date>2013-02-20T03:36:34Z</Date>
+    <Identifier>AKIAIYOOWGGDC3F5ABOQ</Identifier>
+    <Name>AccessKey</Name>
+  </Authentication>
+  <Job>
+    <TransferType>http</TransferType>
+    <TransferHost>localhost</TransferHost>
+    <Transfer>
+      <Inherit>1</Inherit>
+      <Host>admaker.s3.amazonaws.com</Host>
+      <Path>moviemasher/example/transcode/media/user/marcelozimmler/276BBF52-EF9C-485C-A766-BE333FCDAEB0/{Transfer.File}</Path>
+      <SeparateRequests>1</SeparateRequests>
+      <Retries>3</Retries>
+      <Method>put</Method>
+      <HeaderName>Authorization</HeaderName>
+      <HeaderName>x-amz-acl</HeaderName>
+      <HeaderName>Content-Type</HeaderName>
+      <HeaderName>Content-MD5</HeaderName>
+      <HeaderName>Date</HeaderName>
+      <HeaderValue>AWS {AccessKey.Identifier}:{Transfer.Signature}</HeaderValue>
+      <HeaderValue>public-read</HeaderValue>
+      <HeaderValue>{Transfer.Mime}</HeaderValue>
+      <HeaderValue>{Transfer.MD5}</HeaderValue>
+      <HeaderValue>{Transfer.Date}</HeaderValue>
+      <Signature>
+        <Base64Encode>
+          <HMACSHA1>
+            <Join>
+              <NewLine/>
+              <UpperCase>{Transfer.Method}</UpperCase>
+              <Value>{Transfer.MD5}</Value>
+              <Value>{Transfer.Mime}</Value>
+              <Value>{Transfer.Date}</Value>
+              <Value>x-amz-acl:public-read</Value>
+              <Value>/admaker/{Transfer.Path}</Value>
+            </Join>
+            <Value>{AccessKey.Secret}</Value>
+          </HMACSHA1>
+        </Base64Encode>
+      </Signature>
+    </Transfer>
+    <Input>
+      <Type>image</Type>
+      <Transfer>
+        <Inherit>1</Inherit>
+        <Path>moviemasher/example/transcode/media/user/marcelozimmler/276BBF52-EF9C-485C-A766-BE333FCDAEB0/original.jpg</Path>
+        <Host>admaker.s3.amazonaws.com</Host>
+      </Transfer>
+    </Input>
+    <Output>
+      <Type>text</Type>
+      <Payload>1</Payload>
+      <Body>
+        <Response>
+          <WarningLog>{Job.Warnings}</WarningLog>
+          <ErrorLog>{Job.Errors}</ErrorLog>
+          <Error>{Job.Error}</Error>
+          <Version>{Job.Version}</Version>
+        </Response>
+      </Body>
+      <Transfer>
+        <Host>localhost</Host>
+        <Type>http</Type>
+        <ParameterName>id</ParameterName>
+        <ParameterName>job</ParameterName>
+        <ParameterName>uid</ParameterName>
+        <ParameterName>sig</ParameterName>
+        <ParameterName>date</ParameterName>
+        <ParameterValue>276BBF52-EF9C-485C-A766-BE333FCDAEB0</ParameterValue>
+        <ParameterValue>{Job.ID}</ParameterValue>
+        <ParameterValue>marcelozimmler</ParameterValue>
+        <ParameterValue>{Transfer.Signature}</ParameterValue>
+        <ParameterValue>{Transfer.DateTimestamp}</ParameterValue>
+        <Signature>
+          <Base64Encode>
+            <HMACSHA1>
+              <Join>
+                <NewLine/>
+                <Value>{AccessKey.Identifier}</Value>
+                <Value>{Transfer.DateTimestamp}</Value>
+              </Join>
+              <Value>{AccessKey.Secret}</Value>
+            </HMACSHA1>
+          </Base64Encode>
+        </Signature>
+        <Path>moviemasher/example/transcode/media/php/import_error.php</Path>
+      </Transfer>
+      <Trigger>error</Trigger>
+    </Output>
+    <Output>
+      <Type>text</Type>
+      <Payload>1</Payload>
+      <Body>
+        <Response>
+          <Progress>
+            <Percent>{Job.Percent}</Percent>
+            <PercentEstimate>{Job.PercentEstimate}</PercentEstimate>
+            <Status>{Job.Status}</Status>
+          </Progress>
+          <Version>{Job.Version}</Version>
+        </Response>
+      </Body>
+      <Transfer>
+        <Host>localhost</Host>
+        <Type>http</Type>
+        <ParameterName>id</ParameterName>
+        <ParameterName>job</ParameterName>
+        <ParameterName>uid</ParameterName>
+        <ParameterName>sig</ParameterName>
+        <ParameterName>date</ParameterName>
+        <ParameterValue>276BBF52-EF9C-485C-A766-BE333FCDAEB0</ParameterValue>
+        <ParameterValue>{Job.ID}</ParameterValue>
+        <ParameterValue>marcelozimmler</ParameterValue>
+        <ParameterValue>{Transfer.Signature}</ParameterValue>
+        <ParameterValue>{Transfer.DateTimestamp}</ParameterValue>
+        <Signature>
+          <Base64Encode>
+            <HMACSHA1>
+              <Join>
+                <NewLine/>
+                <Value>{AccessKey.Identifier}</Value>
+                <Value>{Transfer.DateTimestamp}</Value>
+              </Join>
+              <Value>{AccessKey.Secret}</Value>
+            </HMACSHA1>
+          </Base64Encode>
+        </Signature>
+        <Path>moviemasher/example/transcode/media/php/import_progress.php</Path>
+      </Transfer>
+      <Trigger>progress</Trigger>
+    </Output>
+    <Output>
+      <Type>text</Type>
+      <Payload>1</Payload>
+      <Body/>
+      <Transfer>
+        <Host>localhost</Host>
+        <Type>http</Type>
+        <ParameterName>id</ParameterName>
+        <ParameterName>job</ParameterName>
+        <ParameterName>uid</ParameterName>
+        <ParameterName>sig</ParameterName>
+        <ParameterName>date</ParameterName>
+        <ParameterName>started</ParameterName>
+        <ParameterValue>276BBF52-EF9C-485C-A766-BE333FCDAEB0</ParameterValue>
+        <ParameterValue>{Job.ID}</ParameterValue>
+        <ParameterValue>marcelozimmler</ParameterValue>
+        <ParameterValue>{Transfer.Signature}</ParameterValue>
+        <ParameterValue>{Transfer.DateTimestamp}</ParameterValue>
+        <ParameterValue>1361331394</ParameterValue>
+        <Signature>
+          <Base64Encode>
+            <HMACSHA1>
+              <Join>
+                <NewLine/>
+                <Value>{AccessKey.Identifier}</Value>
+                <Value>{Transfer.DateTimestamp}</Value>
+              </Join>
+              <Value>{AccessKey.Secret}</Value>
+            </HMACSHA1>
+          </Base64Encode>
+        </Signature>
+        <Path>moviemasher/example/transcode/media/php/import_done.php</Path>
+        <VariableName>label</VariableName>
+        <VariableName>extension</VariableName>
+        <VariableName>type</VariableName>
+        <VariableValue>DSC01404.JPG</VariableValue>
+        <VariableValue>jpg</VariableValue>
+        <VariableValue>{Input.Type}</VariableValue>
+      </Transfer>
+      <Trigger>done</Trigger>
+      <Required>1</Required>
+    </Output>
+    <Output>
+      <Type>image</Type>
+      <Basename>256x144x1/0</Basename>
+      <Dimensions>256x144</Dimensions>
+      <Extension>jpg</Extension>
+      <ImageQuality>1</ImageQuality>
+      <NoAudio>1</NoAudio>
+    </Output>
+  </Job>
+</MovieMasher>
+
+04:36:34 import_api.php Client SQS response:
+<?xml version="1.0"?><SendMessageResponse xmlns="http://queue.amazonaws.com/doc/2011-10-01/"><SendMessageResult><MessageId>ac10b8e4-0f1c-434d-b3b6-99d17f171968</MessageId><MD5OfMessageBody>51f1c3ca7157e399f2878f320b795e45</MD5OfMessageBody></SendMessageResult><ResponseMetadata><RequestId>fb7c12b2-ddf0-5c1a-a7c6-5b2c9af214d2</RequestId></ResponseMetadata></SendMessageResponse>
+04:36:34 import_api.php <moviemasher url="media/php/import_monitor.php?type=image&amp;job=ac10b8e4-0f1c-434d-b3b6-99d17f171968&amp;id=276BBF52-EF9C-485C-A766-BE333FCDAEB0" progress="1" status="Queueing..." delay="10" />
+04:36:41 media.php group=mash&index=0&count=20&unique=33E15810-CC7C-3614-1C1D-F5ACB27C7B35&label=
+04:36:41 media.php <moviemasher>
+</moviemasher>
+
+04:36:41 media.php group=mash&index=0&count=20&unique=DC3A541F-D9AD-EFAA-07C8-F5ACB386984D&label=
+04:36:41 media.php <moviemasher>
+</moviemasher>
+
+19:32:59 media.php group=mash&index=0&count=20&unique=5E405B4C-AD8A-3B81-C678-F8E14A626ABB&label=
+19:32:59 media.php <moviemasher>
+</moviemasher>
+
+19:33:00 media.php group=mash&index=0&count=20&unique=746A5D1B-2EE5-CEC1-7911-F8E14BFBD1A3&label=
+19:33:00 media.php <moviemasher>
+</moviemasher>
+
